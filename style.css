@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+  line-height: 1.8;
+  color: #222;
+  background-color: #fff;
+}
+
+a {
+  color: #005fcc;
+}
