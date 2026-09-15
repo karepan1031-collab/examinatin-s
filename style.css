@@ -11,3 +11,17 @@ body {
 a {
   color: #005fcc;
 }
+.qualification-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.qualification-card h2 {
+  margin-top: 0;
+}
+
+.qualification-card p {
+  margin-bottom: 0;
+}
