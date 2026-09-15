@@ -41,3 +41,21 @@ a.qualification-card:focus-visible {
   background-color: #f0f6ff;
   outline: 2px solid #005fcc;
 }
+.qualification-details {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.qualification-details th,
+.qualification-details td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: anywhere;
+}
+
+.qualification-details th {
+  width: 30%;
+  background-color: #f3f6fa;
+}
