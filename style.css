@@ -59,3 +59,17 @@ a.qualification-card:focus-visible {
   width: 30%;
   background-color: #f3f6fa;
 }
+.site-intro {
+  padding: 24px;
+  margin-bottom: 32px;
+  background-color: #f0f6ff;
+  border-left: 5px solid #005fcc;
+}
+
+.site-intro h1 {
+  margin: 0 0 12px;
+}
+
+.site-intro p {
+  margin: 0;
+}
