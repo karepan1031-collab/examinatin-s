@@ -95,3 +95,60 @@ a.qualification-card:focus-visible {
   margin: 0;
   color: #17365d;
 }
+body.home {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f5f8;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 24px 5%;
+  background-color: #fff;
+  border-bottom: 2px solid #17365d;
+}
+
+.site-name {
+  font-size: 30px;
+  font-weight: bold;
+  color: #17365d;
+  text-decoration: none;
+}
+
+.main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.main-menu a,
+.main-menu span {
+  color: #17365d;
+  font-weight: bold;
+}
+
+.main-menu small {
+  font-size: 12px;
+  color: #666;
+}
+
+.home-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.home .qualification-card {
+  background-color: #fff;
+}
+
+.home .qualification-card h3 {
+  margin: 0;
+  color: #005fcc;
+  text-decoration: underline;
+}
