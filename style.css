@@ -73,3 +73,25 @@ a.qualification-card:focus-visible {
 .site-intro p {
   margin: 0;
 }
+.qualification-header {
+  margin: 24px 0 32px;
+  padding: 32px 24px;
+  background-color: #eef4fb;
+  border-left: 6px solid #005fcc;
+  border-radius: 12px;
+}
+
+.category-label {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 4px 12px;
+  background-color: #17365d;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.qualification-header h1 {
+  margin: 0;
+  color: #17365d;
+}
