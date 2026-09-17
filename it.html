@@ -2,21 +2,34 @@
 <html lang="ja">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-　<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2">
   <meta charset="UTF-8">
   <title>IT・情報 | 資格図鑑</title>
 </head>
 
-<body>
-  <nav aria-label="現在位置">
-  <a href="index.html">トップ</a>
-  ›
-  <span>IT・情報</span>
-</nav>
+<body class="home">
+  <header class="site-header">
+    <a class="site-name" href="index.html">資格図鑑</a>
+
+    <nav class="main-menu" aria-label="メインメニュー">
+      <a href="index.html#find">資格を探す</a>
+      <span>単語帳 <small>準備中</small></span>
+      <span>タイマー <small>準備中</small></span>
+    </nav>
+  </header>
+
+  <main class="home-content">
+    <nav aria-label="現在位置">
+      <a href="index.html">トップ</a>
+      ›
+      <a href="genres.html">ジャンルから探す</a>
+      ›
+      <span aria-current="page">IT・情報</span>
+    </nav>
   <h1>IT・情報</h1>
 <p>気になる資格を選んでください。</p>
 
-<h2>分野から探す</h2>
+<h2>資格一覧</h2>
   <a class="qualification-card" href="it-passport.html">
   <h2>ITパスポート</h2>
   <p>ITや仕事に関する基礎知識を扱う試験です。</p>
@@ -33,5 +46,6 @@
 </a>
 
   <a href="index.html">トップに戻る</a>
+    </main>
 </body>
 </html>
