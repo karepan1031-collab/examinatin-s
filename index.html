@@ -24,14 +24,28 @@
       <p>気になる資格を選んでください。</p>
     </section>
 
-    <section id="find">
-      <h2>分野から探す</h2>
+    <section id="find" class="search-panel">
+  <h2>資格を探す</h2>
 
-      <a class="qualification-card" href="it.html">
-        <h3>IT・情報</h3>
-        <p>ITパスポート・基本情報技術者試験・応用情報技術者試験</p>
-      </a>
-    </section>
+  <form action="search.html" method="get" class="search-form">
+    <label for="keyword">キーワード検索</label>
+
+    <div class="search-input-row">
+      <input
+        type="search"
+        id="keyword"
+        name="q"
+        placeholder="資格名を入力"
+        required
+      >
+      <button type="submit">検索</button>
+    </div>
+  </form>
+
+  <a class="genre-link" href="genres.html">
+    ジャンルから探す →
+  </a>
+</section>
   </main>
 </body>
 </html>
