@@ -198,3 +198,15 @@ body.home {
   margin-top: 24px;
   font-weight: bold;
 }
+.details-panel {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(23, 54, 93, 0.06);
+}
+
+.details-panel h2 {
+  margin: 0 0 20px;
+  color: #17365d;
+  font-size: 22px;
+}
