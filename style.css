@@ -263,3 +263,10 @@ body.home {
     width: 38%;
   }
 }
+.daily-section {
+  margin-top: 40px;
+}
+
+.daily-section > h2 {
+  color: #17365d;
+}
