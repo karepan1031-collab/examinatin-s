@@ -210,3 +210,17 @@ body.home {
   color: #17365d;
   font-size: 22px;
 }
+@media (max-width: 600px) {
+  .details-panel {
+    padding: 16px;
+  }
+
+  .qualification-details th,
+  .qualification-details td {
+    padding: 10px;
+  }
+
+  .qualification-details th {
+    width: 38%;
+  }
+}
