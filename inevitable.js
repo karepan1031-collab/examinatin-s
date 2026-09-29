@@ -32,7 +32,7 @@ const random = value - Math.floor(value);
 
 // 候補から1つ選ぶ
 const index = Math.floor(random * qualifications.length);
-const selected = qualifications[index];
+const selected = qualifications[0];
 
 // カードの資格名・説明・リンク先を変更する
 document.getElementById("daily-name").textContent = selected.name;
