@@ -39,3 +39,14 @@ document.getElementById("daily-name").textContent = selected.name;
 document.getElementById("daily-description").textContent =
   selected.description;
 document.getElementById("daily-qualification").href = selected.url;
+// タグを表示する場所を取得する
+const tagsContainer = document.getElementById("daily-tags");
+
+// 中身を空にしてから、選ばれた資格のタグを入れる
+tagsContainer.replaceChildren();
+
+selected.tags.forEach((tag) => {
+  const span = document.createElement("span");
+  span.textContent = tag;
+  tagsContainer.appendChild(span);
+});
