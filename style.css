@@ -270,3 +270,45 @@ body.home {
 .daily-section > h2 {
   color: #17365d;
 }
+/* 資格カード：角丸を控えめにして情報を整理 */
+a.qualification-card.exam-card {
+  padding: 24px;
+  border: 1px solid #cbd2da;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.home a.exam-card h3 {
+  margin: 0;
+  color: #17365d;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.exam-card p {
+  margin: 8px 0 16px;
+}
+
+/* タグは横並び。入りきらなければ次の行へ */
+.qualification-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.qualification-tags span {
+  padding: 3px 9px;
+  border: 1px solid #ccd3db;
+  border-radius: 3px;
+  color: #394b60;
+  font-size: 13px;
+}
+
+.card-more {
+  display: block;
+  margin-top: 20px;
+  text-align: right;
+  color: #005fcc;
+  font-size: 14px;
+  font-weight: bold;
+}
