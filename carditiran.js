@@ -22,10 +22,6 @@ qualifications.forEach((qualification) => {
     tags.appendChild(label);
   });
 
-  const more = document.createElement("span");
-  more.className = "card-more";
-  more.textContent = "詳細を見る →";
-
-  card.append(name, description, tags, more);
+  card.append(name, description, tags);
   list.appendChild(card);
 });
