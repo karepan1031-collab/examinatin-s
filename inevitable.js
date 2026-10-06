@@ -1,5 +1,5 @@
 
-// 日本時間の日付を取得する
+// 日付取得
 const today = new Date().toLocaleDateString("sv-SE", {
   timeZone: "Asia/Tokyo"
 });
