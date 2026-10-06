@@ -8,13 +8,13 @@ const qualifications = [
   },
   {
     name: "基本情報技術者試験",
-    description: "説明は後で入力",
+    description: "説明",
     url: "fe.html",
     tags: ["IT・情報"]
   },
   {
     name: "応用情報技術者試験",
-    description: "説明は後で入力",
+    description: "説明",
     url: "ap.html",
     tags: ["IT・情報"]
   }
