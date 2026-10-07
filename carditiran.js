@@ -3,10 +3,7 @@ const list = document.getElementById("qualification-list");
 
 // 資格を1つずつ取り出してカードを作る
 
-const itQualifications = qualifications.filter((qualification) => {
-  return qualification.category === "it";
-});
-itQualifications.forEach((qualification) => {
+Qualifications.forEach((qualification) => {
   const card = document.createElement("a");
   card.className = "qualification-card exam-card";
   card.href = qualification.url;
