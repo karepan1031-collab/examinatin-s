@@ -9,4 +9,11 @@ if (qualification) {
     qualification.name;
 
  
-}
+  const tagsContainer = document.getElementById("qualification-tags");
+  tagsContainer.replaceChildren();
+
+  qualification.tags.forEach((tag) => {
+    const label = document.createElement("span");
+    label.textContent = tag;
+    tagsContainer.appendChild(label);
+  });}
