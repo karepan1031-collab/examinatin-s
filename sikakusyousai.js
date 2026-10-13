@@ -8,6 +8,5 @@ if (qualification) {
   document.getElementById("qualification-name").textContent =
     qualification.name;
 
-  document.getElementById("qualification-description").textContent =
-    qualification.description;
+ 
 }
