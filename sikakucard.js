@@ -12,7 +12,7 @@ const qualifications = [
     name: "基本情報技術者試験",
     description: "説明",
     url: "fe.html",
-    tags: ["IT・情報"]
+    tags: ["IT・情報","国家試験", "CBT（パソコン受験）", "通年実施"]
   },
   {
     category: "it",
