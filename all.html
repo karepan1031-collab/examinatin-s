@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- サイト共通CSS -->
+  <link rel="stylesheet" href="style.css?v=11">
+
+  <title>資格一覧｜資格図鑑</title>
+</head>
+
+<body class="home genre-detail-page all-page">
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <a class="site-name" href="index.html">
+      資格図鑑
+    </a>
+
+    <nav class="main-menu" aria-label="メインメニュー">
+      <a href="index.html#find">資格を探す</a>
+      <a href="progress.html">マイ取得状況</a>
+    </nav>
+  </header>
+
+  <main class="home-content">
+
+    <!-- パンくずリスト -->
+    <nav class="genre-breadcrumb" aria-label="現在位置">
+      <a href="index.html">トップ</a>
+      <span>›</span>
+      <span aria-current="page">資格一覧</span>
+    </nav>
+
+    <!-- 見出し -->
+    <section class="genre-heading">
+      <h1>資格一覧</h1>
+    </section>
+
+    <!-- 資格カード -->
+    <section class="genre-list-section">
+      <div
+        id="qualification-list"
+        class="qualification-grid"
+      ></div>
+    </section>
+
+  </main>
+
+  <!-- 資格データ -->
+  <script src="sikakucard.js"></script>
+
+  <!-- 全資格一覧の表示 -->
+  <script src="allcards.js"></script>
+
+</body>
+</html>
