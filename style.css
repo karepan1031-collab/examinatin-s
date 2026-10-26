@@ -2240,3 +2240,79 @@ span:nth-child(2) {
   margin-top: 12px;
   padding-top: 0;
 }
+/* 資格図鑑：文字サイズと8ジャンルの配色調整
+   既存 style.css の末尾に追加する */
+
+/* 資格詳細：長い資格名を読みやすく */
+.detail-page .qualification-hero h1 {
+  font-size: clamp(30px, 4.2vw, 50px);
+  line-height: 1.35;
+  letter-spacing: -0.025em;
+  overflow-wrap: anywhere;
+}
+
+/* 資格一覧：カード名の折り返しを減らす */
+.home .qualification-grid a.exam-card h3 {
+  font-size: 19px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+/* 試験概要：値が長い場合にも収まりやすく */
+.detail-page .summary-item strong {
+  font-size: clamp(20px, 2.2vw, 28px);
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+/* ジャンルカード：既存を含む8ジャンルに配色 */
+.genre-overview-page .genre-it { background: #e6f0ff; border-color: #a9caf7; }
+.genre-overview-page .genre-it h3 { color: #1557a0; }
+.genre-overview-page .genre-it:hover { background: #d6e8ff; border-color: #1766bc; }
+
+.genre-overview-page .genre-business { background: #fff0de; border-color: #ebc797; }
+.genre-overview-page .genre-business h3 { color: #975400; }
+.genre-overview-page .genre-business:hover { background: #ffe5c2; border-color: #c88733; }
+
+.genre-overview-page .genre-language { background: #f1e9fc; border-color: #ceb4ed; }
+.genre-overview-page .genre-language h3 { color: #713a9c; }
+.genre-overview-page .genre-language:hover { background: #e8d8fa; border-color: #9b6dcb; }
+
+.genre-overview-page .genre-law { background: #f7e9ed; border-color: #e3bfca; }
+.genre-overview-page .genre-law h3 { color: #8c3650; }
+.genre-overview-page .genre-law:hover { background: #f2dce3; border-color: #b75e77; }
+
+.genre-overview-page .genre-industrial { background: #e6f0f3; border-color: #adcbd5; }
+.genre-overview-page .genre-industrial h3 { color: #245d72; }
+.genre-overview-page .genre-industrial:hover { background: #d6e8ed; border-color: #4c8398; }
+
+.genre-overview-page .genre-medical { background: #e5f5ec; border-color: #acdcc2; }
+.genre-overview-page .genre-medical h3 { color: #196d4e; }
+.genre-overview-page .genre-medical:hover { background: #d4eddf; border-color: #62b58a; }
+
+.genre-overview-page .genre-travel { background: #fff3df; border-color: #ead2a8; }
+.genre-overview-page .genre-travel h3 { color: #91600f; }
+.genre-overview-page .genre-travel:hover { background: #ffebc8; border-color: #bc8a37; }
+
+.genre-overview-page .genre-design { background: #fbe8f6; border-color: #e4bed8; }
+.genre-overview-page .genre-design h3 { color: #894772; }
+.genre-overview-page .genre-design:hover { background: #f5d9ed; border-color: #ae6c9a; }
+
+/* 資格カードのジャンルタグ：ジャンルごとに色分け */
+.home .qualification-grid .card-tags .tag-genre-it { color: #1455a0; background: #dcecff; border-color: #9fc5f5; }
+.home .qualification-grid .card-tags .tag-genre-business { color: #925000; background: #fff0d9; border-color: #f2c58b; }
+.home .qualification-grid .card-tags .tag-genre-language { color: #713a9c; background: #f0e4fc; border-color: #d3b2ed; }
+.home .qualification-grid .card-tags .tag-genre-law { color: #8c3650; background: #f7e9ed; border-color: #e3bfca; }
+.home .qualification-grid .card-tags .tag-genre-industrial { color: #245d72; background: #e6f0f3; border-color: #adcbd5; }
+.home .qualification-grid .card-tags .tag-genre-medical { color: #176a4b; background: #e0f5eb; border-color: #a6dcc3; }
+.home .qualification-grid .card-tags .tag-genre-travel { color: #91600f; background: #fff3df; border-color: #ead2a8; }
+.home .qualification-grid .card-tags .tag-genre-design { color: #894772; background: #fbe8f6; border-color: #e4bed8; }
+
+/* トップの本日の資格：文字サイズをカード一覧に合わせる */
+.top-page .top-daily-grid a.top-daily-card h3 { font-size: 19px; line-height: 1.55; }
+
+@media (max-width: 600px) {
+  .detail-page .qualification-hero h1 { font-size: clamp(28px, 8vw, 38px); }
+  .home .qualification-grid a.exam-card h3 { font-size: 19px; }
+  .detail-page .summary-item strong { font-size: 24px; }
+}
