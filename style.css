@@ -2319,5 +2319,5 @@ span:nth-child(2) {
 /* すべての資格カードの資格名を黒文字にする */
 .home .qualification-grid a.exam-card h3,
 .home .top-daily-card h3 {
-  color: #222222;
+  color: #000000;
 }
