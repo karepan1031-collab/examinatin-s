@@ -5,47 +5,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=7">
 
-  <title>IT・情報 | 資格図鑑</title>
+  <title>IT・情報｜資格図鑑</title>
 </head>
 
-<body class="home">
+<body class="home genre-detail-page">
 
+  <!-- ヘッダー -->
   <header class="site-header">
     <a class="site-name" href="index.html">
       資格図鑑
     </a>
 
     <nav class="main-menu" aria-label="メインメニュー">
-      <a href="index.html#find">資格を探す</a>
-      <span>単語帳 <small>準備中</small></span>
-      <span>タイマー <small>準備中</small></span>
+      <a href="index.html#find">
+        資格を探す
+      </a>
+
+      <a href="progress.html">
+        マイ取得状況
+      </a>
     </nav>
   </header>
 
   <main class="home-content">
 
-    <nav aria-label="現在位置">
+    <!-- パンくずリスト -->
+    <nav class="genre-breadcrumb" aria-label="現在位置">
       <a href="index.html">トップ</a>
-      ›
+      <span>›</span>
+
       <a href="genres.html">ジャンルから探す</a>
-      ›
+      <span>›</span>
+
       <span aria-current="page">IT・情報</span>
     </nav>
 
-    <h1>IT・情報</h1>
+    <!-- ジャンルの見出し -->
+    <section class="genre-heading">
+      <h1>IT・情報</h1>
 
-    <p>気になる資格を選んでください。</p>
+      <p class="genre-count">
+        <span aria-hidden="true">▦</span>
+        掲載資格 <span id="qualification-count">4</span>件
+      </p>
+    </section>
 
-    <h2>資格一覧</h2>
+    <!-- 資格一覧 -->
+    <section class="genre-list-section">
+      <h2>資格一覧</h2>
 
-    <div
-      id="qualification-list"
-      class="qualification-grid"
-    ></div>
-
-    <a href="index.html">トップに戻る</a>
+      <div
+        id="qualification-list"
+        class="qualification-grid"
+      ></div>
+    </section>
 
   </main>
 
@@ -54,6 +69,14 @@
 
   <!-- 資格一覧カード -->
   <script src="carditiran.js?v=2"></script>
+
+  <!-- 掲載資格数を自動表示 -->
+  <script>
+    const countElement = document.getElementById("qualification-count");
+    const qualificationList = document.getElementById("qualification-list");
+
+    countElement.textContent = qualificationList.children.length;
+  </script>
 
 </body>
 </html>
