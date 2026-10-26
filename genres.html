@@ -1,69 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- サイト共通CSS -->
-  <link rel="stylesheet" href="style.css?v=9">
-
   <title>ジャンルから探す｜資格図鑑</title>
+  <link rel="stylesheet" href="style.css?v=11">
+  <link rel="stylesheet" href="genre-additions.css?v=1">
 </head>
-
 <body class="home genre-overview-page">
-
-  <!-- ヘッダー -->
   <header class="site-header">
-    <a class="site-name" href="index.html">
-      資格図鑑
-    </a>
-
+    <a class="site-name" href="index.html">資格図鑑</a>
     <nav class="main-menu" aria-label="メインメニュー">
-      <a href="index.html#find">
-        資格を探す
-      </a>
-
-      <a href="progress.html">
-        マイ取得状況
-      </a>
+      <a href="index.html#find">資格を探す</a>
+      <a href="progress.html">マイ取得状況</a>
     </nav>
   </header>
-
   <main class="home-content">
-
-    <!-- パンくずリスト -->
     <nav class="genre-breadcrumb" aria-label="現在位置">
-      <a href="index.html">トップ</a>
-      <span>›</span>
-      <span aria-current="page">
-        ジャンルから探す
-      </span>
+      <a href="index.html">トップ</a><span>›</span>
+      <span aria-current="page">ジャンルから探す</span>
     </nav>
-
-    <!-- ページの見出し -->
-    <section class="genre-heading">
-      <h1>ジャンルから探す</h1>
-    </section>
-
-    <!-- ジャンル一覧 -->
-    <section class="genre-list-section">
-      
-
-      <div class="genre-overview-grid">
-
-        <!-- IT・情報 -->
-        <a
-          class="genre-overview-card genre-it"
-          href="it.html"
-        >
-          <h3>IT・情報</h3>
-        </a>
-
-      </div>
-    </section>
-
+    <section class="genre-heading"><h1>ジャンルから探す</h1></section>
+    <div class="genre-overview-grid">
+        <a class="genre-overview-card genre-it" href="it.html"><h3>IT・情報</h3></a>
+        <a class="genre-overview-card genre-business" href="business.html"><h3>ビジネス・会計</h3></a>
+        <a class="genre-overview-card genre-language" href="language.html"><h3>語学</h3></a>
+        <a class="genre-overview-card genre-law" href="law.html"><h3>法律・不動産</h3></a>
+        <a class="genre-overview-card genre-industrial" href="industrial.html"><h3>技術・工業</h3></a>
+        <a class="genre-overview-card genre-medical" href="medical.html"><h3>医療・福祉</h3></a>
+        <a class="genre-overview-card genre-travel" href="travel.html"><h3>旅行・観光</h3></a>
+        <a class="genre-overview-card genre-design" href="design.html"><h3>デザイン・色彩</h3></a>
+    </div>
   </main>
-
 </body>
 </html>
