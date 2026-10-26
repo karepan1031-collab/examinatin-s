@@ -1396,3 +1396,105 @@ body.detail-page {
     transform: none;
   }
 }
+
+/* ========================================
+   IT・情報 ジャンル詳細ページ
+======================================== */
+
+/* パンくずリスト */
+.genre-detail-page .genre-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+
+  margin: 0 0 24px;
+
+  color: #64748b;
+  font-size: 14px;
+}
+
+.genre-detail-page .genre-breadcrumb a {
+  color: #1766bc;
+}
+
+/* ジャンルの見出し */
+.genre-detail-page .genre-heading {
+  margin-bottom: 36px;
+  padding: 28px 32px;
+
+  background-color: #eaf2fd;
+  border-left: 5px solid #1766bc;
+}
+
+/* ジャンル名 */
+.genre-detail-page .genre-heading h1 {
+  margin: 0;
+
+  color: #17365d;
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+/* 掲載資格数 */
+.genre-detail-page .genre-count {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin: 14px 0 0;
+
+  color: #45617e;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* 資格一覧の見出し */
+.genre-detail-page .genre-list-section h2 {
+  margin: 0 0 22px;
+
+  color: #17365d;
+  font-size: 24px;
+}
+
+/* ヘッダーを詳細ページに近い見た目にする */
+.genre-detail-page .site-header {
+  padding: 18px 5%;
+  border-bottom: 1px solid #cdd7e3;
+}
+
+.genre-detail-page .main-menu {
+  gap: 30px;
+}
+
+.genre-detail-page .main-menu a {
+  color: #17365d;
+  text-decoration: none;
+}
+
+.genre-detail-page .main-menu a:hover {
+  color: #005fcc;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* スマートフォン対応 */
+@media (max-width: 600px) {
+
+  .genre-detail-page .genre-heading {
+    padding: 24px 20px;
+    margin-bottom: 28px;
+  }
+
+  .genre-detail-page .genre-heading h1 {
+    font-size: 28px;
+  }
+
+  .genre-detail-page .genre-list-section h2 {
+    font-size: 22px;
+  }
+
+  .genre-detail-page .main-menu {
+    gap: 16px;
+  }
+}
