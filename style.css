@@ -2316,8 +2316,8 @@ span:nth-child(2) {
   .home .qualification-grid a.exam-card h3 { font-size: 19px; }
   .detail-page .summary-item strong { font-size: 24px; }
 }
-/* すべての資格カードの資格名を黒文字にする */
+/* 資格一覧の資格名を完全な黒にする */
 .home .qualification-grid a.exam-card h3,
-.home .top-daily-card h3 {
+.home .top-daily-grid a.top-daily-card h3 {
   color: #000000;
 }
