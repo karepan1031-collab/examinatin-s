@@ -2074,3 +2074,164 @@ span:nth-child(2) {
     transform: none;
   }
 }
+
+/* ========================================
+   資格検索ページ
+======================================== */
+
+/* 検索フォーム全体 */
+.search-page .search-page-panel {
+  margin-bottom: 28px;
+  padding: 28px;
+
+  background-color: #ffffff;
+  border: 1px solid #cbd7e5;
+  border-radius: 12px;
+}
+
+/* 検索結果メッセージ */
+.search-page .search-result-message {
+  margin: 0 0 22px;
+
+  color: #536476;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* 検索結果のカード */
+.search-page .qualification-grid {
+  margin-top: 0;
+}
+
+/* 既存の一覧カードと同じ見た目 */
+.search-page .qualification-grid a.exam-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  padding: 24px;
+  margin-bottom: 0;
+
+  background-color: #ffffff;
+  border: 1px solid #cbd7e5;
+  border-radius: 12px;
+
+  color: #17365d;
+  text-decoration: none;
+  cursor: pointer;
+
+  box-shadow: 0 3px 10px rgba(23, 54, 93, 0.06);
+
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.search-page .qualification-grid a.exam-card:hover {
+  transform: translateY(-4px);
+  border-color: #005fcc;
+  box-shadow: 0 8px 22px rgba(23, 54, 93, 0.14);
+}
+
+.search-page .qualification-grid a.exam-card:focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: 3px;
+}
+
+/* 資格名 */
+.search-page .qualification-grid a.exam-card h3 {
+  margin: 0;
+  color: #17365d;
+  font-size: 22px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+/* 説明文 */
+.search-page .qualification-grid .card-description {
+  margin: 0;
+  color: #536476;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* タグ */
+.search-page .qualification-grid .card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.search-page .qualification-grid .card-tags span {
+  display: inline-block;
+  padding: 5px 11px;
+
+  color: #17365d;
+  background-color: #e9eff7;
+  border: 1px solid #c8d6e8;
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+/* ジャンル：IT・情報 */
+.search-page .qualification-grid .card-tags .tag-genre-it {
+  color: #1455a0;
+  background-color: #dcecff;
+  border-color: #9fc5f5;
+}
+
+/* ジャンル：ビジネス */
+.search-page .qualification-grid .card-tags .tag-genre-business {
+  color: #925000;
+  background-color: #fff0d9;
+  border-color: #f2c58b;
+}
+
+/* ジャンル：語学 */
+.search-page .qualification-grid .card-tags .tag-genre-language {
+  color: #713a9c;
+  background-color: #f0e4fc;
+  border-color: #d3b2ed;
+}
+
+/* ジャンル：医療・福祉 */
+.search-page .qualification-grid .card-tags .tag-genre-medical {
+  color: #176a4b;
+  background-color: #e0f5eb;
+  border-color: #a6dcc3;
+}
+
+/* 国家試験・国家資格 */
+.search-page .qualification-grid .card-tags .tag-national {
+  color: #ad2929;
+  background-color: #fce5e5;
+  border-color: #e9aaaa;
+}
+
+/* スマートフォン */
+@media (max-width: 600px) {
+  .search-page .search-page-panel {
+    padding: 20px;
+  }
+
+  .search-page .qualification-grid a.exam-card {
+    padding: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .search-page .qualification-grid a.exam-card {
+    transition: none;
+  }
+
+  .search-page .qualification-grid a.exam-card:hover {
+    transform: none;
+  }
+}
