@@ -1,37 +1,69 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- サイト共通CSS -->
+  <link rel="stylesheet" href="style.css?v=9">
+
   <title>ジャンルから探す｜資格図鑑</title>
-  <link rel="stylesheet" href="style.css?v=2">
 </head>
 
-<body class="home">
+<body class="home genre-overview-page">
+
+  <!-- ヘッダー -->
   <header class="site-header">
-    <a class="site-name" href="index.html">資格図鑑</a>
+    <a class="site-name" href="index.html">
+      資格図鑑
+    </a>
 
     <nav class="main-menu" aria-label="メインメニュー">
-      <a href="index.html#find">資格を探す</a>
-      <span>単語帳 <small>準備中</small></span>
-      <span>タイマー <small>準備中</small></span>
+      <a href="index.html#find">
+        資格を探す
+      </a>
+
+      <a href="progress.html">
+        マイ取得状況
+      </a>
     </nav>
   </header>
 
   <main class="home-content">
-    <nav aria-label="現在位置">
+
+    <!-- パンくずリスト -->
+    <nav class="genre-breadcrumb" aria-label="現在位置">
       <a href="index.html">トップ</a>
-      ›
-      <span aria-current="page">ジャンルから探す</span>
+      <span>›</span>
+      <span aria-current="page">
+        ジャンルから探す
+      </span>
     </nav>
 
-    <h1>ジャンルから探す</h1>
-    <p>気になる分野を選んでください。</p>
+    <!-- ページの見出し -->
+    <section class="genre-heading">
+      <h1>ジャンルから探す</h1>
+    </section>
 
-    <a class="qualification-card" href="it.html">
-      <h2>IT・情報</h2>
-      <p>ITパスポート・基本情報技術者試験・応用情報技術者試験</p>
-    </a>
+    <!-- ジャンル一覧 -->
+    <section class="genre-list-section">
+      <h2>ジャンル一覧</h2>
+
+      <div class="genre-overview-grid">
+
+        <!-- IT・情報 -->
+        <a
+          class="genre-overview-card genre-it"
+          href="it.html"
+        >
+          <h3>IT・情報</h3>
+        </a>
+
+      </div>
+    </section>
+
   </main>
+
 </body>
 </html>
