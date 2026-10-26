@@ -31,7 +31,7 @@
       </a>
 
       <a href="progress.html">
-        取得率を確認
+        マイ取得状況
       </a>
     </nav>
   </header>
@@ -58,14 +58,6 @@
     <section class="qualification-hero">
 
       <div class="qualification-hero-main">
-        <p class="qualification-eyebrow">
-          QUALIFICATION PROFILE
-        </p>
-
-        <p class="category-label">
-          IT・情報
-        </p>
-
         <h1 id="qualification-name">
           ITパスポート
         </h1>
@@ -85,18 +77,18 @@
         ></div>
       </div>
 
-      <!-- マイ図鑑登録 -->
+      <!-- 取得済み登録 -->
       <div class="collection-action">
-  <button
-    id="acquisition-button"
-    class="collection-button"
-    type="button"
-    aria-pressed="false"
-  >
-    <span aria-hidden="true">＋</span>
-    取得済みに追加
-  </button>
-</div>
+        <button
+          id="acquisition-button"
+          class="collection-button"
+          type="button"
+          aria-pressed="false"
+        >
+          <span aria-hidden="true">＋</span>
+          取得済みに追加
+        </button>
+      </div>
 
     </section>
 
@@ -133,7 +125,7 @@
       <p>このページの内容</p>
 
       <div class="page-index-links">
-        <a href="#summary">ひと目でわかる</a>
+        <a href="#summary">ひと目でわかる試験情報</a>
         <a href="#steps">受験までの流れ</a>
         <a href="#basic-information">基本情報</a>
         <a href="#pass-rate">合格率</a>
@@ -142,7 +134,7 @@
       </div>
     </nav>
 
-    <!-- 要点 -->
+    <!-- ひと目でわかる試験情報 -->
     <section
       id="summary"
       class="content-section exam-summary"
@@ -205,43 +197,17 @@
           <span class="step-number">1</span>
 
           <div class="step-content">
-            <h3>受験資格を確認する</h3>
+            <h3>申し込む</h3>
 
             <p>
-              年齢、学歴、実務経験などの
-              受験制限はありません。
+              公式申込サイトで利用者IDを登録し、
+              受験する会場と日時を選びます。
             </p>
           </div>
         </li>
 
         <li class="exam-step">
           <span class="step-number">2</span>
-
-          <div class="step-content">
-            <h3>利用者IDを登録する</h3>
-
-            <p>
-              ITパスポート試験の申込サイトで
-              利用者IDを登録します。
-            </p>
-          </div>
-        </li>
-
-        <li class="exam-step">
-          <span class="step-number">3</span>
-
-          <div class="step-content">
-            <h3>会場と日時を選ぶ</h3>
-
-            <p>
-              試験会場の空き状況から、
-              受験する場所と日時を選択します。
-            </p>
-          </div>
-        </li>
-
-        <li class="exam-step">
-          <span class="step-number">4</span>
 
           <div class="step-content">
             <h3>試験を受ける</h3>
@@ -254,7 +220,7 @@
         </li>
 
         <li class="exam-step">
-          <span class="step-number">5</span>
+          <span class="step-number">3</span>
 
           <div class="step-content">
             <h3>結果を確認する</h3>
@@ -550,7 +516,7 @@
       </div>
     </section>
 
-    <!-- 小さく表示する情報源 -->
+    <!-- 情報源 -->
     <aside
       id="sources"
       class="source-note"
@@ -601,8 +567,8 @@
   <!-- 資格名・説明・タグの表示 -->
   <script src="sikakusyousai.js?v=3"></script>
 
+  <!-- 取得済みボタン -->
+  <script src="acquisition.js?v=1"></script>
+
 </body>
 </html>
-<script src="sikakucard.js?v=3"></script>
-<script src="sikakusyousai.js?v=3"></script>
-<script src="acquisition.js?v=1"></script>
