@@ -3,7 +3,7 @@ const qualifications = [
   {
     category: "it",
     name: "ITパスポート",
-    description: "IT・経営・情報セキュリティなど、社会人に必要な基礎知識を問う試験です。",
+    description: "IT・経営・情報セキュリティなど、幅広い分野の基礎知識を問う試験です。",
     url: "it-passport.html",
     tags: [
       "IT・情報",
