@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 共通CSS -->
+  <link rel="stylesheet" href="style.css?v=12">
+
+  <title>資格検索｜資格図鑑</title>
+</head>
+
+<body class="home genre-detail-page search-page">
+
+  <!-- ヘッダー -->
+  <header class="site-header">
+    <a class="site-name" href="index.html">
+      資格図鑑
+    </a>
+
+    <nav class="main-menu" aria-label="メインメニュー">
+      <a href="index.html#find">資格を探す</a>
+      <a href="progress.html">マイ取得状況</a>
+    </nav>
+  </header>
+
+  <main class="home-content">
+
+    <!-- パンくずリスト -->
+    <nav class="genre-breadcrumb" aria-label="現在位置">
+      <a href="index.html">トップ</a>
+      <span>›</span>
+      <span aria-current="page">資格検索</span>
+    </nav>
+
+    <!-- ページ見出し -->
+    <section class="genre-heading">
+      <h1>資格検索</h1>
+    </section>
+
+    <!-- 検索フォーム -->
+    <section class="search-page-panel">
+
+      <form
+        id="qualification-search-form"
+        class="search-form"
+        action="search.html"
+        method="get"
+        role="search"
+      >
+        <label for="keyword">資格名で検索</label>
+
+        <div class="search-input-row">
+          <input
+            type="search"
+            id="keyword"
+            name="q"
+            placeholder="資格名を入力"
+            required
+          >
+
+          <button type="submit">検索</button>
+        </div>
+      </form>
+
+    </section>
+
+    <!-- 検索結果 -->
+    <section class="search-results-section" aria-label="検索結果">
+
+      <p
+        id="search-result-message"
+        class="search-result-message"
+        role="status"
+        aria-live="polite"
+      ></p>
+
+      <div
+        id="qualification-list"
+        class="qualification-grid"
+      ></div>
+
+    </section>
+
+  </main>
+
+  <!-- 資格データ -->
+  <script src="sikakucard.js"></script>
+
+  <!-- 検索処理 -->
+  <script src="search.js"></script>
+
+</body>
+</html>
