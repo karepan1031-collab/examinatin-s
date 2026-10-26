@@ -2235,3 +2235,8 @@ span:nth-child(2) {
     transform: none;
   }
 }
+/* 資格カードの余白を調整 */
+.home .qualification-grid .card-tags {
+  margin-top: 12px;
+  padding-top: 0;
+}
