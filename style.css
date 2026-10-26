@@ -1498,3 +1498,236 @@ body.detail-page {
     gap: 16px;
   }
 }
+
+/* ========================================
+   ジャンル一覧ページ
+======================================== */
+
+/* ヘッダー */
+.genre-overview-page .site-header {
+  padding: 18px 5%;
+  border-bottom: 1px solid #cdd7e3;
+}
+
+.genre-overview-page .main-menu {
+  gap: 30px;
+}
+
+.genre-overview-page .main-menu a {
+  color: #17365d;
+  text-decoration: none;
+}
+
+.genre-overview-page .main-menu a:hover {
+  color: #005fcc;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* パンくずリスト */
+.genre-overview-page .genre-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+
+  margin-bottom: 24px;
+
+  color: #64748b;
+  font-size: 14px;
+}
+
+.genre-overview-page .genre-breadcrumb a {
+  color: #1766bc;
+}
+
+/* ジャンル一覧の見出し */
+.genre-overview-page .genre-heading {
+  padding: 28px 32px;
+  margin-bottom: 36px;
+
+  background-color: #eaf2fd;
+  border-left: 5px solid #1766bc;
+}
+
+.genre-overview-page .genre-heading h1 {
+  margin: 0;
+
+  color: #17365d;
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+/* ジャンル一覧の小見出し */
+.genre-overview-page .genre-list-section h2 {
+  margin: 0 0 22px;
+
+  color: #17365d;
+  font-size: 24px;
+}
+
+/* カードを並べる場所 */
+.genre-overview-page .genre-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+/* ジャンルカード共通 */
+.genre-overview-page .genre-overview-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 110px;
+  padding: 20px;
+  box-sizing: border-box;
+
+  border: 1px solid #cbd7e5;
+  border-radius: 12px;
+
+  background-color: #ffffff;
+
+  box-shadow: 0 3px 10px rgba(23, 54, 93, 0.06);
+
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+/* ジャンル名 */
+.genre-overview-page .genre-overview-card h3 {
+  margin: 0;
+
+  color: #17365d;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+/* カードにマウスを乗せたとき */
+.genre-overview-page .genre-overview-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 8px 22px rgba(23, 54, 93, 0.14);
+}
+
+/* キーボード操作 */
+.genre-overview-page .genre-overview-card:focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: 3px;
+}
+
+/* ========================================
+   ジャンル別カラー
+======================================== */
+
+/* IT・情報：青 */
+.genre-overview-page .genre-it {
+  background-color: #e6f0ff;
+  border-color: #a9caf7;
+}
+
+.genre-overview-page .genre-it h3 {
+  color: #1557a0;
+}
+
+.genre-overview-page .genre-it:hover {
+  background-color: #d6e8ff;
+  border-color: #1766bc;
+}
+
+/* ビジネス：オレンジ（将来用） */
+.genre-overview-page .genre-business {
+  background-color: #fff0de;
+  border-color: #ebc797;
+}
+
+.genre-overview-page .genre-business h3 {
+  color: #975400;
+}
+
+.genre-overview-page .genre-business:hover {
+  background-color: #ffe5c2;
+  border-color: #c88733;
+}
+
+/* 語学：紫（将来用） */
+.genre-overview-page .genre-language {
+  background-color: #f1e9fc;
+  border-color: #ceb4ed;
+}
+
+.genre-overview-page .genre-language h3 {
+  color: #713a9c;
+}
+
+.genre-overview-page .genre-language:hover {
+  background-color: #e8d8fa;
+  border-color: #9b6dcb;
+}
+
+/* 医療・福祉：緑（将来用） */
+.genre-overview-page .genre-medical {
+  background-color: #e5f5ec;
+  border-color: #acdcc2;
+}
+
+.genre-overview-page .genre-medical h3 {
+  color: #196d4e;
+}
+
+.genre-overview-page .genre-medical:hover {
+  background-color: #d4eddf;
+  border-color: #62b58a;
+}
+
+/* ========================================
+   画面幅に合わせる
+======================================== */
+
+/* タブレット */
+@media (max-width: 900px) {
+  .genre-overview-page .genre-overview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* スマートフォン */
+@media (max-width: 600px) {
+  .genre-overview-page .genre-overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .genre-overview-page .genre-heading {
+    padding: 24px 20px;
+  }
+
+  .genre-overview-page .genre-heading h1 {
+    font-size: 28px;
+  }
+
+  .genre-overview-page .genre-overview-card h3 {
+    font-size: 20px;
+  }
+
+  .genre-overview-page .main-menu {
+    gap: 16px;
+  }
+}
+
+/* 動きを減らす設定への対応 */
+@media (prefers-reduced-motion: reduce) {
+  .genre-overview-page .genre-overview-card {
+    transition: none;
+  }
+
+  .genre-overview-page .genre-overview-card:hover {
+    transform: none;
+  }
+}
