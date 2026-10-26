@@ -1218,3 +1218,181 @@ body.detail-page {
   background-color: var(--detail-yellow);
   border-color: var(--detail-yellow);
 }
+
+/* ========================================
+   資格一覧カード 新デザイン
+======================================== */
+
+/* カード全体 */
+.home .qualification-grid a.exam-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  padding: 24px;
+  margin-bottom: 0;
+
+  background-color: #ffffff;
+  border: 1px solid #cbd7e5;
+  border-radius: 12px;
+
+  box-shadow: 0 3px 10px rgba(23, 54, 93, 0.06);
+
+  color: #17365d;
+  text-decoration: none;
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+/* マウスを乗せたとき */
+.home .qualification-grid a.exam-card:hover {
+  transform: translateY(-4px);
+
+  background-color: #f8fbff;
+  border-color: #005fcc;
+
+  box-shadow: 0 8px 22px rgba(23, 54, 93, 0.14);
+
+  outline: none;
+}
+
+/* キーボードで選択したとき */
+.home .qualification-grid a.exam-card:focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: 3px;
+}
+
+/* クリックしたとき */
+.home .qualification-grid a.exam-card:active {
+  transform: translateY(-1px);
+}
+
+/* 資格名 */
+.home .qualification-grid a.exam-card h3 {
+  margin: 0;
+
+  color: #17365d;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.5;
+
+  text-decoration: none;
+}
+
+/* 説明文 */
+.home .qualification-grid .card-description {
+  margin: 0;
+
+  color: #536476;
+  font-size: 14px;
+  line-height: 1.8;
+
+  overflow-wrap: anywhere;
+}
+
+/* タグ全体 */
+.home .qualification-grid .card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+/* タグの共通デザイン */
+.home .qualification-grid .card-tags span {
+  display: inline-block;
+
+  padding: 5px 11px;
+
+  color: #17365d;
+  background-color: #e9eff7;
+  border: 1px solid #c8d6e8;
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+/* ========================================
+   ジャンルごとの色
+======================================== */
+
+/* IT・情報：青 */
+.home .qualification-grid .card-tags .tag-genre-it {
+  color: #1455a0;
+  background-color: #dcecff;
+  border-color: #9fc5f5;
+}
+
+/* ビジネス：オレンジ */
+.home .qualification-grid .card-tags .tag-genre-business {
+  color: #925000;
+  background-color: #fff0d9;
+  border-color: #f2c58b;
+}
+
+/* 語学：紫 */
+.home .qualification-grid .card-tags .tag-genre-language {
+  color: #713a9c;
+  background-color: #f0e4fc;
+  border-color: #d3b2ed;
+}
+
+/* 医療・福祉：緑 */
+.home .qualification-grid .card-tags .tag-genre-medical {
+  color: #176a4b;
+  background-color: #e0f5eb;
+  border-color: #a6dcc3;
+}
+
+/* ========================================
+   国家試験・国家資格：赤
+======================================== */
+
+.home .qualification-grid .card-tags .tag-national {
+  color: #ad2929;
+  background-color: #fce5e5;
+  border-color: #e9aaaa;
+}
+
+/* ========================================
+   スマートフォン対応
+======================================== */
+
+@media (max-width: 600px) {
+
+  .home .qualification-grid a.exam-card {
+    padding: 20px;
+    gap: 12px;
+  }
+
+  .home .qualification-grid a.exam-card h3 {
+    font-size: 20px;
+  }
+
+  .home .qualification-grid .card-tags span {
+    font-size: 12px;
+  }
+
+}
+
+/* 動きを減らす設定の利用者にも対応 */
+@media (prefers-reduced-motion: reduce) {
+  .home .qualification-grid a.exam-card {
+    transition: none;
+  }
+
+  .home .qualification-grid a.exam-card:hover,
+  .home .qualification-grid a.exam-card:active {
+    transform: none;
+  }
+}
