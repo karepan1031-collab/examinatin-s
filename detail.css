@@ -1,0 +1,841 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.detail-page {
+  --detail-navy: #123b6d;
+  --detail-blue: #1479d1;
+  --detail-cyan: #168fb8;
+  --detail-light-blue: #69c7e5;
+  --detail-pale-blue: #eaf5fb;
+  --detail-ink: #172331;
+  --detail-muted: #607080;
+  --detail-line: #cbdce8;
+  --detail-background: #f5faff;
+  --detail-white: #ffffff;
+
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  color: var(--detail-ink);
+  background-color: var(--detail-background);
+  background-image:
+    linear-gradient(
+      rgba(20, 121, 209, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(20, 121, 209, 0.025) 1px,
+      transparent 1px
+    );
+  background-size: 48px 48px;
+}
+
+.detail-page * {
+  box-sizing: border-box;
+}
+
+/* ヘッダー */
+
+.detail-page .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  padding: 18px 5%;
+
+  background-color: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid var(--detail-line);
+
+  backdrop-filter: blur(10px);
+}
+
+.detail-page .site-name {
+  color: var(--detail-navy);
+  font-size: 27px;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+}
+
+.detail-page .main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.detail-page .main-menu a {
+  color: var(--detail-ink);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.detail-page .main-menu a:hover,
+.detail-page .main-menu a:focus-visible {
+  color: var(--detail-blue);
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* ページ全体 */
+
+.detail-page .home-content {
+  width: min(1100px, calc(100% - 40px));
+  max-width: none;
+  margin: 0 auto;
+  padding: 28px 0 80px;
+}
+
+/* パンくず */
+
+.detail-page .breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+
+  margin-bottom: 28px;
+
+  color: var(--detail-muted);
+  font-size: 14px;
+}
+
+.detail-page .breadcrumb a {
+  color: var(--detail-blue);
+}
+
+/* 資格名エリア */
+
+.qualification-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 270px;
+  gap: 40px;
+
+  padding: 48px 0 42px;
+
+  border-top: 4px solid var(--detail-light-blue);
+  border-bottom: 1px solid var(--detail-line);
+}
+
+.qualification-hero-main {
+  min-width: 0;
+}
+
+.qualification-eyebrow {
+  margin: 0 0 14px;
+
+  color: var(--detail-cyan);
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.18em;
+}
+
+.detail-page .category-label {
+  display: inline-block;
+
+  margin: 0 0 16px;
+  padding: 5px 11px;
+
+  color: #ffffff;
+  background-color: var(--detail-navy);
+  border-radius: 2px;
+
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.qualification-hero h1 {
+  margin: 0;
+
+  color: var(--detail-ink);
+
+  font-size: clamp(38px, 6vw, 64px);
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+}
+
+.qualification-lead {
+  max-width: 760px;
+
+  margin: 24px 0 0;
+
+  color: var(--detail-muted);
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+/* タグ */
+
+.detail-page .qualification-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-top: 24px;
+}
+
+.detail-page .qualification-tags span {
+  padding: 5px 11px;
+
+  color: var(--detail-navy);
+  background-color: var(--detail-pale-blue);
+  border: 1px solid #bddbed;
+  border-radius: 999px;
+
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* マイ図鑑 */
+
+.collection-action {
+  align-self: center;
+
+  padding: 24px;
+
+  background-color: var(--detail-white);
+  border-top: 3px solid var(--detail-light-blue);
+  border-bottom: 1px solid var(--detail-line);
+}
+
+.collection-label {
+  margin: 0 0 12px;
+
+  color: var(--detail-muted);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.16em;
+}
+
+.collection-button {
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  padding: 14px 18px;
+
+  color: #ffffff;
+  background-color: var(--detail-navy);
+  border: 2px solid var(--detail-navy);
+  border-radius: 3px;
+
+  font: inherit;
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.collection-button span {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.collection-button:hover,
+.collection-button:focus-visible {
+  color: var(--detail-navy);
+  background-color: #ffffff;
+}
+
+.collection-button[aria-pressed="true"] {
+  color: #ffffff;
+  background-color: var(--detail-blue);
+  border-color: var(--detail-blue);
+}
+
+/* 重要なお知らせ */
+
+.exam-notice {
+  margin: 38px 0 28px;
+  padding: 22px 26px;
+
+  background-color: #edf7fc;
+  border-left: 4px solid var(--detail-blue);
+}
+
+.exam-notice h2 {
+  margin: 0 0 10px;
+
+  color: var(--detail-navy);
+  font-size: 19px;
+}
+
+.exam-notice p {
+  margin: 0 0 10px;
+  line-height: 1.8;
+}
+
+.exam-notice a {
+  color: var(--detail-blue);
+  font-weight: bold;
+}
+
+/* ページ内メニュー */
+
+.page-index {
+  margin: 28px 0 70px;
+  padding: 20px 0;
+
+  border-top: 1px solid var(--detail-line);
+  border-bottom: 1px solid var(--detail-line);
+}
+
+.page-index p {
+  margin: 0 0 10px;
+
+  color: var(--detail-muted);
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.page-index-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+}
+
+.page-index-links a {
+  color: var(--detail-blue);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.page-index-links a::after {
+  content: " ↓";
+  color: var(--detail-cyan);
+}
+
+.page-index-links a:hover {
+  text-decoration: underline;
+}
+
+/* 共通の項目 */
+
+.content-section {
+  margin: 0 0 90px;
+  scroll-margin-top: 110px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-bottom: 28px;
+}
+
+.section-number {
+  margin: 0;
+
+  color: var(--detail-cyan);
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  color: var(--detail-ink);
+
+  font-size: clamp(28px, 4vw, 38px);
+  line-height: 1.3;
+}
+
+/* 要点 */
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  background-color: var(--detail-white);
+  border-bottom: 1px solid var(--detail-line);
+}
+
+.summary-item {
+  min-width: 0;
+
+  padding: 24px 20px;
+
+  border-top: 4px solid var(--detail-navy);
+  border-right: 1px solid var(--detail-line);
+}
+
+.summary-item:nth-child(2) {
+  border-top-color: var(--detail-blue);
+}
+
+.summary-item:nth-child(3) {
+  border-top-color: var(--detail-cyan);
+}
+
+.summary-item:nth-child(4) {
+  border-top-color: var(--detail-light-blue);
+}
+
+.summary-item:last-child {
+  border-right: 0;
+}
+
+.summary-item span,
+.summary-item small {
+  display: block;
+}
+
+.summary-item span {
+  color: var(--detail-muted);
+  font-size: 14px;
+}
+
+.summary-item strong {
+  display: block;
+
+  margin: 10px 0;
+
+  color: var(--detail-ink);
+
+  font-size: clamp(23px, 3vw, 32px);
+  line-height: 1.25;
+}
+
+.summary-item small {
+  color: var(--detail-muted);
+  line-height: 1.6;
+}
+
+/* 受験までの流れ */
+
+.exam-steps {
+  max-width: 850px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.exam-step {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 50px minmax(0, 1fr);
+  gap: 18px;
+
+  padding-bottom: 32px;
+}
+
+.exam-step:not(:last-child)::before {
+  content: "";
+
+  position: absolute;
+  top: 42px;
+  bottom: 0;
+  left: 20px;
+
+  width: 2px;
+
+  background-color: var(--detail-line);
+}
+
+.step-number {
+  position: relative;
+  z-index: 1;
+
+  display: grid;
+  width: 42px;
+  height: 42px;
+
+  place-items: center;
+
+  color: #ffffff;
+  background-color: var(--detail-blue);
+  border-radius: 50%;
+
+  font-weight: bold;
+}
+
+.step-content {
+  padding: 7px 0 26px;
+  border-bottom: 1px solid var(--detail-line);
+}
+
+.step-content h3 {
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+
+.step-content p {
+  margin: 0;
+  color: var(--detail-muted);
+}
+
+/* 基本情報の表 */
+
+.information-table-wrap {
+  overflow-x: auto;
+
+  background-color: #ffffff;
+  border-top: 4px solid var(--detail-blue);
+}
+
+.detail-page .qualification-details {
+  width: 100%;
+  margin: 0;
+
+  border-collapse: collapse;
+}
+
+.detail-page .qualification-details th,
+.detail-page .qualification-details td {
+  padding: 17px 20px;
+
+  border: 0;
+  border-bottom: 1px solid var(--detail-line);
+
+  text-align: left;
+  vertical-align: top;
+}
+
+.detail-page .qualification-details th {
+  width: 25%;
+
+  color: var(--detail-navy);
+  background-color: var(--detail-pale-blue);
+
+  font-weight: bold;
+}
+
+.detail-page .qualification-details td {
+  color: var(--detail-ink);
+  background-color: #ffffff;
+}
+
+/* 合格率 */
+
+.rate-highlight {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+
+  padding: 30px;
+
+  color: #ffffff;
+  background-color: var(--detail-navy);
+}
+
+.rate-highlight span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #dceeff;
+}
+
+.rate-highlight strong {
+  display: block;
+
+  font-size: clamp(42px, 7vw, 68px);
+  line-height: 1;
+}
+
+.rate-numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+
+  margin: 0;
+}
+
+.rate-numbers div {
+  min-width: 140px;
+}
+
+.rate-numbers dt {
+  color: #dceeff;
+  font-size: 13px;
+}
+
+.rate-numbers dd {
+  margin: 5px 0 0;
+
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.rate-note {
+  margin: 15px 0 38px;
+
+  color: var(--detail-muted);
+  font-size: 14px;
+}
+
+.rate-history {
+  padding: 26px;
+
+  background-color: var(--detail-white);
+  border: 1px solid var(--detail-line);
+}
+
+.rate-history h3 {
+  margin: 0 0 26px;
+}
+
+.rate-row {
+  display: grid;
+  grid-template-columns: 90px minmax(100px, 1fr) 70px;
+  gap: 16px;
+
+  align-items: center;
+
+  margin-bottom: 18px;
+}
+
+.rate-row:last-child {
+  margin-bottom: 0;
+}
+
+.rate-year {
+  font-size: 14px;
+}
+
+.rate-track {
+  height: 14px;
+  overflow: hidden;
+
+  background-color: #e1edf5;
+}
+
+.rate-bar {
+  display: block;
+
+  width: var(--rate);
+  height: 100%;
+
+  background-color: var(--detail-blue);
+}
+
+.rate-row:last-child .rate-bar {
+  background-color: var(--detail-cyan);
+}
+
+/* 公式リンク */
+
+.official-link-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.official-link-card {
+  display: flex;
+  min-height: 150px;
+
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 22px;
+
+  color: var(--detail-ink);
+  background-color: var(--detail-white);
+
+  border-top: 4px solid var(--detail-navy);
+  border-right: 1px solid var(--detail-line);
+  border-bottom: 1px solid var(--detail-line);
+  border-left: 1px solid var(--detail-line);
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.official-link-card:nth-child(2) {
+  border-top-color: var(--detail-blue);
+}
+
+.official-link-card:nth-child(3) {
+  border-top-color: var(--detail-cyan);
+}
+
+.official-link-card span {
+  color: var(--detail-muted);
+  font-size: 13px;
+}
+
+.official-link-card strong {
+  margin: 12px 0;
+
+  color: var(--detail-navy);
+  font-size: 19px;
+}
+
+.official-link-card small {
+  color: var(--detail-blue);
+}
+
+.official-link-card:hover,
+.official-link-card:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(18, 59, 109, 0.12);
+}
+
+/* 情報源 */
+
+.source-note {
+  margin: 55px 0 35px;
+  padding-top: 18px;
+
+  color: var(--detail-muted);
+  border-top: 1px solid var(--detail-line);
+
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.source-note p {
+  margin: 3px 0;
+}
+
+.source-note a {
+  color: var(--detail-blue);
+}
+
+/* 戻るリンク */
+
+.back-link {
+  margin: 0;
+}
+
+.back-link a {
+  color: var(--detail-blue);
+  font-weight: bold;
+}
+
+/* タブレット */
+
+@media (max-width: 850px) {
+  .qualification-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-action {
+    max-width: 420px;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .summary-item:nth-child(2) {
+    border-right: 0;
+  }
+
+  .official-link-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .official-link-card {
+    min-height: 120px;
+  }
+}
+
+/* スマートフォン */
+
+@media (max-width: 600px) {
+  .detail-page .site-header {
+    padding: 14px 20px;
+  }
+
+  .detail-page .site-name {
+    font-size: 22px;
+  }
+
+  .detail-page .main-menu {
+    width: 100%;
+    gap: 18px;
+
+    font-size: 14px;
+  }
+
+  .detail-page .home-content {
+    width: min(100% - 28px, 1100px);
+    padding-top: 20px;
+  }
+
+  .qualification-hero {
+    gap: 26px;
+    padding: 35px 0;
+  }
+
+  .qualification-hero h1 {
+    font-size: 39px;
+  }
+
+  .qualification-lead {
+    font-size: 16px;
+  }
+
+  .exam-notice {
+    padding: 19px;
+  }
+
+  .page-index {
+    margin-bottom: 55px;
+  }
+
+  .content-section {
+    margin-bottom: 65px;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-item {
+    border-right: 0;
+    border-bottom: 1px solid var(--detail-line);
+  }
+
+  .detail-page .qualification-details th,
+  .detail-page .qualification-details td {
+    padding: 14px 13px;
+  }
+
+  .detail-page .qualification-details th {
+    width: 34%;
+  }
+
+  .rate-highlight {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .rate-numbers {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .rate-numbers div {
+    min-width: 0;
+  }
+
+  .rate-row {
+    grid-template-columns: 75px minmax(70px, 1fr) 55px;
+    gap: 10px;
+  }
+
+  .rate-history {
+    padding: 18px;
+  }
+}
