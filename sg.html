@@ -1,88 +1,262 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css?v=2">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css?v=11">
+  <link rel="stylesheet" href="detail.css?v=1">
   <title>情報セキュリティマネジメント試験｜資格図鑑</title>
 </head>
+<body class="home detail-page">
 
-<body class="home">
+  <!-- 共通ヘッダー -->
   <header class="site-header">
     <a class="site-name" href="index.html">資格図鑑</a>
-
     <nav class="main-menu" aria-label="メインメニュー">
       <a href="index.html#find">資格を探す</a>
-      <span>単語帳 <small>準備中</small></span>
-      <span>タイマー <small>準備中</small></span>
+      <a href="progress.html">マイ取得状況</a>
     </nav>
   </header>
 
   <main class="home-content">
-    <nav aria-label="現在位置">
-      <a href="index.html">トップ</a>
-      ›
-      <a href="genres.html">ジャンルから探す</a>
-      ›
-      <a href="it.html">IT・情報</a>
-      ›
+
+    <!-- パンくずリスト -->
+    <nav class="breadcrumb" aria-label="現在位置">
+      <a href="index.html">トップ</a><span>›</span>
+      <a href="genres.html">ジャンルから探す</a><span>›</span>
+      <a href="it.html">IT・情報</a><span>›</span>
       <span aria-current="page">情報セキュリティマネジメント試験</span>
     </nav>
-  <header class="qualification-header">
-  <p class="category-label">IT・情報</p>
-  <h1 id="qualification-name">情報セキュリティマネジメント試験</h1>
-<p id="qualification-description">
-  説明文
-</p>
-    <div id="qualification-tags" class="qualification-tags"></div>
-</header>
-<section class="details-panel">
-  <h2>試験の基本情報</h2>
-  <table class="qualification-details">
-  <tr>
-    <th scope="row">用途</th>
-    <td>後で入力</td>
-  </tr>
-  <tr>
-    <th scope="row">受験資格</th>
-    <td>後で入力</td>
-  </tr>
-  <tr>
-    <th scope="row">合格率</th>
-    <td>後で入力</td>
-  </tr>
-  <tr>
-    <th scope="row">試験日時</th>
-    <td>後で入力</td>
-  </tr>
-  <tr>
-    <th scope="row">料金</th>
-    <td>後で入力</td>
-  </tr>
-  <tr>
-    <th scope="row">申込み方法</th>
-    <td>後で入力</td>
-  </tr>
-  <tr>
-    <th scope="row">試験方法</th>
-    <td>後で入力</td>
-  </tr>
-  <tr>
-  <th scope="row">公式サイト</th>
-  <td>
-    <a href="https://www.ipa.go.jp/shiken/kubun/sg.html
-       target="_blank"
-       rel="noopener noreferrer">
-      情報セキュリティマネジメント 公式サイト ↗
-    </a>
-  </td>
-</tr>
-</table>
-  </section>
 
-  <p><a href="it.html">← IT・情報の資格一覧に戻る</a></p>
-</main>
-  <script src="sikakucard.js?v=3"></script>
-<script src="sikakusyousai.js"></script>
+    <!-- 資格名・説明・取得済み登録 -->
+    <section class="qualification-hero">
+      <div class="qualification-hero-main">
+        <h1 id="qualification-name">情報セキュリティマネジメント試験</h1>
+        <p id="qualification-description" class="qualification-lead">組織の情報セキュリティを適切に管理・運用するための知識や技能を問う国家試験です。情報資産の保護やリスク管理など、実際の業務に役立つ内容が出題されます。</p>
+        <div id="qualification-tags" class="qualification-tags" aria-label="資格の特徴"></div>
+      </div>
+      <div class="collection-action">
+        <button id="acquisition-button" class="collection-button" type="button" aria-pressed="false"><span aria-hidden="true">＋</span> 取得済みに追加</button>
+      </div>
+    </section>
+
+    <!-- 重要なお知らせ -->
+    <section class="exam-notice" aria-labelledby="notice-title">
+      <h2 id="notice-title">重要なお知らせ</h2>
+      <p>情報セキュリティマネジメント試験は通常、年間を通してCBT方式で実施されています。ただし、試験システムの更新に伴い、2026年12月28日以降は一時休止が予定されています。会場によっては、それより前に休止となる場合もあります。</p>
+      <p>試験再開時期や2027年以降の日程については、IPAの最新情報をご確認ください。</p>
+      <a href="https://www.ipa.go.jp/shiken/2026/cbt-202605-jisshi.html" target="_blank" rel="noopener noreferrer">IPAの試験休止に関するお知らせを確認する ↗</a>
+    </section>
+
+    <!-- ページ内メニュー -->
+    <nav class="page-index" aria-label="ページ内メニュー">
+      <p>このページの内容</p>
+      <div class="page-index-links">
+        <a href="#summary">ひと目でわかる試験情報</a>
+        <a href="#steps">受験までの流れ</a>
+        <a href="#basic-information">基本情報</a>
+        <a href="#pass-rate">合格率</a>
+        <a href="#official-links">公式サイト</a>
+        <a href="#sources">情報源</a>
+      </div>
+    </nav>
+
+    <!-- 01 ひと目でわかる試験情報 -->
+    <section id="summary" class="content-section exam-summary">
+      <div class="section-heading">
+        <p class="section-number">01</p>
+        <h2>ひと目でわかる試験情報</h2>
+      </div>
+
+      <div class="summary-grid">
+        <article class="summary-item">
+          <span>合格率</span>
+          <strong>70.0%</strong>
+          <small>2025年度</small>
+        </article>
+        <article class="summary-item">
+          <span>受験資格</span>
+          <strong>制限なし</strong>
+          <small>年齢・学歴・実務経験を問わない</small>
+        </article>
+        <article class="summary-item">
+          <span>受験料</span>
+          <strong>7,500円</strong>
+          <small>消費税込み</small>
+        </article>
+        <article class="summary-item">
+          <span>実施時期</span>
+          <strong>通年</strong>
+          <small>2026年12月28日以降は休止予定</small>
+        </article>
+      </div>
+    </section>
+
+    <!-- 02 受験までの流れ -->
+    <section id="steps" class="content-section">
+      <div class="section-heading">
+        <p class="section-number">02</p>
+        <h2>受験までの流れ</h2>
+      </div>
+
+      <ol class="exam-steps">
+        <li class="exam-step">
+          <span class="step-number">1</span>
+          <div class="step-content">
+            <h3>申し込む</h3>
+            <p>公式申込サイトで受験者情報を登録し、受験する会場と日時を選んで申し込みます。受験料の支払いも行います。</p>
+          </div>
+        </li>
+        <li class="exam-step">
+          <span class="step-number">2</span>
+          <div class="step-content">
+            <h3>試験を受ける</h3>
+            <p>選択した会場のパソコンでCBT方式の試験を受けます。科目Aと科目Bを合わせて120分で解答します。</p>
+          </div>
+        </li>
+        <li class="exam-step">
+          <span class="step-number">3</span>
+          <div class="step-content">
+            <h3>結果を確認する</h3>
+            <p>試験後に評価点を確認し、正式な合否は後日公表される合格者受験番号一覧や受験者マイページで確認します。</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- 03 試験の基本情報 -->
+    <section id="basic-information" class="content-section">
+      <div class="section-heading">
+        <p class="section-number">03</p>
+        <h2>試験の基本情報</h2>
+      </div>
+
+      <div class="information-table-wrap">
+        <table class="qualification-details">
+          <tbody>
+            <tr><th scope="row">用途</th><td>組織の情報資産を守り、情報セキュリティ対策の計画・運用・評価・改善に必要な基礎知識や技能を持っていることを証明します。</td></tr>
+            <tr><th scope="row">実施団体</th><td>独立行政法人 情報処理推進機構（IPA）</td></tr>
+            <tr><th scope="row">資格の種類</th><td>国家試験</td></tr>
+            <tr><th scope="row">受験資格</th><td>制限はありません。</td></tr>
+            <tr><th scope="row">試験日時</th><td>通常は年間を通して実施され、会場の空き状況から日時を選択します。ただし、2026年12月28日以降は試験の一時休止が予定されています。</td></tr>
+            <tr><th scope="row">受験料</th><td>7,500円（税込）</td></tr>
+            <tr><th scope="row">申込方法</th><td>公式申込サイトで受験者情報を登録し、試験会場と日時を選択して申し込みます。</td></tr>
+            <tr><th scope="row">試験方式</th><td>CBT方式。試験会場のパソコンで科目A・科目Bの問題を解答します。</td></tr>
+            <tr><th scope="row">試験時間</th><td>120分（科目A・科目Bを合わせた時間）</td></tr>
+            <tr><th scope="row">出題数</th><td>科目A・科目B合わせて60問（全問解答）</td></tr>
+            <tr><th scope="row">出題形式</th><td>科目A：四肢択一式、科目B：多肢選択式</td></tr>
+            <tr><th scope="row">出題分野</th><td>情報セキュリティ管理、情報資産管理、リスクアセスメント、情報セキュリティ対策、関連法規、委託先管理、情報セキュリティ教育など。</td></tr>
+            <tr><th scope="row">合格基準</th><td>総合評価点600点以上／1,000点。科目A・科目Bを合わせた総合評価点で判定されます。</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 04 合格率 -->
+    <section id="pass-rate" class="content-section">
+      <div class="section-heading">
+        <p class="section-number">04</p>
+        <h2>合格率と受験者数</h2>
+      </div>
+
+      <div class="rate-highlight">
+        <div>
+          <span>2025年度の合格率</span>
+          <strong>70.0%</strong>
+        </div>
+        <dl class="rate-numbers">
+          <div>
+            <dt>受験者数</dt>
+            <dd>45,924人</dd>
+          </div>
+          <div>
+            <dt>合格者数</dt>
+            <dd>32,141人</dd>
+          </div>
+        </dl>
+      </div>
+
+      <p class="rate-note">合格率は合格者数を受験者数で割った値です。2025年度の確定値を掲載しています。2026年度の途中集計とは区別しています。</p>
+
+      <div class="rate-history">
+        <h3>現行制度での合格率の推移</h3>
+
+        <div class="rate-row">
+          <span class="rate-year">2023年度</span>
+          <div class="rate-track">
+            <span class="rate-bar" style="--rate: 72.6%;"></span>
+          </div>
+          <strong>72.6%</strong>
+        </div>
+
+        <div class="rate-row">
+          <span class="rate-year">2024年度</span>
+          <div class="rate-track">
+            <span class="rate-bar" style="--rate: 69.0%;"></span>
+          </div>
+          <strong>69.0%</strong>
+        </div>
+
+        <div class="rate-row">
+          <span class="rate-year">2025年度</span>
+          <div class="rate-track">
+            <span class="rate-bar" style="--rate: 70.0%;"></span>
+          </div>
+          <strong>70.0%</strong>
+        </div>
+      </div>
+
+      <p class="rate-note">2023年度に通年CBT方式へ移行しているため、同じ実施方式となった2023年度以降の合格率を掲載しています。</p>
+    </section>
+
+    <!-- 05 公式リンク -->
+    <section id="official-links" class="content-section">
+      <div class="section-heading">
+        <p class="section-number">05</p>
+        <h2>過去問・公式サイト</h2>
+      </div>
+
+      <div class="official-link-grid">
+        <a class="official-link-card" href="https://www.ipa.go.jp/shiken/kubun/sg.html" target="_blank" rel="noopener noreferrer">
+          <span>試験の最新情報</span>
+          <strong>情報セキュリティマネジメント試験 公式ページ</strong>
+          <small>IPAのサイトを開く ↗</small>
+        </a>
+
+        <a class="official-link-card" href="https://www.ipa.go.jp/shiken/mousikomi/cbt_sg_fe.html" target="_blank" rel="noopener noreferrer">
+          <span>受験申込み</span>
+          <strong>受験申込案内ページ</strong>
+          <small>IPAの申込案内を開く ↗</small>
+        </a>
+
+        <a class="official-link-card" href="https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/2026r08.html" target="_blank" rel="noopener noreferrer">
+          <span>試験対策</span>
+          <strong>2026年度の公開問題・解答例</strong>
+          <small>IPAの公開問題を開く ↗</small>
+        </a>
+      </div>
+    </section>
+
+    <!-- 情報源 -->
+    <aside id="sources" class="source-note">
+      <p><strong>情報源：</strong><a href="https://www.ipa.go.jp/shiken/kubun/sg.html" target="_blank" rel="noopener noreferrer">情報処理推進機構（IPA）</a> ／ <a href="https://www.ipa.go.jp/shiken/kubun/sg/outline.html" target="_blank" rel="noopener noreferrer">試験内容・合格基準</a> ／ <a href="https://www.ipa.go.jp/shiken/reports/toukei_sg.html" target="_blank" rel="noopener noreferrer">SG試験統計</a></p>
+      <p>最終確認日：2026年10月26日</p>
+      <p>試験情報は変更される場合があります。申込み前に公式サイトをご確認ください。</p>
+    </aside>
+
+    <p class="back-link">
+      <a href="it.html">← IT・情報の資格一覧に戻る</a>
+    </p>
+  </main>
+
+  <!-- 資格データ -->
+  <script src="sikakucard.js?v=4"></script>
+
+  <!-- 資格名・タグの表示 -->
+  <script src="sikakusyousai.js?v=3"></script>
+
+  <!-- 取得済みボタン -->
+  <script src="acquisition.js?v=1"></script>
 </body>
 </html>
