@@ -1,65 +1,141 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-　<link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
-  <title>資格試験</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- サイト共通CSS -->
+  <link rel="stylesheet" href="style.css?v=11">
+
+  <title>資格図鑑</title>
 </head>
 
-<body class="home">
+<body class="home top-page">
+
+  <!-- ヘッダー -->
   <header class="site-header">
-    <a class="site-name" href="index.html">資格試験</a>
+    <a class="site-name" href="index.html">
+      資格図鑑
+    </a>
 
     <nav class="main-menu" aria-label="メインメニュー">
       <a href="#find">資格を探す</a>
-      <span>単語帳 <small>準備中</small></span>
-      <span>タイマー <small>準備中</small></span>
+      <a href="progress.html">マイ取得状況</a>
     </nav>
   </header>
 
   <main class="home-content">
+
+    <!-- サイトの見出し -->
     <section class="site-intro">
-      <h1>資格試験</h1>
-      <p>気になる資格を選んでください。</p>
+      <h1>資格図鑑</h1>
     </section>
 
-    <section id="find" class="search-panel">
-  <h2>資格を探す</h2>
-<form action="search.html" method="get" class="search-form">    
-  <label for="keyword">キーワード検索</label>    
-  <div class="search-input-row">    
-  <input         type="search"         id="keyword"         name="q"         placeholder="資格名を入力"         required       >
-<button type="submit">検索</button>  
-      
-    </div>
-  </form>
+    <!-- 資格を探す -->
+    <section id="find" class="top-find-section">
 
-  <a class="genre-button" href="genres.html">
-   <span>ジャンルから探す</span> 
-    <span class="genre-icon" aria-hidden="true">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </span>
-  </a>
-</section>
+      <h2>資格を探す</h2>
+
+      <!-- キーワード検索 -->
+      <form
+        action="search.html"
+        method="get"
+        class="search-form"
+      >
+        <label for="keyword">キーワード検索</label>
+
+        <div class="search-input-row">
+          <input
+            type="search"
+            id="keyword"
+            name="q"
+            placeholder="資格名を入力"
+            required
+          >
+
+          <button type="submit">検索</button>
+        </div>
+      </form>
+
+      <!-- 2つの探し方 -->
+      <div class="top-browse-grid">
+
+        <!-- 左：資格一覧 -->
+        <a class="top-browse-card" href="all.html">
+          <span
+            class="browse-icon browse-list-icon"
+            aria-hidden="true"
+          >
+            ☷
+          </span>
+
+          <span>資格一覧から探す</span>
+        </a>
+
+        <!-- 右：ジャンル -->
+        <a class="top-browse-card" href="genres.html">
+
+          <span class="genre-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+
+          <span>ジャンルから探す</span>
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- 本日の資格 -->
     <section class="daily-section">
-  <h2>本日の資格</h2>
 
-  <a id="daily-qualification"
-     class="qualification-card"
-     href="it-passport.html">
-    <h3 id="daily-name">ITパスポート</h3>
-    <p id="daily-description">
-      ITや仕事に関する基礎知識を扱う試験です。
-    </p>
-    <div id="daily-tags" class="qualification-tags"></div>
-  </a>
-</section>
+      <h2>本日の資格</h2>
+
+      <div class="top-daily-grid">
+
+        <!-- カード全体がリンク -->
+        <a
+          id="daily-qualification"
+          class="qualification-card exam-card top-daily-card"
+          href="it-passport.html"
+        >
+
+          <!-- 資格名 -->
+          <h3 id="daily-name">
+            ITパスポート
+          </h3>
+
+          <!-- 説明 -->
+          <p
+            id="daily-description"
+            class="card-description"
+          >
+            ITや仕事に関する基礎知識を扱う試験です。
+          </p>
+
+          <!-- タグ -->
+          <div
+            id="daily-tags"
+            class="qualification-tags card-tags"
+          ></div>
+
+        </a>
+
+      </div>
+
+    </section>
+
   </main>
-    <script src="sikakucard.js"></script>
-<script src="inevitable.js"></script>
+
+  <!-- 資格データ -->
+  <script src="sikakucard.js"></script>
+
+  <!-- 本日の資格の日替わり表示 -->
+  <script src="inevitable.js"></script>
+
 </body>
 </html>
