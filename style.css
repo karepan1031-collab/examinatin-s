@@ -338,3 +338,65 @@ a.qualification-card.exam-card {
     grid-template-columns: 1fr;
   }
 }
+.exam-notice {
+  margin: 28px 0;
+  padding: 20px 24px;
+  background-color: #f4f7fa;
+  border-left: 4px solid #17365d;
+}
+
+.exam-notice h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.exam-notice p {
+  margin: 0 0 8px;
+}
+
+.exam-summary {
+  margin: 32px 0;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 3px solid #17365d;
+  border-bottom: 1px solid #ccd4dc;
+}
+
+.summary-item {
+  padding: 20px;
+  border-right: 1px solid #ccd4dc;
+  background-color: #fff;
+}
+
+.summary-item:last-child {
+  border-right: 0;
+}
+
+.summary-item span,
+.summary-item small {
+  display: block;
+}
+
+.summary-item strong {
+  display: block;
+  margin: 8px 0;
+  color: #17365d;
+  font-size: 25px;
+}
+
+.summary-item small {
+  color: #5e6872;
+}
+
+@media (max-width: 700px) {
+  .summary-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .summary-item {
+    border-bottom: 1px solid #ccd4dc;
+  }
+}
