@@ -1,6 +1,10 @@
 // このページに対応する資格を探す
+// 現在開いているHTMLのファイル名を取得
+const currentPage = window.location.pathname.split("/").pop();
+
+// ファイル名が一致する資格を探す
 const qualification = qualifications.find((item) => {
-  return item.url === "it-passport.html";
+  return item.url === currentPage;
 });
 
 // 見つかった資格の名前と説明を表示する
