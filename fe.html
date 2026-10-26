@@ -3,131 +3,50 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1"
-  >
-
-  <!-- サイト全体のCSS -->
-  <link rel="stylesheet" href="style.css?v=4">
-
-  <!-- 資格詳細ページ専用のCSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css?v=11">
   <link rel="stylesheet" href="detail.css?v=1">
-
   <title>基本情報技術者試験｜資格図鑑</title>
 </head>
-
 <body class="home detail-page">
-
-  <!-- 共通ヘッダー -->
   <header class="site-header">
-    <a class="site-name" href="index.html">
-      資格図鑑
-    </a>
-
+    <a class="site-name" href="index.html">資格図鑑</a>
     <nav class="main-menu" aria-label="メインメニュー">
-      <a href="index.html#find">
-        資格を探す
-      </a>
-
-      <a href="progress.html">
-        マイ取得状況
-      </a>
+      <a href="index.html#find">資格を探す</a>
+      <a href="progress.html">マイ取得状況</a>
     </nav>
   </header>
 
   <main class="home-content">
-
-    <!-- パンくずリスト -->
     <nav class="breadcrumb" aria-label="現在位置">
-      <a href="index.html">トップ</a>
-      <span>›</span>
-
-      <a href="genres.html">ジャンルから探す</a>
-      <span>›</span>
-
-      <a href="it.html">IT・情報</a>
-      <span>›</span>
-
-      <span aria-current="page">
-        基本情報技術者試験
-      </span>
+      <a href="index.html">トップ</a><span>›</span>
+      <a href="genres.html">ジャンルから探す</a><span>›</span>
+      <a href="it.html">IT・情報</a><span>›</span>
+      <span aria-current="page">基本情報技術者試験</span>
     </nav>
 
-    <!-- 資格名・説明 -->
+    <!-- 資格名・説明・取得済み登録 -->
     <section class="qualification-hero">
-
       <div class="qualification-hero-main">
-        <h1 id="qualification-name">
-          基本情報技術者試験
-        </h1>
-
-        <p
-          id="qualification-description"
-          class="qualification-lead"
-        >
-          ITエンジニアに必要な基礎知識や技能を
-          身につけていることを証明する国家試験です。
-          プログラミングやアルゴリズム、
-          情報セキュリティなどの知識が問われます。
-        </p>
-
-        <div
-          id="qualification-tags"
-          class="qualification-tags"
-          aria-label="資格の特徴"
-        ></div>
+        <h1 id="qualification-name">基本情報技術者試験</h1>
+        <p id="qualification-description" class="qualification-lead">ITエンジニアに必要な基礎知識や技能を問う国家試験です。プログラミングやアルゴリズム、情報セキュリティなどが出題されます。</p>
+        <div id="qualification-tags" class="qualification-tags" aria-label="資格の特徴"></div>
       </div>
-
-      <!-- 取得済み登録 -->
       <div class="collection-action">
-        <button
-          id="acquisition-button"
-          class="collection-button"
-          type="button"
-          aria-pressed="false"
-        >
-          <span aria-hidden="true">＋</span>
-          取得済みに追加
-        </button>
+        <button id="acquisition-button" class="collection-button" type="button" aria-pressed="false"><span aria-hidden="true">＋</span> 取得済みに追加</button>
       </div>
-
     </section>
 
-    <!-- 重要なお知らせ -->
-    <section
-      class="exam-notice"
-      aria-labelledby="notice-title"
-    >
-      <h2 id="notice-title">
-        重要なお知らせ
-      </h2>
-
-      <p>
-        基本情報技術者試験は、システム更新のため、
-        2026年12月28日以降に試験の一時休止が
-        予定されています。
-        2027年以降の試験日程については、
-        IPAの最新情報をご確認ください。
-      </p>
-
-      <a
-        href="https://www.ipa.go.jp/shiken/2026/cbt-202605-jisshi.html"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        IPAの試験休止に関するお知らせを確認する ↗
-      </a>
+    <!-- お知らせ -->
+    <section class="exam-notice" aria-labelledby="notice-title">
+      <h2 id="notice-title">重要なお知らせ</h2>
+      <p>基本情報技術者試験は、システム更新のため2026年12月28日以降に試験の一時休止が予定されています。2027年以降の日程はIPAの最新情報をご確認ください。</p>
+      <a href="https://www.ipa.go.jp/shiken/2026/cbt-202605-jisshi.html" target="_blank" rel="noopener noreferrer">IPAの試験休止に関するお知らせ ↗</a>
     </section>
 
     <!-- ページ内メニュー -->
-    <nav
-      class="page-index"
-      aria-label="ページ内メニュー"
-    >
+    <nav class="page-index" aria-label="ページ内メニュー">
       <p>このページの内容</p>
-
       <div class="page-index-links">
         <a href="#summary">ひと目でわかる試験情報</a>
         <a href="#steps">受験までの流れ</a>
@@ -138,413 +57,169 @@
       </div>
     </nav>
 
-    <!-- ひと目でわかる試験情報 -->
-    <section
-      id="summary"
-      class="content-section exam-summary"
-    >
+    <!-- 01 ひと目でわかる試験情報 -->
+    <section id="summary" class="content-section exam-summary">
       <div class="section-heading">
         <p class="section-number">01</p>
         <h2>ひと目でわかる試験情報</h2>
       </div>
-
       <div class="summary-grid">
-
         <article class="summary-item">
           <span>直近の合格率</span>
           <strong>38.3%</strong>
-          <small>
-            2025年度・受験者のうち
-          </small>
+          <small>2025年度</small>
         </article>
-
         <article class="summary-item">
           <span>受験資格</span>
           <strong>制限なし</strong>
-          <small>
-            年齢・学歴・実務経験を問わない
-          </small>
+          <small>年齢・学歴・実務経験を問わない</small>
         </article>
-
         <article class="summary-item">
           <span>受験料</span>
           <strong>7,500円</strong>
-          <small>
-            消費税込み
-          </small>
+          <small>消費税込み</small>
         </article>
-
         <article class="summary-item">
           <span>実施時期</span>
-          <strong>通年</strong>
-          <small>
-            2026年12月28日以降は休止予定
-          </small>
+          <strong>通年（休止予定あり）</strong>
+          <small>公式日程を確認</small>
         </article>
-
       </div>
     </section>
 
-    <!-- 受験までの流れ -->
-    <section
-      id="steps"
-      class="content-section"
-    >
+    <!-- 02 受験までの流れ -->
+    <section id="steps" class="content-section">
       <div class="section-heading">
         <p class="section-number">02</p>
         <h2>受験までの流れ</h2>
       </div>
-
       <ol class="exam-steps">
-
         <li class="exam-step">
           <span class="step-number">1</span>
-
           <div class="step-content">
             <h3>申し込む</h3>
-
-            <p>
-              公式申込サイトで受験者情報を登録し、
-              受験する会場と日時を選びます。
-              受験料の支払いも行います。
-            </p>
+            <p>公式申込サイトで受験者情報を登録し、受験する会場と日時を選び、受験料を支払います。</p>
           </div>
         </li>
-
         <li class="exam-step">
           <span class="step-number">2</span>
-
           <div class="step-content">
             <h3>試験を受ける</h3>
-
-            <p>
-              選択した会場のパソコンを使用し、
-              CBT方式で科目Aと科目Bの試験を受けます。
-            </p>
+            <p>選択した会場のパソコンを使用し、科目Aと科目Bを受験します。</p>
           </div>
         </li>
-
         <li class="exam-step">
           <span class="step-number">3</span>
-
           <div class="step-content">
             <h3>結果を確認する</h3>
-
-            <p>
-              試験後に評価点を確認できます。
-              正式な合否は、後日発表される
-              合格者受験番号一覧や受験者マイページで
-              確認します。
-            </p>
+            <p>試験後の評価点を確認し、正式な合否は後日案内される方法で確認します。</p>
           </div>
         </li>
-
       </ol>
     </section>
 
-    <!-- 基本情報 -->
-    <section
-      id="basic-information"
-      class="content-section"
-    >
+    <!-- 03 基本情報 -->
+    <section id="basic-information" class="content-section">
       <div class="section-heading">
         <p class="section-number">03</p>
         <h2>試験の基本情報</h2>
       </div>
-
       <div class="information-table-wrap">
-
         <table class="qualification-details">
           <tbody>
-
-            <tr>
-              <th scope="row">用途</th>
-              <td>
-                ITエンジニアに求められる基礎的な
-                知識や技能を持っていることを
-                証明します。
-              </td>
-            </tr>
-
-            <tr>
-              <th scope="row">実施団体</th>
-              <td>
-                独立行政法人 情報処理推進機構（IPA）
-              </td>
-            </tr>
-
-            <tr>
-              <th scope="row">資格の種類</th>
-              <td>国家試験</td>
-            </tr>
-
-            <tr>
-              <th scope="row">受験資格</th>
-              <td>制限はありません。</td>
-            </tr>
-
-            <tr>
-              <th scope="row">試験日時</th>
-              <td>
-                通常は年間を通して実施され、
-                会場の空きから日時を選択します。
-                ただし、2026年12月28日以降は
-                試験の一時休止が予定されています。
-              </td>
-            </tr>
-
-            <tr>
-              <th scope="row">受験料</th>
-              <td>7,500円（税込）</td>
-            </tr>
-
-            <tr>
-              <th scope="row">申込方法</th>
-              <td>
-                公式申込サイトで受験者情報を登録し、
-                試験会場と日時を選択して申し込みます。
-              </td>
-            </tr>
-
-            <tr>
-              <th scope="row">試験方式</th>
-              <td>
-                CBT方式です。
-                試験会場のパソコンを使用し、
-                科目Aと科目Bを受験します。
-              </td>
-            </tr>
-
-            <tr>
-              <th scope="row">試験時間</th>
-              <td>
-                科目A：90分<br>
-                科目B：100分<br>
-                合計：190分（試験時間のみ）
-              </td>
-            </tr>
-
-            <tr>
-              <th scope="row">出題数</th>
-              <td>
-                科目A：60問<br>
-                科目B：20問<br>
-                合計：80問
-              </td>
-            </tr>
-
-            <tr>
-              <th scope="row">出題形式</th>
-              <td>
-                科目A：四肢択一式<br>
-                科目B：多肢選択式
-              </td>
-            </tr>
-
-            <tr>
-              <th scope="row">出題分野</th>
-              <td>
-                科目Aでは、IT技術、経営、
-                システム開発などの幅広い知識が問われます。
-                科目Bでは、アルゴリズムとプログラミング、
-                情報セキュリティに関する問題が出題されます。
-              </td>
-            </tr>
-
-            <tr>
-              <th scope="row">合格基準</th>
-              <td>
-                科目Aと科目Bの両方で、
-                それぞれ評価点600点以上が必要です。
-                各科目の評価点は1,000点満点です。
-              </td>
-            </tr>
-
+            <tr><th scope="row">用途</th><td>ITエンジニアに求められる基礎的な知識や技能を持っていることを証明します。</td></tr>
+            <tr><th scope="row">実施団体</th><td>独立行政法人 情報処理推進機構（IPA）</td></tr>
+            <tr><th scope="row">資格の種類</th><td>国家試験</td></tr>
+            <tr><th scope="row">受験資格</th><td>制限はありません。</td></tr>
+            <tr><th scope="row">試験日時</th><td>通常は通年実施で、会場の空きから日時を選びます。ただし2026年12月28日以降は一時休止予定です。</td></tr>
+            <tr><th scope="row">受験料</th><td>7,500円（税込）</td></tr>
+            <tr><th scope="row">申込方法</th><td>公式申込サイトで受験者情報を登録し、会場と日時を選択して申し込みます。</td></tr>
+            <tr><th scope="row">試験方式</th><td>CBT方式。試験会場のパソコンで科目Aと科目Bを受験します。</td></tr>
+            <tr><th scope="row">試験時間</th><td>科目A：90分、科目B：100分（合計190分）</td></tr>
+            <tr><th scope="row">出題数</th><td>科目A：60問、科目B：20問（合計80問）</td></tr>
+            <tr><th scope="row">出題形式</th><td>科目A：四肢択一式、科目B：多肢選択式</td></tr>
+            <tr><th scope="row">出題分野</th><td>科目AではIT技術、経営、システム開発など、科目Bではアルゴリズムとプログラミング、情報セキュリティなどが出題されます。</td></tr>
+            <tr><th scope="row">合格基準</th><td>科目Aと科目Bの両方で、それぞれ評価点600点以上／1,000点が必要です。</td></tr>
           </tbody>
         </table>
-
       </div>
     </section>
 
-    <!-- 合格率 -->
-    <section
-      id="pass-rate"
-      class="content-section"
-    >
+    <!-- 04 合格率 -->
+    <section id="pass-rate" class="content-section">
       <div class="section-heading">
         <p class="section-number">04</p>
         <h2>合格率と受験者数</h2>
       </div>
-
       <div class="rate-highlight">
-        <div class="latest-rate">
+        <div>
           <span>2025年度の合格率</span>
           <strong>38.3%</strong>
         </div>
-
         <dl class="rate-numbers">
-          <div>
-            <dt>受験者数</dt>
-            <dd>147,186人</dd>
-          </div>
-
-          <div>
-            <dt>合格者数</dt>
-            <dd>56,370人</dd>
-          </div>
+          <div><dt>受験者数</dt><dd>147,186人</dd></div>
+          <div><dt>合格者数</dt><dd>56,370人</dd></div>
         </dl>
       </div>
-
-      <p class="rate-note">
-        合格率は、合格者数を受験者数で割った値です。
-        合格率だけで試験の難しさが決まるわけではありません。
-      </p>
+      <p class="rate-note">合格率は合格者数を受験者数で割った値です。最新の統計はIPAで確認してください。</p>
 
       <div class="rate-history">
-        <h3>現行制度での合格率の推移</h3>
-
+        <h3>合格率の推移</h3>
         <div class="rate-row">
           <span class="rate-year">2023年度</span>
-          <div class="rate-track">
-            <span
-              class="rate-bar"
-              style="--rate: 47.1%;"
-            ></span>
-          </div>
+          <div class="rate-track"><span class="rate-bar" style="--rate: 47.1%;"></span></div>
           <strong>47.1%</strong>
         </div>
-
         <div class="rate-row">
           <span class="rate-year">2024年度</span>
-          <div class="rate-track">
-            <span
-              class="rate-bar"
-              style="--rate: 40.8%;"
-            ></span>
-          </div>
+          <div class="rate-track"><span class="rate-bar" style="--rate: 40.8%;"></span></div>
           <strong>40.8%</strong>
         </div>
-
         <div class="rate-row">
           <span class="rate-year">2025年度</span>
-          <div class="rate-track">
-            <span
-              class="rate-bar"
-              style="--rate: 38.3%;"
-            ></span>
-          </div>
+          <div class="rate-track"><span class="rate-bar" style="--rate: 38.3%;"></span></div>
           <strong>38.3%</strong>
         </div>
       </div>
-
-      <p class="rate-note">
-        2023年度から現在の科目A・科目Bによる
-        通年CBT方式へ移行したため、
-        2023年度以降の合格率を掲載しています。
-      </p>
     </section>
 
-    <!-- 公式リンク -->
-    <section
-      id="official-links"
-      class="content-section"
-    >
+    <!-- 05 公式リンク -->
+    <section id="official-links" class="content-section">
       <div class="section-heading">
         <p class="section-number">05</p>
         <h2>過去問・公式サイト</h2>
       </div>
-
       <div class="official-link-grid">
-
-        <a
-          class="official-link-card"
-          href="https://www.ipa.go.jp/shiken/kubun/fe.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a class="official-link-card" href="https://www.ipa.go.jp/shiken/kubun/fe.html" target="_blank" rel="noopener noreferrer">
           <span>試験の最新情報</span>
-          <strong>
-            基本情報技術者試験 公式ページ
-          </strong>
+          <strong>基本情報技術者試験 公式ページ</strong>
           <small>IPAのサイトを開く ↗</small>
         </a>
-
-        <a
-          class="official-link-card"
-          href="https://www.ipa.go.jp/shiken/mousikomi/cbt_sg_fe.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a class="official-link-card" href="https://www.ipa.go.jp/shiken/mousikomi/moushikomi.html" target="_blank" rel="noopener noreferrer">
           <span>受験申込み</span>
-          <strong>受験申込案内ページ</strong>
-          <small>IPAの申込案内を開く ↗</small>
+          <strong>受験申込案内</strong>
+          <small>IPAのサイトを開く ↗</small>
         </a>
-
-        <a
-          class="official-link-card"
-          href="https://www.ipa.go.jp/shiken/kakomon/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a class="official-link-card" href="https://www.ipa.go.jp/shiken/kakomon/" target="_blank" rel="noopener noreferrer">
           <span>試験対策</span>
-          <strong>公開問題・サンプル問題</strong>
-          <small>IPAの問題掲載ページを開く ↗</small>
+          <strong>公開問題・過去問題</strong>
+          <small>IPAのサイトを開く ↗</small>
         </a>
-
       </div>
     </section>
 
     <!-- 情報源 -->
-    <aside
-      id="sources"
-      class="source-note"
-    >
-      <p>
-        <strong>情報源：</strong>
-
-        <a
-          href="https://www.ipa.go.jp/shiken/kubun/fe.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          情報処理推進機構（IPA）
-        </a>
-
-        ／
-
-        <a
-          href="https://www.ipa.go.jp/shiken/reports/toukei_fe.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          IPA 基本情報技術者試験の統計資料
-        </a>
-      </p>
-
+    <aside id="sources" class="source-note">
+      <p><strong>情報源：</strong><a href="https://www.ipa.go.jp/shiken/" target="_blank" rel="noopener noreferrer">情報処理推進機構（IPA）</a> ／ <a href="https://www.ipa.go.jp/shiken/reports/toukei.html" target="_blank" rel="noopener noreferrer">IPAの試験統計</a></p>
       <p>最終確認日：2026年10月26日</p>
-
-      <p>
-        試験情報は変更される場合があります。
-        申込み前に公式サイトをご確認ください。
-      </p>
+      <p>試験情報は変更される場合があります。申込み前に公式サイトをご確認ください。</p>
     </aside>
 
-    <p class="back-link">
-      <a href="it.html">
-        ← IT・情報の資格一覧に戻る
-      </a>
-    </p>
-
+    <p class="back-link"><a href="it.html">← IT・情報の資格一覧に戻る</a></p>
   </main>
 
-  <!-- 資格データ -->
-  <script src="sikakucard.js?v=3"></script>
-
-  <!-- 資格名・タグの表示 -->
+  <script src="sikakucard.js?v=4"></script>
   <script src="sikakusyousai.js?v=3"></script>
-
-  <!-- 取得済みボタン -->
   <script src="acquisition.js?v=1"></script>
-
 </body>
 </html>
