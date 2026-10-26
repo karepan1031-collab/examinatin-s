@@ -1,0 +1,18 @@
+/* ジャンル別の追加カラー・50資格一覧用 */
+.genre-overview-page .genre-law { background:#f7e9ed; border-color:#e3bfca; }
+.genre-overview-page .genre-law h3 { color:#8c3650; }
+.genre-overview-page .genre-law:hover { background:#f2dce3; border-color:#b75e77; }
+.genre-overview-page .genre-industrial { background:#e6f0f3; border-color:#adcbd5; }
+.genre-overview-page .genre-industrial h3 { color:#245d72; }
+.genre-overview-page .genre-industrial:hover { background:#d6e8ed; border-color:#4c8398; }
+.genre-overview-page .genre-travel { background:#fff3df; border-color:#ead2a8; }
+.genre-overview-page .genre-travel h3 { color:#91600f; }
+.genre-overview-page .genre-travel:hover { background:#ffebc8; border-color:#bc8a37; }
+.genre-overview-page .genre-design { background:#fbe8f6; border-color:#e4bed8; }
+.genre-overview-page .genre-design h3 { color:#894772; }
+.genre-overview-page .genre-design:hover { background:#f5d9ed; border-color:#ae6c9a; }
+.home .qualification-grid .card-tags .tag-genre-law { color:#8c3650; background:#f7e9ed; border-color:#e3bfca; }
+.home .qualification-grid .card-tags .tag-genre-industrial { color:#245d72; background:#e6f0f3; border-color:#adcbd5; }
+.home .qualification-grid .card-tags .tag-genre-travel { color:#91600f; background:#fff3df; border-color:#ead2a8; }
+.home .qualification-grid .card-tags .tag-genre-design { color:#894772; background:#fbe8f6; border-color:#e4bed8; }
+/* 既存のcarditiran.js/allcards.jsで分類クラスを付けていないタグにも色を適用 */
