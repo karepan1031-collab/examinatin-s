@@ -20,12 +20,12 @@ const qualifications = [
     description: "説明",
     url: "ap.html",
     tags: ["IT・情報","国家試験", "CBT（パソコン受験）"]
-  }
+  },
   {
     category: "it",
     name: "情報セキュリティマネジメント試験",
     description: "インターネットやITシステムを安全に使いこなすための、組織的な情報セキュリティの管理・運用スキルを証明できます。",
     url: "sg.html",
-    tags: ["IT・情報""国家試験", "CBT（パソコン受験）", "通年実施"]
+    tags: ["IT・情報","国家試験", "CBT（パソコン受験）", "通年実施"]
   }
 ];
