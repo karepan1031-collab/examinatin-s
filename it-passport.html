@@ -2,49 +2,80 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <!-- サイト全体のCSS -->
   <link rel="stylesheet" href="style.css?v=4">
+
+  <!-- 資格詳細ページ専用のCSS -->
+  <link rel="stylesheet" href="detail.css?v=1">
 
   <title>ITパスポート｜資格図鑑</title>
 </head>
 
 <body class="home detail-page">
 
-  <!-- サイト共通ヘッダー -->
+  <!-- 共通ヘッダー -->
   <header class="site-header">
-    <a class="site-name" href="index.html">資格図鑑</a>
+    <a class="site-name" href="index.html">
+      資格図鑑
+    </a>
 
     <nav class="main-menu" aria-label="メインメニュー">
-      <a href="index.html#find">資格を探す</a>
-      <a href="progress.html">取得率を確認</a>
+      <a href="index.html#find">
+        資格を探す
+      </a>
+
+      <a href="progress.html">
+        取得率を確認
+      </a>
     </nav>
   </header>
 
   <main class="home-content">
 
-    <!-- 現在位置 -->
+    <!-- パンくずリスト -->
     <nav class="breadcrumb" aria-label="現在位置">
       <a href="index.html">トップ</a>
       <span>›</span>
+
       <a href="genres.html">ジャンルから探す</a>
       <span>›</span>
+
       <a href="it.html">IT・情報</a>
       <span>›</span>
-      <span aria-current="page">ITパスポート</span>
+
+      <span aria-current="page">
+        ITパスポート
+      </span>
     </nav>
 
-    <!-- 1. 資格名・説明・タグ -->
+    <!-- 資格名・説明 -->
     <section class="qualification-hero">
+
       <div class="qualification-hero-main">
-        <p class="qualification-eyebrow">QUALIFICATION PROFILE</p>
+        <p class="qualification-eyebrow">
+          QUALIFICATION PROFILE
+        </p>
 
-        <p class="category-label">IT・情報</p>
+        <p class="category-label">
+          IT・情報
+        </p>
 
-        <h1 id="qualification-name">ITパスポート</h1>
+        <h1 id="qualification-name">
+          ITパスポート
+        </h1>
 
-        <p id="qualification-description" class="qualification-lead">
-          ITや経営、情報セキュリティなど、社会人に必要なITの基礎知識を扱う国家試験です。
+        <p
+          id="qualification-description"
+          class="qualification-lead"
+        >
+          ITや経営、情報セキュリティなど、
+          社会人に必要なITの基礎知識を扱う国家試験です。
         </p>
 
         <div
@@ -54,29 +85,39 @@
         ></div>
       </div>
 
+      <!-- マイ図鑑登録 -->
       <div class="collection-action">
-  <p class="collection-label">MY COLLECTION</p>
+        <p class="collection-label">
+          MY COLLECTION
+        </p>
 
-  <button
-    id="acquisition-button"
-    class="collection-button"
-    type="button"
-    aria-pressed="false"
-  >
-    <span aria-hidden="true">＋</span>
-    マイ図鑑に登録
-  </button>
-</div>
+        <button
+          id="acquisition-button"
+          class="collection-button"
+          type="button"
+          aria-pressed="false"
+        >
+          <span aria-hidden="true">＋</span>
+          マイ図鑑に登録
+        </button>
+      </div>
+
     </section>
 
-    <!-- 2. 重要なお知らせ -->
-    <section class="exam-notice" aria-labelledby="notice-title">
-      <h2 id="notice-title">重要なお知らせ</h2>
+    <!-- 重要なお知らせ -->
+    <section
+      class="exam-notice"
+      aria-labelledby="notice-title"
+    >
+      <h2 id="notice-title">
+        重要なお知らせ
+      </h2>
 
       <p>
-        ITパスポート試験は、2027年度から出題分野などが変更される予定です。
-        公表されている内容には検討中のものが含まれるため、
-        受験前にIPAの最新情報を確認してください。
+        ITパスポート試験は、2027年度から出題分野などが
+        変更される予定です。公表されている内容には
+        検討中のものが含まれるため、受験前にIPAの
+        最新情報を確認してください。
       </p>
 
       <a
@@ -89,7 +130,10 @@
     </section>
 
     <!-- ページ内メニュー -->
-    <nav class="page-index" aria-label="ページ内メニュー">
+    <nav
+      class="page-index"
+      aria-label="ページ内メニュー"
+    >
       <p>このページの内容</p>
 
       <div class="page-index-links">
@@ -97,60 +141,79 @@
         <a href="#steps">受験までの流れ</a>
         <a href="#basic-information">基本情報</a>
         <a href="#pass-rate">合格率</a>
-        <a href="#links">過去問・公式サイト</a>
+        <a href="#official-links">公式サイト</a>
         <a href="#sources">情報源</a>
       </div>
     </nav>
 
-    <!-- 3. 要点 -->
-    <section id="summary" class="content-section exam-summary">
+    <!-- 要点 -->
+    <section
+      id="summary"
+      class="content-section exam-summary"
+    >
       <div class="section-heading">
         <p class="section-number">01</p>
         <h2>要点</h2>
       </div>
 
       <div class="summary-grid">
-        <article class="summary-item summary-rate">
+
+        <article class="summary-item">
           <span>直近の合格率</span>
           <strong>48.6%</strong>
-          <small>2025年度・受験者のうち</small>
+          <small>
+            2025年度・受験者のうち
+          </small>
         </article>
 
-        <article class="summary-item summary-eligibility">
+        <article class="summary-item">
           <span>受験資格</span>
           <strong>制限なし</strong>
-          <small>年齢・学歴・実務経験を問わない</small>
+          <small>
+            年齢・学歴・実務経験を問わない
+          </small>
         </article>
 
-        <article class="summary-item summary-fee">
+        <article class="summary-item">
           <span>受験料</span>
           <strong>7,500円</strong>
-          <small>消費税込み</small>
+          <small>
+            消費税込み
+          </small>
         </article>
 
-        <article class="summary-item summary-schedule">
+        <article class="summary-item">
           <span>実施時期</span>
           <strong>通年</strong>
-          <small>会場と日時を選択する</small>
+          <small>
+            会場と日時を選択
+          </small>
         </article>
+
       </div>
     </section>
 
-    <!-- 4. 受験までの流れ -->
-    <section id="steps" class="content-section">
+    <!-- 受験までの流れ -->
+    <section
+      id="steps"
+      class="content-section"
+    >
       <div class="section-heading">
         <p class="section-number">02</p>
         <h2>受験までの流れ</h2>
       </div>
 
       <ol class="exam-steps">
+
         <li class="exam-step">
           <span class="step-number">1</span>
 
           <div class="step-content">
             <h3>受験資格を確認する</h3>
+
             <p>
-              年齢、学歴、実務経験などの受験制限はありません。
+              年齢、学歴、実務経験などの
+              受験制限はありません。
             </p>
           </div>
         </li>
@@ -160,8 +223,10 @@
 
           <div class="step-content">
             <h3>利用者IDを登録する</h3>
+
             <p>
-              ITパスポート試験の申込サイトで利用者IDを登録します。
+              ITパスポート試験の申込サイトで
+              利用者IDを登録します。
             </p>
           </div>
         </li>
@@ -170,9 +235,11 @@
           <span class="step-number">3</span>
 
           <div class="step-content">
-            <h3>会場と日時を選んで申し込む</h3>
+            <h3>会場と日時を選ぶ</h3>
+
             <p>
-              試験会場の空き状況から、受験する場所と日時を選択します。
+              試験会場の空き状況から、
+              受験する場所と日時を選択します。
             </p>
           </div>
         </li>
@@ -182,8 +249,10 @@
 
           <div class="step-content">
             <h3>試験を受ける</h3>
+
             <p>
-              選択した会場のパソコンを使用し、CBT方式で受験します。
+              選択した会場のパソコンを使用し、
+              CBT方式で受験します。
             </p>
           </div>
         </li>
@@ -192,111 +261,150 @@
           <span class="step-number">5</span>
 
           <div class="step-content">
-            <h3>合格発表を確認する</h3>
+            <h3>結果を確認する</h3>
+
             <p>
-              合格発表後、公式サイトから結果を確認します。
+              合格発表後、公式サイトから
+              試験結果を確認します。
             </p>
           </div>
         </li>
+
       </ol>
     </section>
 
-    <!-- 5. 基本情報 -->
-    <section id="basic-information" class="content-section">
+    <!-- 基本情報 -->
+    <section
+      id="basic-information"
+      class="content-section"
+    >
       <div class="section-heading">
         <p class="section-number">03</p>
         <h2>試験の基本情報</h2>
       </div>
 
-      <div class="information-grid">
-        <article class="information-card">
-          <h3>用途</h3>
-          <p>
-            IT、経営、情報セキュリティなどの基礎知識を身につけていることを証明します。
-          </p>
-        </article>
+      <div class="information-table-wrap">
 
-        <article class="information-card">
-          <h3>実施団体</h3>
-          <p>独立行政法人 情報処理推進機構（IPA）</p>
-        </article>
+        <table class="qualification-details">
+          <tbody>
 
-        <article class="information-card">
-          <h3>資格の種類</h3>
-          <p>国家試験</p>
-        </article>
+            <tr>
+              <th scope="row">用途</th>
 
-        <article class="information-card">
-          <h3>受験資格</h3>
-          <p>制限はありません。</p>
-        </article>
+              <td>
+                IT、経営、情報セキュリティなどの
+                基礎知識を身につけていることを証明します。
+              </td>
+            </tr>
 
-        <article class="information-card">
-          <h3>試験日時</h3>
-          <p>
-            年間を通して実施され、会場の空きから日時を選択します。
-          </p>
-        </article>
+            <tr>
+              <th scope="row">実施団体</th>
 
-        <article class="information-card">
-          <h3>受験料</h3>
-          <p>7,500円（税込）</p>
-        </article>
+              <td>
+                独立行政法人 情報処理推進機構（IPA）
+              </td>
+            </tr>
 
-        <article class="information-card">
-          <h3>申込方法</h3>
-          <p>
-            公式申込サイトで利用者IDを登録し、会場と日時を選択して申し込みます。
-          </p>
-        </article>
+            <tr>
+              <th scope="row">資格の種類</th>
 
-        <article class="information-card">
-          <h3>試験方式</h3>
-          <p>
-            CBT方式です。試験会場のパソコンを使用して解答します。
-          </p>
-        </article>
+              <td>国家試験</td>
+            </tr>
 
-        <article class="information-card">
-          <h3>試験時間</h3>
-          <p>120分</p>
-        </article>
+            <tr>
+              <th scope="row">受験資格</th>
 
-        <article class="information-card">
-          <h3>出題数</h3>
-          <p>100問</p>
-        </article>
+              <td>制限はありません。</td>
+            </tr>
 
-        <article class="information-card">
-          <h3>出題分野</h3>
-          <p>
-            ストラテジ系、マネジメント系、テクノロジ系の3分野です。
-          </p>
-        </article>
+            <tr>
+              <th scope="row">試験日時</th>
 
-        <article class="information-card">
-          <h3>合格基準</h3>
-          <p>
-            総合評価点600点以上に加え、各分野で300点以上が必要です。
-          </p>
-        </article>
+              <td>
+                年間を通して実施され、
+                会場の空きから日時を選択します。
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">受験料</th>
+
+              <td>7,500円（税込）</td>
+            </tr>
+
+            <tr>
+              <th scope="row">申込方法</th>
+
+              <td>
+                公式申込サイトで利用者IDを登録し、
+                会場と日時を選択して申し込みます。
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">試験方式</th>
+
+              <td>
+                CBT方式です。試験会場のパソコンを
+                使用して解答します。
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">試験時間</th>
+
+              <td>120分</td>
+            </tr>
+
+            <tr>
+              <th scope="row">出題数</th>
+
+              <td>100問</td>
+            </tr>
+
+            <tr>
+              <th scope="row">出題分野</th>
+
+              <td>
+                ストラテジ系、マネジメント系、
+                テクノロジ系の3分野
+              </td>
+            </tr>
+
+            <tr>
+              <th scope="row">合格基準</th>
+
+              <td>
+                総合評価点600点以上に加え、
+                各分野で300点以上が必要です。
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+
       </div>
     </section>
 
-    <!-- 6. 合格率 -->
-    <section id="pass-rate" class="content-section">
+    <!-- 合格率 -->
+    <section
+      id="pass-rate"
+      class="content-section"
+    >
       <div class="section-heading">
         <p class="section-number">04</p>
         <h2>合格率と受験者数</h2>
       </div>
 
       <div class="rate-highlight">
-        <div>
+
+        <div class="latest-rate">
           <span>2025年度の合格率</span>
           <strong>48.6%</strong>
         </div>
 
         <dl class="rate-numbers">
+
           <div>
             <dt>受験者数</dt>
             <dd>271,352人</dd>
@@ -306,6 +414,7 @@
             <dt>合格者数</dt>
             <dd>132,012人</dd>
           </div>
+
         </dl>
       </div>
 
@@ -319,54 +428,84 @@
 
         <div class="rate-row">
           <span class="rate-year">2021年度</span>
+
           <div class="rate-track">
-            <span class="rate-bar" style="--rate: 52.7%;"></span>
+            <span
+              class="rate-bar"
+              style="--rate: 52.7%;"
+            ></span>
           </div>
+
           <strong>52.7%</strong>
         </div>
 
         <div class="rate-row">
           <span class="rate-year">2022年度</span>
+
           <div class="rate-track">
-            <span class="rate-bar" style="--rate: 51.6%;"></span>
+            <span
+              class="rate-bar"
+              style="--rate: 51.6%;"
+            ></span>
           </div>
+
           <strong>51.6%</strong>
         </div>
 
         <div class="rate-row">
           <span class="rate-year">2023年度</span>
+
           <div class="rate-track">
-            <span class="rate-bar" style="--rate: 50.3%;"></span>
+            <span
+              class="rate-bar"
+              style="--rate: 50.3%;"
+            ></span>
           </div>
+
           <strong>50.3%</strong>
         </div>
 
         <div class="rate-row">
           <span class="rate-year">2024年度</span>
+
           <div class="rate-track">
-            <span class="rate-bar" style="--rate: 49.1%;"></span>
+            <span
+              class="rate-bar"
+              style="--rate: 49.1%;"
+            ></span>
           </div>
+
           <strong>49.1%</strong>
         </div>
 
         <div class="rate-row">
           <span class="rate-year">2025年度</span>
+
           <div class="rate-track">
-            <span class="rate-bar" style="--rate: 48.6%;"></span>
+            <span
+              class="rate-bar"
+              style="--rate: 48.6%;"
+            ></span>
           </div>
+
           <strong>48.6%</strong>
         </div>
+
       </div>
     </section>
 
-    <!-- 7. 過去問・公式リンク -->
-    <section id="links" class="content-section">
+    <!-- 公式リンク -->
+    <section
+      id="official-links"
+      class="content-section"
+    >
       <div class="section-heading">
         <p class="section-number">05</p>
         <h2>過去問・公式サイト</h2>
       </div>
 
       <div class="official-link-grid">
+
         <a
           class="official-link-card"
           href="https://www.ipa.go.jp/shiken/kubun/ip.html"
@@ -374,7 +513,11 @@
           rel="noopener noreferrer"
         >
           <span>試験の最新情報</span>
-          <strong>ITパスポート試験 公式ページ</strong>
+
+          <strong>
+            ITパスポート試験 公式ページ
+          </strong>
+
           <small>IPAのサイトを開く ↗</small>
         </a>
 
@@ -385,7 +528,11 @@
           rel="noopener noreferrer"
         >
           <span>受験申込み</span>
-          <strong>受験申込ページ</strong>
+
+          <strong>
+            受験申込ページ
+          </strong>
+
           <small>申込サイトを開く ↗</small>
         </a>
 
@@ -396,71 +543,66 @@
           rel="noopener noreferrer"
         >
           <span>試験対策</span>
-          <strong>過去問題・解答例</strong>
+
+          <strong>
+            過去問題・解答例
+          </strong>
+
           <small>公式の過去問題を開く ↗</small>
         </a>
+
       </div>
     </section>
 
-    <!-- 8. 情報源・確認日 -->
-    <section id="sources" class="content-section source-section">
-      <div class="section-heading">
-        <p class="section-number">06</p>
-        <h2>情報源・確認日</h2>
-      </div>
-
+    <!-- 小さく表示する情報源 -->
+    <aside
+      id="sources"
+      class="source-note"
+    >
       <p>
-        試験日時、受験料、試験方式などは変更される可能性があります。
-        実際に申し込む際は、必ず実施団体の公式サイトを確認してください。
+        <strong>情報源：</strong>
+
+        <a
+          href="https://www.ipa.go.jp/shiken/kubun/ip.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          情報処理推進機構（IPA）
+        </a>
+
+        ／
+
+        <a
+          href="https://www.ipa.go.jp/shiken/reports/toukei.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          IPA試験統計情報
+        </a>
       </p>
 
-      <dl class="source-list">
-        <div>
-          <dt>主な情報源</dt>
-          <dd>
-            <a
-              href="https://www.ipa.go.jp/shiken/kubun/ip.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              独立行政法人 情報処理推進機構（IPA）
-            </a>
-          </dd>
-        </div>
+      <p>
+        最終確認日：2026年10月26日
+      </p>
 
-        <div>
-          <dt>統計情報</dt>
-          <dd>
-            <a
-              href="https://www.ipa.go.jp/shiken/reports/toukei.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              IPA 試験統計情報
-            </a>
-          </dd>
-        </div>
-
-        <div>
-          <dt>最終確認日</dt>
-          <dd>2026年10月26日</dd>
-        </div>
-      </dl>
-    </section>
-
-    <!-- 9. 取得済みボタン -->
-    
+      <p>
+        試験情報は変更される場合があります。
+        申込み前に公式サイトをご確認ください。
+      </p>
+    </aside>
 
     <p class="back-link">
-      <a href="it.html">← IT・情報の資格一覧に戻る</a>
+      <a href="it.html">
+        ← IT・情報の資格一覧に戻る
+      </a>
     </p>
 
   </main>
 
-  <!-- 資格データを先に読み込む -->
+  <!-- 資格データ -->
   <script src="sikakucard.js?v=3"></script>
 
-  <!-- ページに合った資格名・説明・タグを表示する -->
+  <!-- 資格名・説明・タグの表示 -->
   <script src="sikakusyousai.js?v=3"></script>
 
 </body>
