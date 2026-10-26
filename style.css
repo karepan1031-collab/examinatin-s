@@ -1170,3 +1170,51 @@ body.detail-page {
     padding: 24px;
   }
 }
+.collection-action {
+  align-self: center;
+  padding: 24px;
+  background-color: #ffffff;
+  border-top: 3px solid var(--detail-yellow);
+  border-bottom: 1px solid var(--detail-line);
+}
+
+.collection-label {
+  margin: 0 0 12px;
+  color: var(--detail-muted);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.16em;
+}
+
+.collection-button {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 14px 18px;
+  color: #ffffff;
+  background-color: var(--detail-navy);
+  border: 2px solid var(--detail-navy);
+  border-radius: 3px;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.collection-button span {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.collection-button:hover,
+.collection-button:focus-visible {
+  color: var(--detail-navy);
+  background-color: #ffffff;
+}
+
+.collection-button[aria-pressed="true"] {
+  color: var(--detail-ink);
+  background-color: var(--detail-yellow);
+  border-color: var(--detail-yellow);
+}
