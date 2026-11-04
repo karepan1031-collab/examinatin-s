@@ -2321,3 +2321,8 @@ span:nth-child(2) {
 .home .top-daily-grid a.top-daily-card h3 {
   color: #000000;
 }
+/* 日替わり資格の案内見出し */
+.top-page .daily-intro {
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
