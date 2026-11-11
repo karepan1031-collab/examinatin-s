@@ -2341,3 +2341,16 @@ span:nth-child(2) {
   color: #17365d;
   font-size: 32px;
 }
+/* 日替わり資格の案内 */
+body.top-page .daily-intro {
+  margin: 32px 0 24px;
+  padding: 28px 32px;
+  background: #eaf2fd;
+  border-left: 5px solid #1766bc;
+}
+
+body.top-page .daily-intro h1 {
+  margin: 0;
+  color: #17365d;
+  font-size: 32px;
+}
