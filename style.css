@@ -2354,3 +2354,19 @@ body.top-page .daily-intro h1 {
   color: #17365d;
   font-size: 32px;
 }
+/* 日替わり資格の案内見出し */
+body.home.top-page section.site-intro.daily-intro {
+  display: block;
+  margin: 32px 0 24px;
+  padding: 28px 32px;
+  background-color: #eaf2fd;
+  border-left: 5px solid #1766bc;
+  border-radius: 0;
+}
+
+body.home.top-page section.site-intro.daily-intro h1 {
+  margin: 0;
+  color: #17365d;
+  font-size: 32px;
+  line-height: 1.5;
+}
