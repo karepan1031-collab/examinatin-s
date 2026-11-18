@@ -4,28 +4,476 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=11">
   <title>マイ取得状況｜資格試験ドットコム</title>
+
+  <style>
+    .progress-panel {
+      padding: 28px;
+      background: #fff;
+      border: 1px solid #cbd7e5;
+      border-radius: 12px;
+      margin-bottom: 24px;
+    }
+
+    .progress-panel h2 {
+      margin: 0 0 16px;
+      color: #17365d;
+      font-size: 24px;
+    }
+
+    .progress-description {
+      margin: 0 0 24px;
+      color: #536476;
+    }
+
+    .progress-overview {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .progress-stat {
+      padding: 20px;
+      background: #eaf2fd;
+      border-radius: 10px;
+    }
+
+    .progress-stat span {
+      display: block;
+      color: #536476;
+      font-size: 14px;
+    }
+
+    .progress-stat strong {
+      display: block;
+      margin-top: 8px;
+      color: #17365d;
+      font-size: 28px;
+    }
+
+    .progress-track {
+      height: 12px;
+      overflow: hidden;
+      background: #e4eaf2;
+      border-radius: 999px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: #1766bc;
+      border-radius: 999px;
+      transition: width 0.2s;
+    }
+
+    .progress-genre-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .progress-genre {
+      padding: 18px;
+      border: 1px solid #cbd7e5;
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .progress-genre-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+      color: #17365d;
+    }
+
+    .progress-genre-heading strong {
+      overflow-wrap: anywhere;
+    }
+
+    .progress-genre-count {
+      white-space: nowrap;
+    }
+
+    .progress-genre .progress-track {
+      height: 8px;
+    }
+
+    .progress-card-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .progress-card {
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #cbd7e5;
+      border-radius: 12px;
+    }
+
+    .progress-card h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    .progress-card h3 a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    .progress-card h3 a:hover {
+      color: #005fcc;
+      text-decoration: underline;
+    }
+
+    .progress-card p {
+      margin: 0 0 14px;
+      color: #536476;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .progress-card-actions {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .progress-remove {
+      padding: 8px 14px;
+      border: 1px solid #bd4650;
+      border-radius: 8px;
+      background: #fff;
+      color: #a52c38;
+      font: inherit;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .progress-remove:hover {
+      background: #fff0f1;
+    }
+
+    .progress-empty {
+      padding: 28px;
+      background: #f5f8fc;
+      border-radius: 10px;
+      text-align: center;
+      color: #536476;
+    }
+
+    .progress-empty a {
+      color: #005fcc;
+      font-weight: bold;
+    }
+
+    .progress-note {
+      margin: 16px 0 0;
+      color: #64748b;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      .progress-overview {
+        grid-template-columns: 1fr;
+      }
+
+      .progress-genre-grid,
+      .progress-card-list {
+        grid-template-columns: 1fr;
+      }
+
+      .progress-panel {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
-<body class="home">
+
+<body class="home genre-detail-page">
+
   <header class="site-header">
     <a class="site-name" href="index.html">資格試験ドットコム</a>
+
     <nav class="main-menu" aria-label="メインメニュー">
       <a href="index.html#find">資格を探す</a>
-      <a href="progress.html">マイ取得状況</a>
+      <a href="progress.html" aria-current="page">マイ取得状況</a>
     </nav>
   </header>
 
   <main class="home-content">
-    <section class="site-intro">
+
+    <nav class="genre-breadcrumb" aria-label="現在位置">
+      <a href="index.html">トップ</a>
+      <span>›</span>
+      <span aria-current="page">マイ取得状況</span>
+    </nav>
+
+    <section class="genre-heading">
       <h1>マイ取得状況</h1>
     </section>
 
-    <section style="background:#fff; padding:60px 24px; text-align:center; border:1px solid #cbd7e5; border-radius:12px;">
-      <h2 style="color:#17365d;">メンテナンス中</h2>
-      <p>現在こちらの機能は利用いただけません</p>
-      <a href="index.html">トップページに戻る</a>
+    <section class="progress-panel">
+      <h2>取得済み資格の管理</h2>
+      <p class="progress-description">資格の詳細ページで「取得済みに追加」を押すと、ここに登録されます。取得した資格と、掲載資格に対する取得率を確認できます。</p>
+
+      <div class="progress-overview">
+        <div class="progress-stat">
+          <span>取得済み資格</span>
+          <strong id="acquired-count">0件</strong>
+        </div>
+        <div class="progress-stat">
+          <span>掲載資格数</span>
+          <strong id="total-count">0件</strong>
+        </div>
+        <div class="progress-stat">
+          <span>全体の取得率</span>
+          <strong id="total-rate">0%</strong>
+        </div>
+      </div>
+
+      <div class="progress-track"
+           id="total-progress-track"
+           role="progressbar"
+           aria-label="全体の取得率"
+           aria-valuemin="0"
+           aria-valuemax="100"
+           aria-valuenow="0">
+        <div id="total-progress-fill" class="progress-fill"></div>
+      </div>
+
+      <p class="progress-note">取得率は、このサイトに掲載されている資格のうち、取得済みに登録した資格の割合です。</p>
     </section>
+
+    <section class="progress-panel">
+      <h2>ジャンル別の取得状況</h2>
+      <div id="genre-progress" class="progress-genre-grid"></div>
+    </section>
+
+    <section class="progress-panel">
+      <h2>取得済み資格一覧</h2>
+      <div id="acquired-list" class="progress-card-list"></div>
+      <p class="progress-note">登録した資格は、このブラウザに保存されます。ほかの端末とは同期されません。</p>
+    </section>
+
   </main>
+
+  <script src="sikakucard.js"></script>
+
+  <script>
+    (() => {
+      const storageKey = "acquiredQualifications";
+
+      const genres = [
+        "IT・情報",
+        "ビジネス・会計",
+        "語学",
+        "法律・不動産",
+        "技術・工業",
+        "医療・福祉",
+        "旅行・観光",
+        "デザイン・色彩"
+      ];
+
+      const genreColors = {
+        "IT・情報": "#1766bc",
+        "ビジネス・会計": "#ca8322",
+        "語学": "#8b5bb5",
+        "法律・不動産": "#b85570",
+        "技術・工業": "#39758b",
+        "医療・福祉": "#29946b",
+        "旅行・観光": "#bb851e",
+        "デザイン・色彩": "#b35c9c"
+      };
+
+      function getAcquired() {
+        try {
+          const saved = JSON.parse(localStorage.getItem(storageKey) || "[]");
+          return Array.isArray(saved) ? saved : [];
+        } catch (error) {
+          return [];
+        }
+      }
+
+      function getGenre(qualification) {
+        const tags = qualification.tags || [];
+
+        const found = genres.find((genre) => tags.includes(genre));
+        if (found) return found;
+
+        if (qualification.category === "it") return "IT・情報";
+
+        return "その他";
+      }
+
+      function makeProgressBar(rate, color) {
+        const track = document.createElement("div");
+        track.className = "progress-track";
+
+        const fill = document.createElement("div");
+        fill.className = "progress-fill";
+        fill.style.width = rate + "%";
+        fill.style.backgroundColor = color;
+
+        track.appendChild(fill);
+        return track;
+      }
+
+      function render() {
+        const allQualifications =
+          typeof qualifications !== "undefined" && Array.isArray(qualifications)
+            ? qualifications
+            : [];
+
+        const saved = getAcquired();
+
+        const acquired = allQualifications.filter((qualification) => {
+          return saved.includes(qualification.url);
+        });
+
+        const total = allQualifications.length;
+        const count = acquired.length;
+        const rate = total > 0 ? (count / total) * 100 : 0;
+
+        document.getElementById("acquired-count").textContent =
+          count + "件";
+
+        document.getElementById("total-count").textContent =
+          total + "件";
+
+        document.getElementById("total-rate").textContent =
+          rate.toFixed(1) + "%";
+
+        document.getElementById("total-progress-fill").style.width =
+          rate + "%";
+
+        document.getElementById("total-progress-track")
+          .setAttribute("aria-valuenow", rate.toFixed(1));
+
+        // ジャンル別取得率
+        const genreArea = document.getElementById("genre-progress");
+        genreArea.replaceChildren();
+
+        const activeGenres = [...genres];
+
+        allQualifications.forEach((qualification) => {
+          const genre = getGenre(qualification);
+
+          if (!activeGenres.includes(genre)) {
+            activeGenres.push(genre);
+          }
+        });
+
+        activeGenres.forEach((genre) => {
+          const items = allQualifications.filter((qualification) => {
+            return getGenre(qualification) === genre;
+          });
+
+          if (items.length === 0) return;
+
+          const acquiredItems = items.filter((qualification) => {
+            return saved.includes(qualification.url);
+          });
+
+          const genreRate = (acquiredItems.length / items.length) * 100;
+
+          const card = document.createElement("div");
+          card.className = "progress-genre";
+
+          const heading = document.createElement("div");
+          heading.className = "progress-genre-heading";
+
+          const name = document.createElement("strong");
+          name.textContent = genre;
+
+          const countText = document.createElement("span");
+          countText.className = "progress-genre-count";
+          countText.textContent =
+            acquiredItems.length + " / " + items.length + "件";
+
+          heading.append(name, countText);
+
+          const bar = makeProgressBar(
+            genreRate,
+            genreColors[genre] || "#1766bc"
+          );
+
+          card.append(heading, bar);
+          genreArea.appendChild(card);
+        });
+
+        // 取得済み資格一覧
+        const list = document.getElementById("acquired-list");
+        list.replaceChildren();
+
+        if (acquired.length === 0) {
+          const empty = document.createElement("div");
+          empty.className = "progress-empty";
+          empty.style.gridColumn = "1 / -1";
+
+          const message = document.createElement("p");
+          message.textContent = "まだ取得済みの資格は登録されていません。";
+
+          const link = document.createElement("a");
+          link.href = "all.html";
+          link.textContent = "資格一覧を見る";
+
+          empty.append(message, link);
+          list.appendChild(empty);
+          return;
+        }
+
+        acquired.forEach((qualification) => {
+          const card = document.createElement("article");
+          card.className = "progress-card";
+
+          const title = document.createElement("h3");
+          const link = document.createElement("a");
+
+          link.href = qualification.url;
+          link.textContent = qualification.name;
+          title.appendChild(link);
+
+          const description = document.createElement("p");
+          description.textContent = qualification.description || "";
+
+          const actions = document.createElement("div");
+          actions.className = "progress-card-actions";
+
+          const removeButton = document.createElement("button");
+          removeButton.className = "progress-remove";
+          removeButton.type = "button";
+          removeButton.textContent = "取得済みから外す";
+          removeButton.setAttribute(
+            "aria-label",
+            qualification.name + "を取得済みから外す"
+          );
+
+          removeButton.addEventListener("click", () => {
+            const updated = getAcquired().filter((url) => {
+              return url !== qualification.url;
+            });
+
+            try {
+              localStorage.setItem(storageKey, JSON.stringify(updated));
+              render();
+            } catch (error) {
+              alert("登録情報を変更できませんでした。");
+            }
+          });
+
+          actions.appendChild(removeButton);
+          card.append(title, description, actions);
+          list.appendChild(card);
+        });
+      }
+
+      render();
+    })();
+  </script>
+
 </body>
 </html>
