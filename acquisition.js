@@ -1,7 +1,8 @@
+
 (() => {
   const button = document.getElementById("acquisition-button");
 
-  if (!button) {
+  if (!button || typeof qualifications === "undefined") {
     return;
   }
 
@@ -18,75 +19,45 @@
   const storageKey = "acquiredQualifications";
 
   function getAcquiredQualifications() {
-    const savedData = localStorage.getItem(storageKey);
-
-    if (!savedData) {
-      return [];
-    }
-
     try {
-      return JSON.parse(savedData);
-    } catch {
+      const saved = JSON.parse(localStorage.getItem(storageKey) || "[]");
+      return Array.isArray(saved) ? saved : [];
+    } catch (error) {
       return [];
     }
   }
 
   function updateButton() {
-    const acquiredQualifications = getAcquiredQualifications();
-
-    const isAcquired = acquiredQualifications.includes(
-      currentQualification.url
-    );
+    const acquired = getAcquiredQualifications();
+    const isAcquired = acquired.includes(currentQualification.url);
 
     button.setAttribute("aria-pressed", String(isAcquired));
 
     if (isAcquired) {
       button.innerHTML =
         '<span aria-hidden="true">✓</span>取得済み';
-
-      button.setAttribute(
-        "aria-label",
-        "取得済みから外す"
-      );
+      button.setAttribute("aria-label", "取得済みから外す");
     } else {
       button.innerHTML =
         '<span aria-hidden="true">＋</span>取得済みに追加';
-
-      button.setAttribute(
-        "aria-label",
-        "取得済みに追加"
-      );
+      button.setAttribute("aria-label", "取得済みに追加");
     }
   }
 
   button.addEventListener("click", () => {
-    const acquiredQualifications = getAcquiredQualifications();
+    const acquired = getAcquiredQualifications();
+    const url = currentQualification.url;
 
-    const qualificationUrl = currentQualification.url;
+    const updated = acquired.includes(url)
+      ? acquired.filter((item) => item !== url)
+      : [...acquired, url];
 
-    const isAcquired =
-      acquiredQualifications.includes(qualificationUrl);
-
-    let newAcquiredQualifications;
-
-    if (isAcquired) {
-      newAcquiredQualifications =
-        acquiredQualifications.filter((url) => {
-          return url !== qualificationUrl;
-        });
-    } else {
-      newAcquiredQualifications = [
-        ...acquiredQualifications,
-        qualificationUrl
-      ];
+    try {
+      localStorage.setItem(storageKey, JSON.stringify(updated));
+      updateButton();
+    } catch (error) {
+      alert("登録情報を保存できませんでした。ブラウザの設定を確認してください。");
     }
-
-    localStorage.setItem(
-      storageKey,
-      JSON.stringify(newAcquiredQualifications)
-    );
-
-    updateButton();
   });
 
   updateButton();
