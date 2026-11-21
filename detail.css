@@ -863,3 +863,71 @@ body.detail-page {
 
 /* 公式資料が4件以上あるページでは均等な2列で表示 */
 @media(min-width:851px){.detail-page .official-link-grid:has(> .official-link-card:nth-child(4)){grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+
+/* 2026-11-21 合格率の見せ方を整理：統計・対象・出典をひとつのパネルへ */
+.detail-page .rate-board {
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--detail-line);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(18, 59, 109, .055);
+}
+.detail-page .rate-board-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 20px;
+  padding: 18px 24px;
+  background: #fff;
+  border-bottom: 1px solid #dbe8f2;
+}
+.detail-page .rate-board-heading-title {color: #163f68; font-size: 17px; font-weight: 800;}
+.detail-page .rate-board-heading-note {color: #57718a; font-size: 12px;}
+.detail-page .rate-board-grid {display: grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap: 1px; background: #dbe8f2;}
+.detail-page .rate-board-card {display: grid; grid-template-columns: minmax(150px, .78fr) minmax(0, 1.22fr); min-height: 212px; background: #fff;}
+.detail-page .rate-board-kpi {display: flex; flex-direction: column; justify-content: center; min-width:0; padding: 28px 24px; background: #17365d; color: #fff;}
+.detail-page .rate-board-category {display: block; color: #d3e7fa; font-size: 14px; font-weight: 700; margin-bottom: 12px;}
+.detail-page .rate-board-value {display: block; font-size: clamp(34px, 3.5vw, 53px); font-weight: 800; line-height: 1.1; letter-spacing: -.045em; font-variant-numeric: tabular-nums;}
+.detail-page .rate-board-caption {color: #d3e7fa; margin-top: 10px; font-size: 13px;}
+.detail-page .rate-board-facts {display:flex; flex-direction:column; justify-content:center; min-width:0; padding:26px 24px; background:#f5f9fd;}
+.detail-page .rate-board-counts {display:grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap:15px; margin-bottom:22px;}
+.detail-page .rate-board-stat span {display:block; color:#57718a; font-weight:600; font-size:13px; margin-bottom:7px;}
+.detail-page .rate-board-stat strong {display:block; color:#17365d; font-size:clamp(19px,2vw,25px); font-weight:800; line-height:1.25; font-variant-numeric:tabular-nums; overflow-wrap:anywhere;}
+.detail-page .rate-board-stat small {font-size:13px; margin-left:2px; font-weight:500;}
+.detail-page .rate-board-no-count {font-size:13px; line-height:1.7; color:#526a80; margin:0 0 22px;}
+.detail-page .rate-board-meter {height:9px; width:100%; overflow:hidden; background:#d6e4f0; border-radius:999px;}
+.detail-page .rate-board-meter span {display:block; height:100%; background:#1a77b8; border-radius:999px 0 0 999px;}
+.detail-page .rate-board-meter-caption {margin-top:9px; font-size:12px; color:#5d7388;}
+.detail-page .rate-board-meta {display:flex; flex-wrap:wrap; flex-direction:column; gap:5px; padding:15px 24px 18px; background:#fff; border-top:1px solid #dbe8f2; font-size:13px; line-height:1.7; color:#496279;}
+.detail-page .rate-board-meta p {margin:0;}
+.detail-page .rate-board-meta strong {color:#17365d; font-weight:700;}
+.detail-page .rate-board-meta a {color:#1262a0; text-decoration:underline; text-underline-offset:3px;}
+.detail-page .rate-board-checked {font-size:12px; white-space:nowrap;}
+.detail-page .rate-history-featured {margin-top:22px; padding:28px 30px; border:1px solid var(--detail-line); border-radius:12px; box-shadow:0 6px 18px rgba(18,59,109,.035);}
+.detail-page .rate-history-featured h3 {margin:0 0 18px; color:#17365d; font-size:21px;}
+.detail-page .rate-history-intro p {margin:0 0 24px; color:#445f78; font-size:14px; line-height:1.7;}
+.detail-page .rate-history-featured .rate-row {grid-template-columns:115px minmax(0,1fr) 70px; margin-bottom:15px;}
+.detail-page .rate-history-featured .rate-track {height:13px; border-radius:999px; background:#e6eef5;}
+.detail-page .rate-history-featured .rate-bar {border-radius:999px; background:#5799cd;}
+.detail-page .rate-history-featured .rate-row.is-current .rate-bar {background:#17365d;}
+.detail-page .rate-history-featured .rate-row.is-current .rate-year,
+.detail-page .rate-history-featured .rate-row.is-current strong {color:#17365d; font-weight:800;}
+.detail-page .rate-history-foot {margin:22px 0 0; padding-top:14px; border-top:1px solid #e3ebf2; color:#5c7287; font-size:12px; line-height:1.7;}
+@media(max-width:760px){
+  .detail-page .rate-board-card {grid-template-columns: 1fr;}
+  .detail-page .rate-board-kpi {padding:25px 22px;}
+  .detail-page .rate-board-facts {padding:23px 22px;}
+  .detail-page .rate-board-heading,.detail-page .rate-board-meta {padding-left:19px; padding-right:19px;}
+  .detail-page .rate-history-featured {padding:22px 19px;}
+  .detail-page .rate-history-featured .rate-row {grid-template-columns:85px minmax(0,1fr) 60px; gap:10px;}
+}
+
+.detail-page .rate-board-fact-note{margin:0;grid-column:1/-1;font-size:12px;color:#5f7388;line-height:1.6}
+
+/* 集計方式が異なる統計の表示調整（2026-11-21） */
+.detail-page .rate-board-card:has(.rate-board-no-count) .rate-board-facts{justify-content:center}
+.detail-page .rate-board-card:has(.rate-board-no-count) .rate-board-no-count{margin-bottom:16px}
+.detail-page .rate-board-meta{overflow-wrap:anywhere}
+@media(max-width:560px){.detail-page .rate-board-grid{grid-template-columns:1fr}.detail-page .rate-board-stat strong{font-size:21px}}
