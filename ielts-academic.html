@@ -4,8 +4,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<link href="style.css?v=11" rel="stylesheet"/>
-<link href="detail.css?v=3" rel="stylesheet"/>
+<link href="style.css?v=4069a8fed5" rel="stylesheet"/>
+<link href="detail.css?v=cb5a029152" rel="stylesheet"/>
 <title>IELTS Academic｜資格試験ドットコム</title>
 </head>
 <body class="home detail-page">
@@ -13,6 +13,7 @@
 <a class="site-name" href="index.html">資格試験ドットコム</a>
 <nav aria-label="メインメニュー" class="main-menu">
 <a href="index.html#find">資格を探す</a>
+<a href="compare.html">候補を比較</a>
 <a href="progress.html">マイ取得状況</a>
 </nav>
 </header>
@@ -20,7 +21,7 @@
 <nav aria-label="現在位置" class="breadcrumb">
 <a href="index.html">トップ</a><span>›</span>
 <a href="genres.html">ジャンルから探す</a><span>›</span>
-<span>語学</span><span>›</span>
+<a href="language.html">語学</a><span>›</span>
 <span aria-current="page">IELTS Academic</span>
 </nav>
 <!-- 資格名・概要 -->
@@ -30,8 +31,11 @@
 <p class="qualification-lead" id="qualification-description">海外の大学・大学院への進学などに必要な英語の4技能を、バンドスコアで評価するテストです。</p>
 <div aria-label="資格の特徴" class="qualification-tags" id="qualification-tags"><span>語学</span><span>国際英語テスト</span><span>4技能</span></div>
 </div>
-<div class="collection-action"><button aria-pressed="false" class="collection-button" id="acquisition-button" type="button"><span aria-hidden="true">＋</span> 取得済みに追加</button></div>
+<div class="collection-action"><a class="exam-entry" href="https://www.eiken.or.jp/ielts/test/index.html" target="_blank" rel="noopener noreferrer">公式の受験案内</a>
+<button id="candidate-button" type="button" aria-pressed="false">候補に保存</button><button aria-pressed="false" class="collection-button" id="acquisition-button" type="button"><span aria-hidden="true">＋</span> 取得済みに追加</button></div>
 </section>
+<section class="practical-use" aria-label="学んだことが役立つ場面"><h2>学んだことが役立つ場面</h2><p>英語の講義を聞く、大学で扱う文章を読む、図表を説明する、意見を文章や会話で伝えるといった留学準備に役立ちます。</p></section>
+
 <!-- お知らせ -->
 <!-- ページ内メニュー -->
 <nav aria-label="ページ内メニュー" class="page-index">
@@ -50,7 +54,6 @@
 <article class="summary-item"><span>実施時期</span><strong>会場ごとに複数の日程</strong></article>
 </div>
 </section>
-
 <section class="content-section study-guide" id="study-guide"><div class="section-heading"><p class="section-number">02</p><h2>学習・受験のポイント</h2></div><div class="study-guide-grid"><article class="study-guide-card"><h3>試験で押さえること</h3><p>合否ではなく0～9のバンドスコアで評価されます。目的の学校・機関が求めるスコアを確認しましょう。</p></article><article class="study-guide-card"><h3>学習・受験時の注意</h3><p>Writing・Speakingは解答の構成と表現の幅が重要。Reading・Listeningだけでなく4技能をバランスよく練習します。</p></article></div></section>
 <!-- 03 基本情報 -->
 <section class="content-section" id="basic-information">
@@ -61,35 +64,37 @@
 <tr><th scope="row">資格の種類</th><td>国際英語テスト</td></tr>
 <tr><th scope="row">受験資格</th><td>英検協会のコンピューター版は11歳以上が対象。16歳未満の人は保護者が申し込む</td></tr>
 <tr><th scope="row">試験日時</th><td>会場ごとに複数の日程</td></tr>
-<tr><th scope="row">受験料</th><td>29,700円（税込・英検IELTS公式テストセンターのコンピューター版）</td></tr>
+<tr><th scope="row">受験料</th><td>29,700円（税込・英検IELTS公式テストセンターのコンピューター版） <small class="info-verified">（2026年11月21日確認：<a href="https://www.eiken.or.jp/ielts/test/index.html" target="_blank" rel="noopener noreferrer">公式案内</a>）</small></td></tr>
 <tr><th scope="row">申込方法</th><td>申込み時に有効なパスポート情報を登録する。試験当日は登録したパスポート原本が必要</td></tr>
-<tr><th scope="row">試験方式</th><td>コンピューター試験など。スピーキングは試験官との面接</td></tr>
+<tr><th scope="row">試験方式</th><td>日本国内のペーパー版は2026年6〜8月に順次終了。英検IELTS公式テストセンターではコンピューター版を実施し、スピーキングは試験官との1対1の面接です。 <small class="info-verified">（2026年11月21日確認：<a href="https://www.eiken.or.jp/ielts/faq/" target="_blank" rel="noopener noreferrer">公式案内</a>）</small></td></tr>
 <tr><th scope="row">試験時間</th><td>リスニング・リーディング・ライティング・スピーキングの合計約2時間45分</td></tr>
 <tr><th scope="row">出題数</th><td>技能ごとに形式・問題数が異なるため公式案内を参照</td></tr>
 <tr><th scope="row">出題形式</th><td>聞く・読む・書く・話すの4技能</td></tr>
 <tr><th scope="row">出題分野</th><td>大学などで必要な講義・文章・議論・エッセーに関する英語力</td></tr>
 <tr><th scope="row">合格基準・評価</th><td>合否はなく、各技能と総合のバンドスコア（0.0〜9.0）で評価</td></tr>
-</tbody></table></div>
+<tr><th scope="row">申込状況</th><td>英検IELTS公式テストセンターのコンピューター版は、会場・日程ごとに空席を選んで予約します。申込締切は試験日の3日前9時ですが、満席になると早く終了します。 <small class="info-verified">（2026年11月21日確認：<a href="https://www.eiken.or.jp/ielts/faq/" target="_blank" rel="noopener noreferrer">公式案内</a>）</small></td></tr></tbody></table></div>
 </section>
 <!-- 04 結果・統計 -->
 <!-- 05 公式リンク -->
 <section class="content-section" id="official-links">
 <div class="section-heading"><p class="section-number">04</p><h2>公式サイト・学習資料</h2></div>
 <div class="official-link-grid">
-<a class="official-link-card" href="https://www.eiken.or.jp/ielts/" rel="noopener noreferrer" target="_blank"><span>公式サイト</span><strong>IELTS Academic公式サイト</strong><small>公式サイトを開く ↗</small></a>
-<a class="official-link-card" href="https://www.britishcouncil.jp/exam/ielts/which-test/academic" rel="noopener noreferrer" target="_blank"><span>試験内容</span><strong>出題内容・評価方法</strong><small>公式サイトを開く ↗</small></a>
+<a class="official-link-card" href="https://www.eiken.or.jp/ielts/test/index.html" rel="noopener noreferrer" target="_blank"><span>受験申込</span><strong>受験申込案内</strong><small>公式ページを開く ↗</small></a>
+
+<a class="official-link-card" href="https://www.eiken.or.jp/ielts/" rel="noopener noreferrer" target="_blank"><span>公式サイト</span><strong>IELTS Academic公式サイト</strong><small>公式ページを開く ↗</small></a>
+<a class="official-link-card" href="https://www.britishcouncil.jp/exam/ielts/which-test/academic" rel="noopener noreferrer" target="_blank"><span>試験内容</span><strong>出題内容・評価方法</strong><small>公式ページを開く ↗</small></a>
 </div>
 </section>
 <!-- 情報源 -->
 <aside class="source-note" id="sources">
 <p><strong>情報源：</strong><a href="https://www.eiken.or.jp/ielts/" rel="noopener noreferrer" target="_blank">主催団体の公式試験案内</a> ／ <a href="https://www.eiken.or.jp/ielts/" rel="noopener noreferrer" target="_blank">申込・日程案内</a> ／ <a href="https://www.britishcouncil.jp/exam/ielts/which-test/academic" rel="noopener noreferrer" target="_blank">出題・評価情報</a></p>
-<p>基本情報の確認日：2026年10月26日（統計は各項目の出典・対象期間を参照）</p>
-
+<p>基本情報の初回確認日：2026年10月26日（統計は各項目の出典・対象期間を参照）</p>
 </aside>
-<p class="back-link"><a href="genres.html">← ジャンルから探すに戻る</a></p>
+<p class="back-link"><a href="language.html">← 語学の資格一覧に戻る</a></p>
 </main>
-<script src="sikakucard.js?v=4"></script>
-<script src="sikakusyousai.js?v=3"></script>
-<script src="acquisition.js?v=1"></script>
+<script src="sikakucard.js?v=e66bac9ded"></script>
+<script src="sikakusyousai.js?v=82338b2333"></script>
+<script src="acquisition.js?v=3485a822eb"></script>
+<script src="candidates.js?v=6068d8ad23"></script>
 </body>
 </html>

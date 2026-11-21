@@ -1,5 +1,4 @@
-// 資格図鑑：全50資格の共通データ
-// 追加・修正はこのファイルで管理します。
+// 掲載資格の共通データ
 const qualifications = [
   {
     "category": "it",
@@ -11,7 +10,9 @@ const qualifications = [
       "国家試験",
       "CBT（パソコン受験）",
       "通年実施"
-    ]
+    ],
+    "feeSummary": "7,500円",
+    "feeNote": "消費税込み"
   },
   {
     "category": "it",
@@ -23,7 +24,9 @@ const qualifications = [
       "国家試験",
       "CBT（パソコン受験）",
       "通年実施"
-    ]
+    ],
+    "feeSummary": "7,500円",
+    "feeNote": "消費税込み"
   },
   {
     "category": "it",
@@ -34,7 +37,9 @@ const qualifications = [
       "IT・情報",
       "国家試験",
       "CBT（パソコン受験）"
-    ]
+    ],
+    "feeSummary": "7,500円",
+    "feeNote": "消費税込み"
   },
   {
     "category": "it",
@@ -46,7 +51,9 @@ const qualifications = [
       "国家試験",
       "CBT（パソコン受験）",
       "通年実施"
-    ]
+    ],
+    "feeSummary": "7,500円",
+    "feeNote": "消費税込み"
   },
   {
     "category": "it",
@@ -57,7 +64,9 @@ const qualifications = [
       "IT・情報",
       "国家試験",
       "CBT（パソコン受験）"
-    ]
+    ],
+    "feeSummary": "7,500円",
+    "feeNote": "非課税"
   },
   {
     "category": "it",
@@ -68,7 +77,9 @@ const qualifications = [
       "IT・情報",
       "国家試験",
       "CBT（パソコン受験）"
-    ]
+    ],
+    "feeSummary": "7,500円",
+    "feeNote": "消費税込み"
   },
   {
     "category": "it",
@@ -79,7 +90,9 @@ const qualifications = [
       "IT・情報",
       "国家試験",
       "CBT（パソコン受験）"
-    ]
+    ],
+    "feeSummary": "7,500円",
+    "feeNote": "消費税込み"
   },
   {
     "category": "it",
@@ -90,7 +103,9 @@ const qualifications = [
       "IT・情報",
       "国家試験",
       "CBT（パソコン受験）"
-    ]
+    ],
+    "feeSummary": "7,500円",
+    "feeNote": "消費税込み"
   },
   {
     "category": "it",
@@ -101,7 +116,9 @@ const qualifications = [
       "IT・情報",
       "国家試験",
       "CBT（パソコン受験）"
-    ]
+    ],
+    "feeSummary": "7,500円",
+    "feeNote": "消費税込み"
   },
   {
     "category": "it",
@@ -112,7 +129,9 @@ const qualifications = [
       "IT・情報",
       "国家試験",
       "CBT（パソコン受験）"
-    ]
+    ],
+    "feeSummary": "7,500円",
+    "feeNote": "消費税込み"
   },
   {
     "category": "it",
@@ -123,7 +142,9 @@ const qualifications = [
       "IT・情報",
       "国家試験",
       "CBT（パソコン受験）"
-    ]
+    ],
+    "feeSummary": "7,500円",
+    "feeNote": "消費税込み"
   },
   {
     "category": "it",
@@ -134,7 +155,9 @@ const qualifications = [
       "IT・情報",
       "国家試験",
       "CBT（パソコン受験）"
-    ]
+    ],
+    "feeSummary": "7,500円",
+    "feeNote": "消費税込み"
   },
   {
     "category": "it",
@@ -145,7 +168,9 @@ const qualifications = [
       "IT・情報",
       "国家試験",
       "CBT（パソコン受験）"
-    ]
+    ],
+    "feeSummary": "7,500円",
+    "feeNote": "消費税込み"
   },
   {
     "category": "it",
@@ -155,7 +180,9 @@ const qualifications = [
     "tags": [
       "IT・情報",
       "民間資格・検定"
-    ]
+    ],
+    "feeSummary": "一般13,200円（税込）",
+    "feeNote": "学生5,500円（税込）"
   },
   {
     "category": "it",
@@ -165,7 +192,9 @@ const qualifications = [
     "tags": [
       "IT・情報",
       "民間資格・検定"
-    ]
+    ],
+    "feeSummary": "16,500円（税込）",
+    "feeNote": ""
   },
   {
     "category": "it",
@@ -175,7 +204,9 @@ const qualifications = [
     "tags": [
       "IT・情報",
       "民間資格・検定"
-    ]
+    ],
+    "feeSummary": "12,980円（税込）",
+    "feeNote": "学割9,680円（税込）"
   },
   {
     "category": "it",
@@ -185,7 +216,9 @@ const qualifications = [
     "tags": [
       "IT・情報",
       "民間資格・検定"
-    ]
+    ],
+    "feeSummary": "12,980円（税込）",
+    "feeNote": "学割9,680円（税込）"
   },
   {
     "category": "it",
@@ -195,7 +228,9 @@ const qualifications = [
     "tags": [
       "IT・情報",
       "民間資格・検定"
-    ]
+    ],
+    "feeSummary": "5,500円（税込）",
+    "feeNote": ""
   },
   {
     "category": "it",
@@ -205,7 +240,9 @@ const qualifications = [
     "tags": [
       "IT・情報",
       "民間資格・検定"
-    ]
+    ],
+    "feeSummary": "11,000円（税込）",
+    "feeNote": "学割5,500円（税込）"
   },
   {
     "category": "it",
@@ -215,7 +252,9 @@ const qualifications = [
     "tags": [
       "IT・情報",
       "民間資格・検定"
-    ]
+    ],
+    "feeSummary": "一般7,000円（税込）",
+    "feeNote": "学割5,000円（税込）"
   },
   {
     "category": "business",
@@ -226,7 +265,9 @@ const qualifications = [
       "ビジネス・会計",
       "民間資格・検定",
       "CBT（パソコン受験）"
-    ]
+    ],
+    "feeSummary": "5,500円（税込）",
+    "feeNote": "ネット申込は別途550円"
   },
   {
     "category": "business",
@@ -237,7 +278,9 @@ const qualifications = [
       "ビジネス・会計",
       "民間資格・検定",
       "CBT（パソコン受験）"
-    ]
+    ],
+    "feeSummary": "3,300円（税込）",
+    "feeNote": "ネット申込は別途550円"
   },
   {
     "category": "business",
@@ -247,7 +290,9 @@ const qualifications = [
     "tags": [
       "ビジネス・会計",
       "民間資格・検定"
-    ]
+    ],
+    "feeSummary": "4,950円（税込）",
+    "feeNote": ""
   },
   {
     "category": "business",
@@ -257,8 +302,10 @@ const qualifications = [
     "tags": [
       "ビジネス・会計",
       "民間資格・検定",
-      "CBT（パソコン受験）"
-    ]
+      "IBT・CBT（パソコン受験）"
+    ],
+    "feeSummary": "7,700円〜",
+    "feeNote": "IBTとCBTで異なります（税込）"
   },
   {
     "category": "business",
@@ -268,8 +315,10 @@ const qualifications = [
     "tags": [
       "ビジネス・会計",
       "民間資格・検定",
-      "CBT（パソコン受験）"
-    ]
+      "IBT・CBT（パソコン受験）"
+    ],
+    "feeSummary": "5,500円〜",
+    "feeNote": "IBTとCBTで異なります（税込）"
   },
   {
     "category": "business",
@@ -280,7 +329,9 @@ const qualifications = [
       "ビジネス・会計",
       "国家資格",
       "CBT（パソコン受験）"
-    ]
+    ],
+    "feeSummary": "11,700円（学科・実技合計、非課税）",
+    "feeNote": "学科・実技合計。申込・払込手数料は別途"
   },
   {
     "category": "business",
@@ -291,7 +342,9 @@ const qualifications = [
       "ビジネス・会計",
       "国家資格",
       "CBT（パソコン受験）"
-    ]
+    ],
+    "feeSummary": "8,000円（学科・実技合計、非課税）",
+    "feeNote": "学科・実技合計。申込・払込手数料は別途"
   },
   {
     "category": "business",
@@ -302,7 +355,9 @@ const qualifications = [
       "ビジネス・会計",
       "民間資格・検定",
       "CBT（パソコン受験）"
-    ]
+    ],
+    "feeSummary": "6,600円＋事務手数料550円（税込）",
+    "feeNote": ""
   },
   {
     "category": "business",
@@ -313,7 +368,9 @@ const qualifications = [
       "ビジネス・会計",
       "民間資格・検定",
       "CBT（パソコン受験）"
-    ]
+    ],
+    "feeSummary": "4,400円（税込）",
+    "feeNote": "事務手数料550円が別途必要"
   },
   {
     "category": "business",
@@ -323,7 +380,9 @@ const qualifications = [
     "tags": [
       "ビジネス・会計",
       "民間資格・検定"
-    ]
+    ],
+    "feeSummary": "5,200円（公開試験）",
+    "feeNote": ""
   },
   {
     "category": "language",
@@ -333,8 +392,11 @@ const qualifications = [
     "tags": [
       "語学",
       "民間資格・検定",
-      "CBT（パソコン受験）"
-    ]
+      "従来型（筆記・面接）",
+      "S-CBT"
+    ],
+    "feeSummary": "10,400円（税込・本会場）",
+    "feeNote": "2026年度"
   },
   {
     "category": "language",
@@ -344,8 +406,11 @@ const qualifications = [
     "tags": [
       "語学",
       "民間資格・検定",
-      "CBT（パソコン受験）"
-    ]
+      "従来型（筆記・面接）",
+      "S-CBT"
+    ],
+    "feeSummary": "8,600円（税込・本会場）",
+    "feeNote": "2026年度"
   },
   {
     "category": "language",
@@ -355,8 +420,11 @@ const qualifications = [
     "tags": [
       "語学",
       "民間資格・検定",
-      "CBT（パソコン受験）"
-    ]
+      "従来型（筆記・面接）",
+      "S-CBT"
+    ],
+    "feeSummary": "9,000円（税込・本会場）",
+    "feeNote": "2026年度"
   },
   {
     "category": "language",
@@ -366,7 +434,9 @@ const qualifications = [
     "tags": [
       "語学",
       "資格・検定"
-    ]
+    ],
+    "feeSummary": "29,700円（税込）",
+    "feeNote": "英検IELTS公式・コンピューター版"
   },
   {
     "category": "language",
@@ -376,7 +446,9 @@ const qualifications = [
     "tags": [
       "語学",
       "資格・検定"
-    ]
+    ],
+    "feeSummary": "7,500円（税込・2026年国内受験）",
+    "feeNote": "2026年第2回（国内）"
   },
   {
     "category": "language",
@@ -387,7 +459,9 @@ const qualifications = [
       "語学",
       "民間資格・検定",
       "CBT（パソコン受験）"
-    ]
+    ],
+    "feeSummary": "5,200円（税込・個人公開会場の紙受検）",
+    "feeNote": "2026年度"
   },
   {
     "category": "language",
@@ -397,7 +471,9 @@ const qualifications = [
     "tags": [
       "語学",
       "民間資格・検定"
-    ]
+    ],
+    "feeSummary": "7,700円（税込）",
+    "feeNote": "紙の公式認定証あり：7,810円"
   },
   {
     "category": "law",
@@ -407,7 +483,9 @@ const qualifications = [
     "tags": [
       "法律・不動産",
       "国家試験"
-    ]
+    ],
+    "feeSummary": "12,000円（非課税）",
+    "feeNote": "2026年度・Web申込は別途400円"
   },
   {
     "category": "law",
@@ -417,7 +495,9 @@ const qualifications = [
     "tags": [
       "法律・不動産",
       "国家試験"
-    ]
+    ],
+    "feeSummary": "10,400円",
+    "feeNote": "2026年度・Web申込は別途370円"
   },
   {
     "category": "law",
@@ -427,7 +507,9 @@ const qualifications = [
     "tags": [
       "法律・不動産",
       "国家試験"
-    ]
+    ],
+    "feeSummary": "8,900円（非課税）",
+    "feeNote": "2026年度・Web申込は別途297円"
   },
   {
     "category": "law",
@@ -437,7 +519,9 @@ const qualifications = [
     "tags": [
       "法律・不動産",
       "国家試験"
-    ]
+    ],
+    "feeSummary": "12,800円",
+    "feeNote": "2026年・電子申請の場合"
   },
   {
     "category": "law",
@@ -447,7 +531,9 @@ const qualifications = [
     "tags": [
       "法律・不動産",
       "国家試験"
-    ]
+    ],
+    "feeSummary": "9,400円（非課税）",
+    "feeNote": "2026年度・Web申込は別途317円"
   },
   {
     "category": "law",
@@ -457,7 +543,9 @@ const qualifications = [
     "tags": [
       "法律・不動産",
       "国家試験"
-    ]
+    ],
+    "feeSummary": "8,000円",
+    "feeNote": "2026年度・収入印紙で納付"
   },
   {
     "category": "law",
@@ -467,7 +555,9 @@ const qualifications = [
     "tags": [
       "法律・不動産",
       "国家試験"
-    ]
+    ],
+    "feeSummary": "8,200円",
+    "feeNote": "2026年度・非課税"
   },
   {
     "category": "medical",
@@ -477,7 +567,9 @@ const qualifications = [
     "tags": [
       "医療・福祉",
       "国家試験"
-    ]
+    ],
+    "feeSummary": "20,510円",
+    "feeNote": ""
   },
   {
     "category": "design",
@@ -487,7 +579,9 @@ const qualifications = [
     "tags": [
       "デザイン・色彩",
       "資格・検定"
-    ]
+    ],
+    "feeSummary": "7,000円",
+    "feeNote": ""
   },
   {
     "category": "travel",
@@ -497,7 +591,9 @@ const qualifications = [
     "tags": [
       "旅行・観光",
       "国家試験"
-    ]
+    ],
+    "feeSummary": "受験手数料8,000円",
+    "feeNote": ""
   },
   {
     "category": "industrial",
@@ -507,7 +603,9 @@ const qualifications = [
     "tags": [
       "技術・工業",
       "国家試験"
-    ]
+    ],
+    "feeSummary": "11,100円",
+    "feeNote": ""
   },
   {
     "category": "industrial",
@@ -517,7 +615,9 @@ const qualifications = [
     "tags": [
       "技術・工業",
       "国家試験"
-    ]
+    ],
+    "feeSummary": "5,300円",
+    "feeNote": ""
   },
   {
     "category": "medical",
@@ -527,6 +627,8 @@ const qualifications = [
     "tags": [
       "医療・福祉",
       "資格・検定"
-    ]
+    ],
+    "feeSummary": "都道府県ごとに異なります。",
+    "feeNote": ""
   }
 ];

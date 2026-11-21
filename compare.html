@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css?v=4069a8fed5">
+<title>候補を比較｜資格試験ドットコム</title>
+</head>
+<body class="home genre-detail-page">
+<header class="site-header">
+<a class="site-name" href="index.html">資格試験ドットコム</a>
+<nav class="main-menu" aria-label="メインメニュー">
+<a href="index.html#find">資格を探す</a>
+<a aria-current="page" href="compare.html">候補を比較</a>
+<a href="progress.html">マイ取得状況</a>
+</nav>
+</header>
+<main class="home-content">
+<h1>候補を比較</h1>
+<p>気になる資格を選ぶと、費用や受験条件を並べて確認できます。候補はこのブラウザに保存されます。</p>
+<section class="comparison-presets" aria-labelledby="comparison-presets-title">
+<h2 id="comparison-presets-title">目的から比べる</h2>
+<div class="comparison-preset-list">
+<button type="button" data-compare="boki3.html,mos-excel.html"><strong>事務の仕事</strong><span>簿記3級とMOS Excelを比べる</span></button>
+<button type="button" data-compare="takken.html,kanrigyomu.html,chintai.html"><strong>不動産の仕事</strong><span>宅建・管理業務主任者・賃貸不動産経営管理士を比べる</span></button>
+</div>
+<p>選んだ資格を候補に追加します。すでに保存した候補も残ります。</p>
+</section>
+<form id="candidate-form"><label for="candidate-select">資格を選ぶ</label>
+<select id="candidate-select" required></select>
+<button>候補に追加</button></form>
+<p id="candidate-status" role="status"></p>
+<fieldset id="candidate-list" hidden><legend>比較する資格を2〜3件選ぶ</legend></fieldset>
+<p id="comparison-status" role="status"></p>
+<p class="comparison-scroll-hint" hidden>比較表は横にスクロールできます。</p>
+<div id="comparison" role="region" tabindex="0" aria-label="資格比較表。横にスクロールできます" hidden></div>
+</main>
+<script src="sikakucard.js?v=e66bac9ded"></script>
+<script src="compare-facts.js?v=c250c3df74"></script>
+<script src="candidates.js?v=6068d8ad23"></script>
+</body>
+</html>

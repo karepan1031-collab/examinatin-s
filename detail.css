@@ -274,7 +274,7 @@ body.detail-page {
 }
 
 .exam-notice a {
-  color: var(--detail-blue);
+  color: #1761a8;
   font-weight: bold;
 }
 
@@ -681,7 +681,7 @@ body.detail-page {
 }
 
 .official-link-card small {
-  color: var(--detail-blue);
+  color: #1761a8;
 }
 
 .official-link-card:hover,
@@ -931,3 +931,29 @@ body.detail-page {
 .detail-page .rate-board-card:has(.rate-board-no-count) .rate-board-no-count{margin-bottom:16px}
 .detail-page .rate-board-meta{overflow-wrap:anywhere}
 @media(max-width:560px){.detail-page .rate-board-grid{grid-template-columns:1fr}.detail-page .rate-board-stat strong{font-size:21px}}
+
+
+/* 2026-11: official exam status and source notes */
+.detail-page .exam-alert {
+  margin: 22px 0 6px;
+  padding: 18px 22px;
+  border: 1px solid #bad5e9;
+  border-left: 4px solid #1479d1;
+  border-radius: 10px;
+  background: #f3f9ff;
+  color: #21384b;
+  line-height: 1.75;
+}
+.detail-page .exam-alert strong { display: block; margin-bottom: 6px; font-size: 17px; }
+.detail-page .exam-alert p { margin: 0 0 7px; }
+.detail-page .exam-alert a,
+.detail-page .qualification-details .info-verified a { color: #07599c; text-underline-offset: 2px; }
+.detail-page .exam-alert small { display: block; color: #526b7f; font-size: 12px; }
+.detail-page .qualification-details .info-verified { display: inline; color: #526b7f; font-size: 12px; line-height: 1.8; }
+@media (max-width: 640px) {
+  .detail-page .exam-alert { padding: 14px 16px; }
+  .detail-page .exam-alert strong { font-size: 16px; }
+}
+.practical-use { padding:20px 24px; margin:24px 0; border-left:4px solid #1766bc; background:#eef5fc; }
+.practical-use h2 { margin:0 0 10px; font-size:20px; color:#17365d; }
+.practical-use p { margin:0; line-height:1.9; }

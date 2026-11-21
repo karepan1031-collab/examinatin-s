@@ -29,7 +29,7 @@ itQualifications.forEach((qualification) => {
   tags.className = "qualification-tags card-tags";
 
   // タグを1つずつ作る
-  qualification.tags.forEach((tag) => {
+  qualification.tags.filter(tag => tag !== "IT・情報").forEach((tag) => {
     const label = document.createElement("span");
     label.textContent = tag;
 
@@ -55,6 +55,17 @@ itQualifications.forEach((qualification) => {
 
   // 資格名 → 説明 → タグ
   card.append(name, description, tags);
+  if (qualification.feeSummary) {
+    const fee = document.createElement("p");
+    fee.className = "card-fee";
+    fee.textContent = "受験料 " + qualification.feeSummary;
+    if (qualification.feeNote) {
+      const note = document.createElement("small");
+      note.textContent = qualification.feeNote;
+      fee.appendChild(note);
+    }
+    card.appendChild(fee);
+  }
 
   // カードを一覧に追加
   list.appendChild(card);

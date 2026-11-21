@@ -2336,7 +2336,7 @@ span:nth-child(2) {
   border-radius: 0;
 }
 
-.top-page .site-intro.daily-intro h1 {
+.top-page .site-intro.daily-intro h2 {
   margin: 0;
   color: #17365d;
   font-size: 32px;
@@ -2349,7 +2349,7 @@ body.top-page .daily-intro {
   border-left: 5px solid #1766bc;
 }
 
-body.top-page .daily-intro h1 {
+body.top-page .daily-intro h2 {
   margin: 0;
   color: #17365d;
   font-size: 32px;
@@ -2364,7 +2364,7 @@ body.home.top-page section.site-intro.daily-intro {
   border-radius: 0;
 }
 
-body.home.top-page section.site-intro.daily-intro h1 {
+body.home.top-page section.site-intro.daily-intro h2 {
   margin: 0;
   color: #17365d;
   font-size: 32px;
@@ -2379,9 +2379,77 @@ body.top-page .site-intro.daily-intro {
   border-left: 5px solid #1766bc;
 }
 
-body.top-page .site-intro.daily-intro h1 {
+body.top-page .site-intro.daily-intro h2 {
   margin: 0;
   color: #17365d;
   font-size: 32px;
   line-height: 1.5;
 }
+
+/* 検索で該当がないときも探し方を案内する */
+.search-empty-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  grid-column: 1 / -1;
+  margin: 10px 0 28px;
+}
+.search-empty-actions a {
+  padding: 10px 16px;
+  border: 1px solid #aac4db;
+  border-radius: 9px;
+  background: #fff;
+  color: #123b6d;
+  font-weight: 700;
+  text-decoration: none;
+}
+.search-empty-actions a:hover, .search-empty-actions a:focus-visible {
+  background: #eaf5fb;
+  text-decoration: underline;
+}
+
+/* 資格の候補と比較表 */
+.main-menu { flex-wrap: wrap; }
+.comparison-presets { margin:28px 0; }
+.comparison-presets h2 { margin:0 0 12px; color:#17365d; font-size:22px; }
+.comparison-presets > p { margin:10px 0 0; color:#475569; font-size:14px; }
+.comparison-preset-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr)); gap:12px; }
+.comparison-preset-list button { padding:18px; border:1px solid #bdcfe4; border-radius:10px; background:#fff; color:#17365d; font:inherit; text-align:left; cursor:pointer; }
+.comparison-preset-list button:hover { background:#eaf2fd; border-color:#1766bc; }
+.comparison-preset-list strong,.comparison-preset-list span { display:block; }
+.comparison-preset-list span { margin-top:6px; color:#475569; font-size:14px; }
+#candidate-form { display:flex; flex-wrap:wrap; align-items:center; gap:.7rem; margin:1.5rem 0; }
+#candidate-select { max-width:100%; padding:.6rem; font:inherit; }
+#candidate-form button, .candidate-table button, #candidate-button {
+  padding:.6rem .9rem; border:1px solid #1766bc; border-radius:8px; background:white; color:#174a83; font:inherit; cursor:pointer;
+}
+#candidate-button { margin:.25rem; }
+#comparison { max-width:100%; overflow-x:auto; }
+.candidate-table { border-collapse:separate; border-spacing:0; background:white; line-height:1.65; }
+.candidate-table th,.candidate-table td { padding:.8rem; border:1px solid #d4dfed; vertical-align:top; text-align:left; }
+.candidate-table td { min-width:12rem; max-width:22rem; }
+.candidate-table th:first-child { position:sticky; left:0; background:#edf3fa; min-width:5rem; }
+.candidate-table button { display:block; margin-top:.5rem; font-size:.85rem; }
+.purpose-links { display:flex; flex-wrap:wrap; gap:12px; margin:20px 0; }
+.purpose-links a { padding:10px 16px; border:1px solid #b8cce3; border-radius:8px; color:#163e6d; background:#fff; }
+.exam-entry { display:block; padding:14px 20px; background:#17365d; color:#fff; border-radius:8px; text-decoration:none; text-align:center; margin:4px; font-weight:700; }
+#candidate-list { border:1px solid #cbd7e5; border-radius:8px; padding:16px; }
+#candidate-list > div { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; padding:10px 0; }
+#candidate-list label { display:flex; align-items:center; gap:10px; }
+#candidate-list input { width:20px; height:20px; flex-shrink:0; }
+#candidate-list button { background:white; border:1px solid #b6c6d8; padding:8px 12px; border-radius:6px; font:inherit; }
+.candidate-table p { margin:0 0 8px; }
+.candidate-table small { display:block; color:#526375; }
+.candidate-table caption { text-align:left; padding:12px 0; font-weight:700; }
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,#comparison:focus-visible { outline:3px solid #1766bc; outline-offset:3px; }
+.collection-action .collection-button { background:white; color:#17365d; border:1px solid #b6c6d8; }
+#candidate-list > div { display:grid; grid-template-columns:minmax(0,1fr) auto; }
+.comparison-scroll-hint { font-size:14px; color:#526375; }
+#candidate-list label { min-width:0; overflow-wrap:anywhere; }
+
+/* 淡い背景でも補足文字を読み取れるコントラスト */
+[aria-current="page"] { color:#475569; }
+
+/* 一覧で資格ごとの費用を見比べる */
+.home a.exam-card .card-fee { margin:16px 0 0; padding-top:12px; border-top:1px solid #d4dfed; color:#17365d; font-size:15px; font-weight:700; }
+.home a.exam-card .card-fee small { display:block; margin-top:4px; color:#475569; font-size:12px; font-weight:400; line-height:1.6; }

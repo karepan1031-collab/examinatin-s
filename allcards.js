@@ -54,6 +54,17 @@ qualifications.forEach((qualification) => {
 
   // 資格名 → 説明 → タグの順に並べる
   card.append(name, description, tags);
+  if (qualification.feeSummary) {
+    const fee = document.createElement("p");
+    fee.className = "card-fee";
+    fee.textContent = "受験料 " + qualification.feeSummary;
+    if (qualification.feeNote) {
+      const note = document.createElement("small");
+      note.textContent = qualification.feeNote;
+      fee.appendChild(note);
+    }
+    card.appendChild(fee);
+  }
 
   // 一覧に追加
   allList.appendChild(card);

@@ -16,7 +16,7 @@ genreItems.forEach(item => {
   desc.textContent = item.description;
   const tags = document.createElement("div");
   tags.className = "qualification-tags card-tags";
-  item.tags.forEach(tag => {
+  item.tags.filter(tag => tag !== item.tags[0]).forEach(tag => {
     const label = document.createElement("span");
     label.textContent = tag;
     const colors = {
@@ -34,5 +34,16 @@ genreItems.forEach(item => {
     tags.appendChild(label);
   });
   card.append(name, desc, tags);
+  if (item.feeSummary) {
+    const fee = document.createElement("p");
+    fee.className = "card-fee";
+    fee.textContent = "受験料 " + item.feeSummary;
+    if (item.feeNote) {
+      const note = document.createElement("small");
+      note.textContent = item.feeNote;
+      fee.appendChild(note);
+    }
+    card.appendChild(fee);
+  }
   genreList.appendChild(card);
 });

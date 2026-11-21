@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- 共通CSS -->
-  <link rel="stylesheet" href="style.css?v=12">
+  <link rel="stylesheet" href="style.css?v=4069a8fed5">
 
   <title>資格検索｜資格試験ドットコム</title>
 </head>
@@ -21,7 +21,8 @@
 
     <nav class="main-menu" aria-label="メインメニュー">
       <a href="index.html#find">資格を探す</a>
-      <a href="progress.html">マイ取得状況</a>
+      <a href="compare.html">候補を比較</a>
+<a href="progress.html">マイ取得状況</a>
     </nav>
   </header>
 
@@ -49,14 +50,14 @@
         method="get"
         role="search"
       >
-        <label for="keyword">資格名で検索</label>
+        <label for="keyword">資格名・略称・興味のある分野から検索</label>
 
         <div class="search-input-row">
           <input
             type="search"
             id="keyword"
             name="q"
-            placeholder="資格名を入力"
+            placeholder="例：英検、宅建、FP、事務、英語"
             required
           >
 
@@ -86,10 +87,10 @@
   </main>
 
   <!-- 資格データ -->
-  <script src="sikakucard.js"></script>
+  <script src="sikakucard.js?v=e66bac9ded"></script>
 
   <!-- 検索処理 -->
-  <script src="search.js?v=3"></script>
+  <script src="search.js?v=b47709d467"></script>
 
 </body>
 </html>

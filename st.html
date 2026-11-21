@@ -4,8 +4,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<link href="style.css?v=11" rel="stylesheet"/>
-<link href="detail.css?v=3" rel="stylesheet"/>
+<link href="style.css?v=4069a8fed5" rel="stylesheet"/>
+<link href="detail.css?v=cb5a029152" rel="stylesheet"/>
 <title>ITストラテジスト試験｜資格試験ドットコム</title>
 </head>
 <body class="home detail-page">
@@ -13,6 +13,7 @@
 <a class="site-name" href="index.html">資格試験ドットコム</a>
 <nav aria-label="メインメニュー" class="main-menu">
 <a href="index.html#find">資格を探す</a>
+<a href="compare.html">候補を比較</a>
 <a href="progress.html">マイ取得状況</a>
 </nav>
 </header>
@@ -32,10 +33,13 @@
 <span>IT・情報</span><span>国家試験</span><span>CBT（パソコン受験）</span><span>2026年度前期</span>
 </div>
 </div>
-<div class="collection-action">
+<div class="collection-action"><a class="exam-entry" href="https://www.ipa.go.jp/shiken/mousikomi/moushikomi.html" target="_blank" rel="noopener noreferrer">公式の受験案内</a>
+<button id="candidate-button" type="button" aria-pressed="false">候補に保存</button>
 <button aria-pressed="false" class="collection-button" id="acquisition-button" type="button"><span aria-hidden="true">＋</span> 取得済みに追加</button>
 </div>
 </section>
+<section class="practical-use" aria-label="学んだことが役立つ場面"><h2>学んだことが役立つ場面</h2><p>企業の課題に対して、ITへの投資で何を改善し、どのように効果を確かめるかを考える場面に役立ちます。</p></section>
+
 <!-- 重要なお知らせ -->
 <!-- ページ内メニュー -->
 <nav aria-label="ページ内メニュー" class="page-index">
@@ -59,7 +63,6 @@
 <article class="summary-item"><span>実施時期</span><strong>前期</strong><small>2026年度・CBT方式</small></article>
 </div>
 </section>
-
 <section class="content-section study-guide" id="study-guide"><div class="section-heading"><p class="section-number">02</p><h2>学習・受験のポイント</h2></div><div class="study-guide-grid"><article class="study-guide-card"><h3>試験で押さえること</h3><p>経営目標とIT投資を結びつけ、投資判断・実行計画・効果測定を一貫して説明できるかが重要です。</p></article><article class="study-guide-card"><h3>学習・受験時の注意</h3><p>技術導入そのものを目的とせず、経営課題をどう解決したかという観点で事例を整理しましょう。</p></article></div></section>
 <!-- 03 試験の基本情報 -->
 <section class="content-section" id="basic-information">
@@ -71,8 +74,8 @@
 <tr><th scope="row">資格の種類</th><td>国家試験（高度情報処理技術者試験）</td></tr>
 <tr><th scope="row">受験資格</th><td>制限なし</td></tr>
 <tr><th scope="row">試験日時</th><td>2026年度は前期の指定期間にCBT方式で実施。試験日の詳細はIPAの公式案内をご確認ください。</td></tr>
-<tr><th scope="row">受験料</th><td>7,500円（税込）</td></tr>
-<tr><th scope="row">申込方法</th><td>IPAが案内する申込ページから、受付期間中に会場と受験日時を選択して申し込みます。</td></tr>
+<tr><th scope="row">受験料</th><td>7,500円（税込）。 <small class="info-verified">（2026年11月21日確認：<a href="https://www.ipa.go.jp/shiken/mousikomi/schedule.html" target="_blank" rel="noopener noreferrer">公式案内</a>）</small></td></tr>
+<tr><th scope="row">申込方法</th><td>IPAが案内する申込ページから、受付期間中に会場と受験日時を選択して申し込みます。</td></tr><tr><th scope="row">申込状況</th><td>2026年度前期の申込みは終了しました。次回の申込期間は公式サイトで確認してください。 <small class="info-verified">（2026年11月21日確認：<a href="https://www.ipa.go.jp/shiken/mousikomi/moushikomi.html" rel="noopener noreferrer" target="_blank">公式案内</a>）</small></td></tr>
 <tr><th scope="row">試験方式</th><td>CBT方式。科目A-1・A-2と科目B-1・B-2を実施。条件を満たす場合はA-1が免除されます。</td></tr>
 <tr><th scope="row">試験時間</th><td>300分（科目A-1：50分、A-2：40分、B-1：90分、B-2：120分。免除なしの場合）</td></tr>
 <tr><th scope="row">出題数</th><td>科目A-1：30問中30問、A-2：25問中25問、B-1：3問中2問、B-2：2問中1問を解答します。</td></tr>
@@ -84,47 +87,46 @@
 </section>
 <!-- 04 合格率 -->
 <section class="content-section" id="pass-rate">
-    <div class="section-heading"><p class="section-number">04</p><h2>合格率と受験者数</h2></div>
-    <div class="rate-board">
-      <div class="rate-board-heading"><span class="rate-board-heading-title">公表されている合格率データ</span><span class="rate-board-heading-note">※対象期間・試験方式を確認</span></div>
-      <div class="rate-board-grid"><article class="rate-board-card">
-      <div class="rate-board-kpi">
-        <span class="rate-board-category">春期試験</span>
-        <strong class="rate-board-value">15.0%</strong>
-        <span class="rate-board-caption">合格率</span>
-      </div>
-      <div class="rate-board-facts">
-        <div class="rate-board-counts"><div class="rate-board-stat"><span>受験者数</span><strong>5,586<small>人</small></strong></div><div class="rate-board-stat"><span>合格者数</span><strong>836<small>人</small></strong></div></div>
-        <div class="rate-board-meter" role="img" aria-label="春期試験の合格率 15.0%"><span style="width:15.0%"></span></div>
-        <span class="rate-board-meter-caption">受験者に占める合格者の割合</span>
-      </div>
-    </article></div>
-      <div class="rate-board-meta">
-       <p><strong>集計対象：</strong>IPA・ITストラテジスト試験の公表値（2025年度春期）。</p>
-       <p><strong>出典：</strong><a href="https://www.ipa.go.jp/news/2025/shiken_20250703.html" rel="noopener noreferrer" target="_blank">IPA・ITストラテジスト試験 公表資料</a> <span class="rate-board-checked">（確認日：2026年11月21日）</span></p>
-    </div>
-    </div>
-    
-    </section>
+<div class="section-heading"><p class="section-number">04</p><h2>合格率と受験者数</h2></div>
+<div class="rate-board">
+<div class="rate-board-heading"><span class="rate-board-heading-title">公表されている合格率データ</span><span class="rate-board-heading-note">※対象期間・試験方式を確認</span></div>
+<div class="rate-board-grid"><article class="rate-board-card">
+<div class="rate-board-kpi">
+<span class="rate-board-category">春期試験</span>
+<strong class="rate-board-value">15.0%</strong>
+<span class="rate-board-caption">合格率</span>
+</div>
+<div class="rate-board-facts">
+<div class="rate-board-counts"><div class="rate-board-stat"><span>受験者数</span><strong>5,586<small>人</small></strong></div><div class="rate-board-stat"><span>合格者数</span><strong>836<small>人</small></strong></div></div>
+<div aria-label="春期試験の合格率 15.0%" class="rate-board-meter" role="img"><span style="width:15.0%"></span></div>
+<span class="rate-board-meter-caption">受験者に占める合格者の割合</span>
+</div>
+</article></div>
+<div class="rate-board-meta">
+<p><strong>集計対象：</strong>IPA・ITストラテジスト試験の公表値（2025年度春期）。</p>
+<p><strong>出典：</strong><a href="https://www.ipa.go.jp/news/2025/shiken_20250703.html" rel="noopener noreferrer" target="_blank">IPA・ITストラテジスト試験 公表資料</a> <span class="rate-board-checked">（確認日：2026年11月21日）</span></p>
+</div>
+</div>
+</section>
 <!-- 05 公式リンク -->
 <section class="content-section" id="official-links">
 <div class="section-heading"><p class="section-number">05</p><h2>公式サイト・学習資料</h2></div>
 <div class="official-link-grid">
-<a class="official-link-card" href="https://www.ipa.go.jp/shiken/kubun/st.html" rel="noopener noreferrer" target="_blank"><span>公式サイト</span><strong>ITストラテジスト試験公式サイト</strong><small>公式サイトを開く ↗</small></a>
-<a class="official-link-card" href="https://www.ipa.go.jp/shiken/mousikomi/moushikomi.html" rel="noopener noreferrer" target="_blank"><span>受験申込み</span><strong>受験申込案内</strong><small>公式サイトを開く ↗</small></a>
-<a class="official-link-card" href="https://www.ipa.go.jp/shiken/mondai-kaiotu/index.html" rel="noopener noreferrer" target="_blank"><span>公開問題・過去問題</span><strong>公開問題・過去問題</strong><small>公式サイトを開く ↗</small></a>
+<a class="official-link-card" href="https://www.ipa.go.jp/shiken/kubun/st.html" rel="noopener noreferrer" target="_blank"><span>公式サイト</span><strong>ITストラテジスト試験公式サイト</strong><small>公式ページを開く ↗</small></a>
+<a class="official-link-card" href="https://www.ipa.go.jp/shiken/mousikomi/moushikomi.html" rel="noopener noreferrer" target="_blank"><span>受験申込</span><strong>受験申込案内</strong><small>公式ページを開く ↗</small></a>
+<a class="official-link-card" href="https://www.ipa.go.jp/shiken/mondai-kaiotu/index.html" rel="noopener noreferrer" target="_blank"><span>公開問題・過去問題</span><strong>公開問題・過去問題</strong><small>公式ページを開く ↗</small></a>
 </div>
 </section>
 <!-- 情報源 -->
 <aside class="source-note" id="sources">
 <p><strong>情報源：</strong><a href="https://www.ipa.go.jp/shiken/kubun/st.html" rel="noopener noreferrer" target="_blank">IPA ITストラテジスト試験</a> ／ <a href="https://www.ipa.go.jp/shiken/mousikomi/moushikomi.html" rel="noopener noreferrer" target="_blank">IPA 受験案内</a> ／ <a href="https://www.ipa.go.jp/shiken/reports/toukei.html" rel="noopener noreferrer" target="_blank">IPA 試験統計</a></p>
-<p>基本情報の確認日：2026年10月26日（統計は各項目の出典・対象期間を参照）</p>
-
+<p>基本情報の初回確認日：2026年10月26日（統計は各項目の出典・対象期間を参照）</p>
 </aside>
 <p class="back-link"><a href="it.html">← IT・情報の資格一覧に戻る</a></p>
 </main>
-<script src="sikakucard.js?v=4"></script>
-<script src="sikakusyousai.js?v=3"></script>
-<script src="acquisition.js?v=1"></script>
+<script src="sikakucard.js?v=e66bac9ded"></script>
+<script src="sikakusyousai.js?v=82338b2333"></script>
+<script src="acquisition.js?v=3485a822eb"></script>
+<script src="candidates.js?v=6068d8ad23"></script>
 </body>
 </html>

@@ -60,5 +60,7 @@
     }
   });
 
+  window.addEventListener("storage", updateButton);
+  window.addEventListener("pageshow", updateButton);
   updateButton();
 })();

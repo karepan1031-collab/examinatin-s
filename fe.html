@@ -5,8 +5,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<link href="style.css?v=11" rel="stylesheet"/>
-<link href="detail.css?v=3" rel="stylesheet"/>
+<link href="style.css?v=4069a8fed5" rel="stylesheet"/>
+<link href="detail.css?v=cb5a029152" rel="stylesheet"/>
 <title>基本情報技術者試験｜資格試験ドットコム</title>
 </head>
 <body class="home detail-page">
@@ -14,6 +14,7 @@
 <a class="site-name" href="index.html">資格試験ドットコム</a>
 <nav aria-label="メインメニュー" class="main-menu">
 <a href="index.html#find">資格を探す</a>
+<a href="compare.html">候補を比較</a>
 <a href="progress.html">マイ取得状況</a>
 </nav>
 </header>
@@ -31,16 +32,15 @@
 <p class="qualification-lead" id="qualification-description">ITエンジニアに必要な基礎知識や技能を問う国家試験です。プログラミングやアルゴリズム、情報セキュリティなどが出題されます。</p>
 <div aria-label="資格の特徴" class="qualification-tags" id="qualification-tags"></div>
 </div>
-<div class="collection-action">
+<div class="collection-action"><a class="exam-entry" href="https://www.ipa.go.jp/shiken/mousikomi/cbt_sg_fe.html" target="_blank" rel="noopener noreferrer">公式の受験案内</a>
+<button id="candidate-button" type="button" aria-pressed="false">候補に保存</button>
 <button aria-pressed="false" class="collection-button" id="acquisition-button" type="button"><span aria-hidden="true">＋</span> 取得済みに追加</button>
 </div>
 </section>
+<section class="practical-use" aria-label="学んだことが役立つ場面"><h2>学んだことが役立つ場面</h2><p>プログラムの処理を手順に分けたり、データを効率よく扱う方法を考えたりする、システム開発の基礎に役立ちます。</p></section>
+<section aria-label="試験・申込に関するお知らせ" class="exam-alert"><strong>試験の一時休止について</strong><p>ITパスポート・基本情報・情報セキュリティマネジメントの3試験は、2026年12月28日から一時休止し、2027年1月下旬に再開予定です。 <a href="https://www.ipa.go.jp/shiken/2026/cbt-202701-yotei.html" rel="noopener noreferrer" target="_blank">公式案内を確認</a></p> <small>2026年11月21日時点の公式発表。新しい日程は主催団体で確認してください。</small></section>
 <!-- お知らせ -->
-<section aria-labelledby="notice-title" class="exam-notice">
-<h2 id="notice-title">重要なお知らせ</h2>
-<p>基本情報技術者試験は、システム更新のため2026年12月28日以降に試験の一時休止が予定されています。2027年以降の日程はIPAの最新情報をご確認ください。</p>
-<a href="https://www.ipa.go.jp/shiken/2026/cbt-202605-jisshi.html" rel="noopener noreferrer" target="_blank">IPAの試験休止に関するお知らせ ↗</a>
-</section>
+
 <!-- ページ内メニュー -->
 <nav aria-label="ページ内メニュー" class="page-index">
 <p>このページの内容</p>
@@ -63,7 +63,7 @@
 <article class="summary-item"><span>公表合格率</span><strong>38.3%</strong><small>2025年度</small></article>
 <article class="summary-item"><span>受験資格</span><strong>制限なし</strong><small>年齢・学歴・実務経験を問わない</small></article>
 <article class="summary-item"><span>受験料</span><strong>7,500円</strong><small>消費税込み</small></article>
-<article class="summary-item"><span>実施時期</span><strong>通年</strong></article>
+<article class="summary-item"><span>実施時期</span><strong>通年（休止あり）</strong><small>2026年12月28日から一時休止。2027年1月下旬再開予定</small></article>
 </div>
 </section>
 <section class="content-section study-guide" id="study-guide"><div class="section-heading"><p class="section-number">02</p><h2>学習・受験のポイント</h2></div><div class="study-guide-grid"><article class="study-guide-card"><h3>試験で押さえること</h3><p>科目Aは知識の幅、科目Bはアルゴリズム・プログラミングと情報セキュリティの読解が中心。別々に演習量を確保するのがポイントです。</p></article><article class="study-guide-card"><h3>学習・受験時の注意</h3><p>科目Bでは処理の流れを頭の中だけで追わず、変数の値や分岐条件を書き出して確認すると取り違えを減らせます。</p></article></div></section>
@@ -80,9 +80,9 @@
 <tr><th scope="row">実施団体</th><td>独立行政法人 情報処理推進機構（IPA）</td></tr>
 <tr><th scope="row">資格の種類</th><td>国家試験</td></tr>
 <tr><th scope="row">受験資格</th><td>制限はありません。</td></tr>
-<tr><th scope="row">試験日時</th><td>通常は通年実施で、会場の空きから日時を選びます。ただし2026年12月28日以降は一時休止予定です。</td></tr>
-<tr><th scope="row">受験料</th><td>7,500円（税込）</td></tr>
-<tr><th scope="row">申込方法</th><td>公式申込サイトで受験者情報を登録し、会場と日時を選択して申し込みます。</td></tr>
+<tr><th scope="row">試験日時</th><td>通常は会場の空き状況から選択。2026年12月28日から一時休止、2027年1月下旬に再開予定です。 <small class="info-verified">（2026年11月21日確認：<a href="https://www.ipa.go.jp/shiken/2026/cbt-202701-yotei.html" rel="noopener noreferrer" target="_blank">公式案内</a>）</small></td></tr>
+<tr><th scope="row">受験料</th><td>7,500円（税込）。 <small class="info-verified">（2026年11月21日確認：<a href="https://www.ipa.go.jp/shiken/mousikomi/schedule.html" target="_blank" rel="noopener noreferrer">公式案内</a>）</small></td></tr>
+<tr><th scope="row">申込方法</th><td>公式申込サイトで受験者情報を登録し、会場と日時を選択して申し込みます。</td></tr><tr><th scope="row">申込状況</th><td>休止期間の受験日は選択できません。申込可能な日付は公式CBT申込案内で確認してください。 <small class="info-verified">（2026年11月21日確認：<a href="https://www.ipa.go.jp/shiken/2026/cbt-202701-yotei.html" rel="noopener noreferrer" target="_blank">公式案内</a>）</small></td></tr>
 <tr><th scope="row">試験方式</th><td>CBT方式。試験会場のパソコンで科目Aと科目Bを受験します。</td></tr>
 <tr><th scope="row">試験時間</th><td>科目A：90分、科目B：100分（合計190分）</td></tr>
 <tr><th scope="row">出題数</th><td>科目A：60問、科目B：20問（合計80問）</td></tr>
@@ -112,7 +112,7 @@
 </article></div>
 <div class="rate-board-meta">
 <p><strong>集計対象：</strong>IPA・基本情報技術者試験の公表値（2025年度）。</p>
-<p><strong>出典：</strong><a href="https://www.ipa.go.jp/shiken/reports/toukei_all.html" rel="noopener noreferrer" target="_blank">IPA・基本情報技術者試験 公表資料</a> <span class="rate-board-checked">（確認日：2026年11月21日）</span></p>
+<p><strong>出典：</strong><a href="https://www.ipa.go.jp/shiken/reports/hjuojm000000ll0f-att/suii_hyo.pdf" rel="noopener noreferrer" target="_blank">IPA・基本情報技術者試験 公表資料</a> <span class="rate-board-checked">（確認日：2026年11月21日）</span></p>
 </div>
 </div>
 <div class="rate-history rate-history-featured">
@@ -144,29 +144,30 @@
 <a class="official-link-card" href="https://www.ipa.go.jp/shiken/kubun/fe.html" rel="noopener noreferrer" target="_blank">
 <span>公式サイト</span>
 <strong>基本情報技術者試験公式サイト</strong>
-<small>公式サイトを開く ↗</small>
+<small>公式ページを開く ↗</small>
 </a>
 <a class="official-link-card" href="https://www.ipa.go.jp/shiken/mousikomi/cbt_sg_fe.html" rel="noopener noreferrer" target="_blank">
-<span>受験申込み</span>
+<span>受験申込</span>
 <strong>受験申込案内</strong>
-<small>公式サイトを開く ↗</small>
+<small>公式ページを開く ↗</small>
 </a>
 <a class="official-link-card" href="https://www.ipa.go.jp/shiken/mondai-kaiotu/sg_fe/koukai/index.html" rel="noopener noreferrer" target="_blank">
 <span>公開問題</span>
 <strong>公開問題・過去問題</strong>
-<small>公式サイトを開く ↗</small>
+<small>公式ページを開く ↗</small>
 </a>
 </div>
 </section>
 <!-- 情報源 -->
 <aside class="source-note" id="sources">
 <p><strong>情報源：</strong><a href="https://www.ipa.go.jp/shiken/" rel="noopener noreferrer" target="_blank">情報処理推進機構（IPA）</a> ／ <a href="https://www.ipa.go.jp/shiken/reports/toukei.html" rel="noopener noreferrer" target="_blank">IPAの試験統計</a></p>
-<p>基本情報の確認日：2026年10月26日（統計は各項目の出典・対象期間を参照）</p>
+<p>基本情報の初回確認日：2026年10月26日（統計は各項目の出典・対象期間を参照）</p>
 </aside>
 <p class="back-link"><a href="it.html">← IT・情報の資格一覧に戻る</a></p>
 </main>
-<script src="sikakucard.js?v=4"></script>
-<script src="sikakusyousai.js?v=3"></script>
-<script src="acquisition.js?v=1"></script>
+<script src="sikakucard.js?v=e66bac9ded"></script>
+<script src="sikakusyousai.js?v=82338b2333"></script>
+<script src="acquisition.js?v=3485a822eb"></script>
+<script src="candidates.js?v=6068d8ad23"></script>
 </body>
 </html>

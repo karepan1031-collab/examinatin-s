@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- サイト共通CSS -->
-  <link rel="stylesheet" href="style.css?v=13">
+  <link rel="stylesheet" href="style.css?v=4069a8fed5">
 
   <title>資格試験ドットコム</title>
 </head>
@@ -21,7 +21,8 @@
 
     <nav class="main-menu" aria-label="メインメニュー">
       <a href="#find">資格を探す</a>
-      <a href="progress.html">マイ取得状況</a>
+      <a href="compare.html">候補を比較</a>
+<a href="progress.html">マイ取得状況</a>
     </nav>
   </header>
 
@@ -41,14 +42,14 @@
         method="get"
         class="search-form"
       >
-        <label for="keyword">キーワード検索</label>
+        <label for="keyword">資格名・略称・興味のある分野から検索</label>
 
         <div class="search-input-row">
           <input
             type="search"
             id="keyword"
             name="q"
-            placeholder="資格名を入力"
+            placeholder="例：英検、宅建、FP、事務、英語"
             required
           >
 
@@ -56,7 +57,8 @@
         </div>
       </form>
 
-      <!-- 2つの探し方 -->
+      <nav class="purpose-links" aria-label="興味から探す"><a href="search.html?q=事務">事務の仕事</a><a href="search.html?q=お金">お金・家計</a><a href="search.html?q=英語">英語</a><a href="search.html?q=プログラミング">プログラミング</a><a href="search.html?q=不動産">不動産</a></nav>
+<!-- 2つの探し方 -->
       <div class="top-browse-grid">
 
         <!-- 左：資格一覧 -->
@@ -90,7 +92,7 @@
     
 
 <section class="site-intro daily-intro" style="display:block; margin:32px 0 24px; padding:28px 32px; background-color:#eaf2fd; border-left:5px solid #1766bc;">
-  <h1>手軽に資格を知りたい人へ</h1>
+  <h2>手軽に資格を知りたい人へ</h2>
 </section>
 
     
@@ -136,10 +138,10 @@
   </main>
 
   <!-- 資格データ -->
-  <script src="sikakucard.js"></script>
+  <script src="sikakucard.js?v=e66bac9ded"></script>
 
   <!-- 本日の資格の日替わり表示 -->
-  <script src="inevitable.js"></script>
+  <script src="inevitable.js?v=379321a630"></script>
 
 </body>
 </html>

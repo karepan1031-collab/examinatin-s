@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css?v=11">
+  <link rel="stylesheet" href="style.css?v=4069a8fed5">
   <title>マイ取得状況｜資格試験ドットコム</title>
 
   <style>
@@ -200,7 +200,8 @@
 
     <nav class="main-menu" aria-label="メインメニュー">
       <a href="index.html#find">資格を探す</a>
-      <a href="progress.html" aria-current="page">マイ取得状況</a>
+      <a href="compare.html">候補を比較</a>
+<a href="progress.html" aria-current="page">マイ取得状況</a>
     </nav>
   </header>
 
@@ -261,7 +262,7 @@
 
   </main>
 
-  <script src="sikakucard.js"></script>
+  <script src="sikakucard.js?v=e66bac9ded"></script>
 
   <script>
     (() => {
@@ -471,6 +472,8 @@
         });
       }
 
+      window.addEventListener("storage", render);
+      window.addEventListener("pageshow", render);
       render();
     })();
   </script>
