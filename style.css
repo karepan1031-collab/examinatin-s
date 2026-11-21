@@ -2430,8 +2430,6 @@ body.top-page .site-intro.daily-intro h2 {
 .candidate-table td { min-width:12rem; max-width:22rem; }
 .candidate-table th:first-child { position:sticky; left:0; background:#edf3fa; min-width:5rem; }
 .candidate-table button { display:block; margin-top:.5rem; font-size:.85rem; }
-.purpose-links { display:flex; flex-wrap:wrap; gap:12px; margin:20px 0; }
-.purpose-links a { padding:10px 16px; border:1px solid #b8cce3; border-radius:8px; color:#163e6d; background:#fff; }
 .exam-entry { display:block; padding:14px 20px; background:#17365d; color:#fff; border-radius:8px; text-decoration:none; text-align:center; margin:4px; font-weight:700; }
 #candidate-list { border:1px solid #cbd7e5; border-radius:8px; padding:16px; }
 #candidate-list > div { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px; padding:10px 0; }
