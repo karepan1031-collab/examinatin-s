@@ -40,6 +40,18 @@
   // 最大10件選択（同じ資格は選ばない）
   const selectedQualifications = shuffled.slice(0, 10);
 
+  // 一覧ページと同じルールでタグの色を決める。
+  const tagColorClasses = {
+    'IT・情報': 'tag-genre-it',
+    'ビジネス・会計': 'tag-genre-business',
+    '語学': 'tag-genre-language',
+    '法律・不動産': 'tag-genre-law',
+    '技術・工業': 'tag-genre-industrial',
+    '医療・福祉': 'tag-genre-medical',
+    '旅行・観光': 'tag-genre-travel',
+    'デザイン・色彩': 'tag-genre-design'
+  };
+
   const fragment = document.createDocumentFragment();
 
   selectedQualifications.forEach((qualification) => {
@@ -70,6 +82,8 @@
       (qualification.tags || []).forEach((tag) => {
         const span = document.createElement("span");
         span.textContent = tag;
+        if (tagColorClasses[tag]) span.classList.add(tagColorClasses[tag]);
+        if (tag === '国家資格' || tag === '国家試験') span.classList.add('tag-national');
         tagsContainer.appendChild(span);
       });
     }
@@ -80,6 +94,19 @@
     card.querySelectorAll("[id]").forEach((element) => {
       element.removeAttribute("id");
     });
+
+    // 一覧と同じ受験料の目安を表示する。細かな条件は詳細ページで確認する。
+    if (qualification.feeSummary) {
+      const fee = document.createElement('p');
+      fee.className = 'card-fee';
+      fee.textContent = '受験料 ' + qualification.feeSummary;
+      if (qualification.feeNote) {
+        const note = document.createElement('small');
+        note.textContent = qualification.feeNote;
+        fee.appendChild(note);
+      }
+      card.appendChild(fee);
+    }
 
     fragment.appendChild(card);
   });

@@ -5,11 +5,13 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<link href="style.css?v=e552afddd0" rel="stylesheet"/>
-<link href="detail.css?v=04878531e5" rel="stylesheet"/>
+<link href="style.css?v=1c99882023" rel="stylesheet"/>
+<link href="detail.css?v=e0ca7e60e6" rel="stylesheet"/>
 <title>ITパスポート｜資格試験ドットコム</title>
+  <meta name="description" content="ITパスポートの試験内容・受験資格・受験料・試験時間・申込方法をまとめました。IT・経営・情報セキュリティなどの基礎知識を問う試験です。">
 </head>
 <body class="home detail-page">
+<a class="skip-link" href="#main-content">本文へ移動</a>
 <header class="site-header">
 <a class="site-name" href="index.html">資格試験ドットコム</a>
 <nav aria-label="メインメニュー" class="main-menu">
@@ -18,7 +20,7 @@
 <a href="progress.html">マイ取得状況</a>
 </nav>
 </header>
-<main class="home-content">
+<main id="main-content" class="home-content">
 <nav aria-label="現在位置" class="breadcrumb">
 <a href="index.html">トップ</a><span>›</span>
 <a href="genres.html">ジャンルから探す</a><span>›</span>
@@ -32,19 +34,22 @@
 <p class="qualification-lead" id="qualification-description">IT・経営・情報セキュリティなど、幅広い分野の基礎知識を問う国家試験です。</p>
 <div aria-label="資格の特徴" class="qualification-tags" id="qualification-tags"></div>
 </div>
-<div class="collection-action"><a class="exam-entry" href="https://www.ipa.go.jp/shiken/mousikomi/cbt_ip.html" target="_blank" rel="noopener noreferrer">公式の受験案内</a>
+<div class="collection-action"><a class="exam-entry" href="https://www.ipa.go.jp/shiken/mousikomi/cbt_ip.html" rel="noopener noreferrer" target="_blank">公式の受験案内</a>
 <button aria-pressed="false" class="collection-button" id="acquisition-button" type="button"><span aria-hidden="true">＋</span> 取得済みに追加</button>
-<button id="candidate-button" type="button" aria-pressed="false">候補に保存</button>
+<button aria-pressed="false" id="candidate-button" type="button">候補に保存</button>
+
+<p class="collection-help">取得済みは「<a href="progress.html">マイ取得状況</a>」、候補は「<a href="compare.html">候補を比較</a>」で確認できます。</p>
 </div>
-</section><section aria-label="試験・申込に関するお知らせ" class="exam-alert"><strong>試験の一時休止について</strong><p>ITパスポート・基本情報・情報セキュリティマネジメントの3試験は、2026年12月28日から一時休止し、2027年1月下旬に再開予定です。 <a href="https://www.ipa.go.jp/shiken/2026/cbt-202701-yotei.html" rel="noopener noreferrer" target="_blank">公式案内を確認</a></p> <small>2026年11月21日時点の公式発表。新しい日程は主催団体で確認してください。</small></section>
+</section><section aria-label="試験・申込に関するお知らせ" class="exam-alert"><strong>申込受付と試験の一時休止</strong><p>2026年12月28日から試験を一時休止します。試験再開は2027年1月下旬、再開後の受験申込は2027年1月中旬以降に開始予定です。年内の申込分を再開後の日程へ変更することはできません。 <a href="https://www.ipa.go.jp/shiken/2026/cbt-202701-yotei.html" rel="noopener noreferrer" target="_blank">IPAの公式案内を確認</a></p><small>2026年11月22日確認。実際の受付開始日時や会場の空席は主催者の発表に従ってください。</small></section>
 <!-- お知らせ -->
-<section class="practical-use" aria-label="学んだことが役立つ場面"><h2>学んだことが役立つ場面</h2><p>仕事で扱う情報の守り方や、会社で使うIT・経営の用語を学び、システムの説明を理解する土台を作れます。</p></section>
+<section aria-label="学んだことが役立つ場面" class="practical-use"><h2>学んだことが役立つ場面</h2><p>仕事で扱う情報の守り方や、会社で使うIT・経営の用語を学び、システムの説明を理解する土台を作れます。</p></section>
+<section aria-label="2027年度の試験制度変更予定" class="exam-alert"><strong>2027年度の試験制度変更（予定）</strong><p>2027年度から出題分野の構成などが変更される予定です。試験時間・出題数は現行制度と同じ想定ですが、2027年度以降に受験する方は出題範囲の最新情報を確認してください。 <a href="https://www.ipa.go.jp/shiken/syllabus/henkou/2025/20260331.html" rel="noopener noreferrer" target="_blank">IPAの制度見直し案を確認</a></p><small>2026年11月22日確認。制度変更は検討段階であり、今後変更される可能性があります。</small></section>
 <!-- ページ内メニュー -->
 <nav aria-label="ページ内メニュー" class="page-index">
 <p>このページの内容</p>
 <div class="page-index-links">
 <a href="#summary">ひと目でわかる試験情報</a>
-<a href="#study-guide">学習・受験のポイント</a>
+<a href="#study-guide">学習・受験のポイント</a><a href="#exam-steps">受験までの流れ</a>
 <a href="#basic-information">基本情報</a>
 <a href="#pass-rate">合格率</a>
 <a href="#official-links">公式サイト・学習資料</a>
@@ -61,10 +66,10 @@
 <article class="summary-item"><span>公表合格率</span><strong>48.6%</strong><small>2025年度</small></article>
 <article class="summary-item"><span>受験資格</span><strong>制限なし</strong><small>年齢・学歴・実務経験を問わない</small></article>
 <article class="summary-item"><span>受験料</span><strong>7,500円</strong></article>
-<article class="summary-item"><span>実施時期</span><strong>通年（休止あり）</strong><small>2026年12月28日から一時休止。2027年1月下旬再開予定</small></article>
+<article class="summary-item"><span>実施時期</span><strong>通年（休止あり）</strong><small>12月28日から休止。2027年1月下旬再開・申込は1月中旬以降の予定</small></article>
 </div>
 </section>
-<section class="content-section study-guide" id="study-guide"><div class="section-heading"><p class="section-number">02</p><h2>学習・受験のポイント</h2></div><div class="study-guide-grid"><article class="study-guide-card"><h3>試験で押さえること</h3><p>「ストラテジ・マネジメント・テクノロジ」の3分野を横断して出題されます。IT用語だけでなく、企業活動やプロジェクト管理も学習対象に含めましょう。</p></article><article class="study-guide-card"><h3>学習・受験時の注意</h3><p>過去の公開問題は、出題形式を知るために有効です。分野ごとの弱点を洗い出し、用語の意味を具体例と結びつけて確認すると整理しやすくなります。</p></article></div></section>
+<section class="content-section study-guide" id="study-guide"><div class="section-heading"><p class="section-number">02</p><h2>学習・受験のポイント</h2></div><div class="study-guide-grid"><article class="study-guide-card"><h3>試験で押さえること</h3><p>「ストラテジ・マネジメント・テクノロジ」の3分野を横断して出題されます。IT用語だけでなく、企業活動やプロジェクト管理も学習対象に含めましょう。</p></article><article class="study-guide-card"><h3>学習・受験時の注意</h3><p>過去の公開問題は、出題形式を知るために有効です。分野ごとの弱点を洗い出し、用語の意味を具体例と結びつけて確認すると整理しやすくなります。</p></article></div><div class="study-route"><h3 class="guide-steps-title" id="exam-steps">受験までの流れ</h3><ol class="exam-steps"><li class="exam-step"><span aria-hidden="true" class="step-number">1</span><div class="step-content"><h4>受験できる日を確認する</h4><p>CBT試験の実施・予約受付の最新状況を確認します。休止・再開時期は公式案内を優先してください。</p></div></li><li class="exam-step"><span aria-hidden="true" class="step-number">2</span><div class="step-content"><h4>3分野の公開問題を解く</h4><p>ストラテジ・マネジメント・テクノロジの公開問題を解き、分からなかった用語を分野ごとに整理します。</p></div></li><li class="exam-step"><span aria-hidden="true" class="step-number">3</span><div class="step-content"><h4>会場と日時を選んで申し込む</h4><p>申込可能な期間に希望会場と日時を選び、受験当日に必要な本人確認書類などを確認します。</p></div></li></ol><p class="study-route-note">日程・締切・受験当日の条件は変更されることがあります。最後に<a href="#official-links">公式サイト・受験案内</a>で確認してください。</p></div></section>
 <!-- 03 基本情報 -->
 <section class="content-section" id="basic-information">
 <div class="section-heading">
@@ -77,16 +82,16 @@
 <tr><th scope="row">用途</th><td>IT・経営・情報セキュリティなど、幅広い分野の基礎知識を理解していることを示します。</td></tr>
 <tr><th scope="row">実施団体</th><td>独立行政法人 情報処理推進機構（IPA）</td></tr>
 <tr><th scope="row">資格の種類</th><td>国家試験</td></tr>
-<tr><th scope="row">受験資格</th><td>制限はありません。</td></tr>
-<tr><th scope="row">試験日時</th><td>通常は会場の空き状況から選択。2026年12月28日から一時休止、2027年1月下旬に再開予定です。 <small class="info-verified">（2026年11月21日確認：<a href="https://www.ipa.go.jp/shiken/2026/cbt-202701-yotei.html" rel="noopener noreferrer" target="_blank">公式案内</a>）</small></td></tr>
-<tr><th scope="row">受験料</th><td>7,500円。 <small class="info-verified">（2026年11月21日確認：<a href="https://www.ipa.go.jp/shiken/mousikomi/schedule.html" target="_blank" rel="noopener noreferrer">公式案内</a>）</small></td></tr>
-<tr><th scope="row">申込方法</th><td>公式のCBT試験申込サイトで申し込みます。</td></tr><tr><th scope="row">申込状況</th><td>休止期間の受験日は選択できません。申込可能な日付は公式CBT申込案内で確認してください。 <small class="info-verified">（2026年11月21日確認：<a href="https://www.ipa.go.jp/shiken/2026/cbt-202701-yotei.html" rel="noopener noreferrer" target="_blank">公式案内</a>）</small></td></tr>
-<tr><th scope="row">試験方式</th><td>CBT方式。試験会場のパソコンで解答します。</td></tr>
-<tr><th scope="row">試験時間</th><td>120分</td></tr>
-<tr><th scope="row">出題数</th><td>100問</td></tr>
-<tr><th scope="row">出題形式</th><td>四肢択一式</td></tr>
+<tr><th scope="row">受験資格</th><td>制限なし <small class="info-verified">（2026年11月22日確認：<a href="https://www.ipa.go.jp/shiken/about/merit/merit04.html" rel="noopener noreferrer" target="_blank">IPA・受験できる試験区分</a>）</small></td></tr>
+<tr><th scope="row">試験日時</th><td>試験会場の空き枠から日時を選択（2026年内は12月27日までの開催日）。2026年12月28日から一時休止し、2027年1月下旬に再開予定です。 <small class="info-verified">（2026年11月22日確認：<a href="https://www.ipa.go.jp/shiken/2026/cbt-202701-yotei.html" rel="noopener noreferrer" target="_blank">IPA・2027年1月以降の実施予定</a>）</small></td></tr>
+<tr><th scope="row">受験料</th><td>7,500円。 <small class="info-verified">（2026年11月21日確認：<a href="https://www.ipa.go.jp/shiken/mousikomi/schedule.html" rel="noopener noreferrer" target="_blank">公式案内</a>）</small></td></tr>
+<tr><th scope="row">申込方法</th><td>公式のCBT試験申込サイトで申し込みます。</td></tr><tr><th scope="row">申込状況</th><td>2026年内の試験は12月27日までの実施日について、会場の空き枠を確認してください。再開後（2027年1月下旬予定）の試験の申込受付は2027年1月中旬以降に開始予定です。2026年内の申込を再開後の試験日に変更することはできません。 <small class="info-verified">（2026年11月22日確認：<a href="https://www.ipa.go.jp/shiken/2026/cbt-202701-yotei.html" rel="noopener noreferrer" target="_blank">IPA・2027年1月以降の実施予定</a>）</small></td></tr>
+<tr><th scope="row">試験方式</th><td>CBT方式。試験会場のパソコンで解答します。 <small class="info-verified">（2026年11月22日確認：<a href="https://www.ipa.go.jp/shiken/kubun/ip.html" rel="noopener noreferrer" target="_blank">IPA・ITパスポート試験</a>）</small></td></tr>
+<tr><th scope="row">試験時間</th><td>120分 <small class="info-verified">（2026年11月22日確認：<a href="https://www.ipa.go.jp/shiken/kubun/ip.html" rel="noopener noreferrer" target="_blank">IPA・ITパスポート試験</a>）</small></td></tr>
+<tr><th scope="row">出題数</th><td>100問 <small class="info-verified">（2026年11月22日確認：<a href="https://www.ipa.go.jp/shiken/kubun/ip.html" rel="noopener noreferrer" target="_blank">IPA・ITパスポート試験</a>）</small></td></tr>
+<tr><th scope="row">出題形式</th><td>四肢択一式 <small class="info-verified">（2026年11月22日確認：<a href="https://www.ipa.go.jp/shiken/kubun/ip.html" rel="noopener noreferrer" target="_blank">IPA・ITパスポート試験</a>）</small></td></tr>
 <tr><th scope="row">出題分野</th><td>ストラテジ系、マネジメント系、テクノロジ系。</td></tr>
-<tr><th scope="row">合格基準</th><td>総合評価点が600点以上／1,000点であり、分野別評価点もそれぞれ300点以上／1,000点であること。</td></tr>
+<tr><th scope="row">合格基準</th><td>総合評価点が600点以上／1,000点であり、分野別評価点もそれぞれ300点以上／1,000点であること。 <small class="info-verified">（2026年11月22日確認：<a href="https://www3.jitec.ipa.go.jp/JitesCbt/html/about/range.html" rel="noopener noreferrer" target="_blank">IPA・ITパスポート試験内容</a>）</small></td></tr>
 </tbody>
 </table>
 </div>
@@ -139,19 +144,16 @@
 <a class="official-link-card" href="https://www.ipa.go.jp/shiken/kubun/ip.html" rel="noopener noreferrer" target="_blank">
 <span>公式サイト</span>
 <strong>ITパスポート公式サイト</strong>
-<small>公式ページを開く ↗</small>
-</a>
-<a class="official-link-card" href="https://www.ipa.go.jp/shiken/mousikomi/cbt_ip.html" rel="noopener noreferrer" target="_blank">
-<span>受験申込</span>
-<strong>受験申込案内</strong>
-<small>公式ページを開く ↗</small>
-</a>
-<a class="official-link-card" href="https://www3.jitec.ipa.go.jp/JitesCbt/html/openinfo/questions.html" rel="noopener noreferrer" target="_blank">
-<span>公開問題</span>
-<strong>公開問題・過去問題</strong>
-<small>公式ページを開く ↗</small>
-</a>
-</div>
+<small>主催団体の案内を見る ↗</small>
+</a><a class="official-link-card" href="https://www.ipa.go.jp/shiken/mousikomi/cbt_ip.html" rel="noopener noreferrer" target="_blank">
+<span>受験申込案内</span>
+<strong>ITパスポートのCBT受験申込案内</strong>
+<small>申込方法を確認 ↗</small>
+</a><a class="official-link-card" href="https://www3.jitec.ipa.go.jp/JitesCbt/html/openinfo/questions.html" rel="noopener noreferrer" target="_blank">
+<span>公開問題・過去問題</span>
+<strong>ITパスポートの公開問題と正解</strong>
+<small>問題例・過去問を見る ↗</small>
+</a></div>
 </section>
 <!-- 情報源 -->
 <aside class="source-note" id="sources">
@@ -160,9 +162,10 @@
 </aside>
 <p class="back-link"><a href="it.html">← IT・情報の資格一覧に戻る</a></p>
 </main>
-<script src="sikakucard.js?v=552e6611a8"></script>
-<script src="sikakusyousai.js?v=82338b2333"></script>
-<script src="acquisition.js?v=3485a822eb"></script>
-<script src="candidates.js?v=6068d8ad23"></script>
+<script src="sikakucard.js?v=358d76ddc6"></script>
+<script src="sikakusyousai.js?v=158186b85f"></script>
+<script src="acquisition.js?v=10bb3b2781"></script>
+<script src="candidates.js?v=8727232dca"></script>
 </body>
 </html>
+

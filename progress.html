@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css?v=e552afddd0">
+  <link rel="stylesheet" href="style.css?v=1c99882023">
   <title>マイ取得状況｜資格試験ドットコム</title>
 
   <style>
@@ -191,9 +191,11 @@
       }
     }
   </style>
+  <meta name="description" content="取得した資格を記録し、掲載資格のうち取得済みの件数とジャンル別の取得状況を確認できる資格試験ドットコムの管理ページです。">
 </head>
 
 <body class="home genre-detail-page">
+<a class="skip-link" href="#main-content">本文へ移動</a>
 
   <header class="site-header">
     <a class="site-name" href="index.html">資格試験ドットコム</a>
@@ -205,7 +207,7 @@
     </nav>
   </header>
 
-  <main class="home-content">
+  <main id="main-content" class="home-content">
 
     <nav class="genre-breadcrumb" aria-label="現在位置">
       <a href="index.html">トップ</a>
@@ -262,7 +264,7 @@
 
   </main>
 
-  <script src="sikakucard.js?v=552e6611a8"></script>
+  <script src="sikakucard.js?v=358d76ddc6"></script>
 
   <script>
     (() => {
@@ -293,7 +295,12 @@
       function getAcquired() {
         try {
           const saved = JSON.parse(localStorage.getItem(storageKey) || "[]");
-          return Array.isArray(saved) ? saved : [];
+          // 過去の保存データに重複・掲載外URLが混ざっても集計がずれないようにする。
+          // 保存時も既存のキーとURL配列の形式を維持する。
+          return Array.isArray(saved)
+            ? [...new Set(saved)].filter((url) =>
+                typeof url === "string" && qualifications.some((item) => item.url === url))
+            : [];
         } catch (error) {
           return [];
         }

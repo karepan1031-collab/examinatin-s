@@ -1995,21 +1995,27 @@ body.detail-page {
   line-height: 1.5;
 }
 
-/* ジャンル：IT・情報 */
-.top-page .top-daily-card .card-tags
-span:first-child {
-  background-color: #dcecff;
-  border-color: #9fc5f5;
-  color: #1455a0;
-}
+/* 日替わり資格・詳細ページも、ジャンル名でタグ色を決める。 */
+.top-page .top-daily-card .card-tags .tag-genre-it,
+.detail-page .qualification-tags .tag-genre-it { color:#1455a0; background:#dcecff; border-color:#9fc5f5; }
+.top-page .top-daily-card .card-tags .tag-genre-business,
+.detail-page .qualification-tags .tag-genre-business { color:#925000; background:#fff0d9; border-color:#f2c58b; }
+.top-page .top-daily-card .card-tags .tag-genre-language,
+.detail-page .qualification-tags .tag-genre-language { color:#713a9c; background:#f0e4fc; border-color:#d3b2ed; }
+.top-page .top-daily-card .card-tags .tag-genre-law,
+.detail-page .qualification-tags .tag-genre-law { color:#8c3650; background:#f7e9ed; border-color:#e3bfca; }
+.top-page .top-daily-card .card-tags .tag-genre-industrial,
+.detail-page .qualification-tags .tag-genre-industrial { color:#245d72; background:#e6f0f3; border-color:#adcbd5; }
+.top-page .top-daily-card .card-tags .tag-genre-medical,
+.detail-page .qualification-tags .tag-genre-medical { color:#176a4b; background:#e0f5eb; border-color:#a6dcc3; }
+.top-page .top-daily-card .card-tags .tag-genre-travel,
+.detail-page .qualification-tags .tag-genre-travel { color:#91600f; background:#fff3df; border-color:#ead2a8; }
+.top-page .top-daily-card .card-tags .tag-genre-design,
+.detail-page .qualification-tags .tag-genre-design { color:#894772; background:#fbe8f6; border-color:#e4bed8; }
+.top-page .top-daily-card .card-tags .tag-national,
+.detail-page .qualification-tags .tag-national { color:#ad2929; background:#fce5e5; border-color:#e9aaaa; }
 
-/* 国家試験・国家資格 */
-.top-page .top-daily-card .card-tags
-span:nth-child(2) {
-  background-color: #fce5e5;
-  border-color: #e9aaaa;
-  color: #ad2929;
-}
+.top-page .daily-description { margin: -10px 0 20px; color:#536476; font-size:15px; line-height:1.7; }
 
 /* ========================================
    画面幅に合わせる
@@ -2451,3 +2457,81 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,#c
 /* 一覧で資格ごとの費用を見比べる */
 .home a.exam-card .card-fee { margin:16px 0 0; padding-top:12px; border-top:1px solid #d4dfed; color:#17365d; font-size:15px; font-weight:700; }
 .home a.exam-card .card-fee small { display:block; margin-top:4px; color:#475569; font-size:12px; font-weight:400; line-height:1.6; }
+
+
+/* 第21回：小さな画面での移動とタップ操作 */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 12px;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #17365d;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 8px;
+  color: #fff;
+  outline: 3px solid #1766bc;
+  outline-offset: 3px;
+}
+.collection-help {
+  margin: 4px 0 0;
+  color: #526375;
+  font-size: 13px;
+  line-height: 1.65;
+}
+.collection-help a { color: #1766bc; text-underline-offset: 2px; }
+.progress-remove, #candidate-list button { min-height: 44px; }
+
+@media (max-width: 600px) {
+  body.home .site-header {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 14px 16px 12px;
+  }
+  body.home .site-header .site-name {
+    display: block;
+    font-size: clamp(20px, 6vw, 24px);
+    line-height: 1.45;
+    letter-spacing: -0.025em;
+  }
+  body.home .site-header .main-menu {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+    width: 100%;
+    font-size: 13px;
+  }
+  body.home .site-header .main-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 48px;
+    padding: 9px 3px;
+    border: 1px solid #d3deeb;
+    border-radius: 7px;
+    background: #f3f7fc;
+    color: #17365d;
+    font-size: 13px;
+    line-height: 1.4;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+  }
+  body.home .site-header .main-menu a[aria-current="page"] {
+    background: #e6f0fd;
+    border-color: #83b0e3;
+  }
+  body.home .site-header .main-menu a:active { background: #d7e9ff; }
+}

@@ -71,8 +71,18 @@
         const cell = row.insertCell();
         cell.append(element('p', compareFacts[url][label]));
         const date = comparisonDates[url][label];
-        const age = (Date.now() - Date.parse(date + 'T00:00:00+09:00')) / 86400000;
-        const note = date === '未確認' ? '受付状況は未確認です。' : '記録上の確認日 ' + date;
+        const isUsage = label === '用途';
+        // 「用途」はサイトの説明文。主催団体による確認日と誤認させない。
+        const age = !isUsage && date !== '未確認'
+          ? (Date.now() - Date.parse(date + 'T00:00:00+09:00')) / 86400000
+          : NaN;
+        const note = isUsage
+          ? '資格の用途は当サイトによる説明です。'
+          : date === '未確認'
+            ? url === 'registered-seller.html' && label === '受験料'
+              ? '都道府県別の具体的な料金は未確認です。'
+              : 'この項目は未確認です。'
+            : '記録上の確認日 ' + date;
         cell.append(element('small', note));
         if (age > 45) cell.append(element('p', '確認から45日以上経過しています。最新情報は詳細ページの公式案内をご確認ください。'));
       }

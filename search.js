@@ -51,7 +51,8 @@ const searchAliases = {
   "eiken-pre2plus.html": ["英検", "英語検定", "英語", "英検準2級プラス", "準2級プラス"],
   "eiken2.html": ["英検", "英語検定", "英語", "英検2級"],
   "ielts-academic.html": ["ielts", "アイエルツ", "英語", "英語留学", "留学"],
-  "jlpt-n2.html": ["jlpt", "日本語", "日本語能力", "日本語検定"],
+  // 「日本語検定」はJLPTとは別の試験なので、検索用の別名に混ぜない。
+  "jlpt-n2.html": ["jlpt", "日本語", "日本語能力", "日本語能力試験"],
   "kanken2.html": ["漢検", "漢字検定", "漢字"],
   "toeic-lr.html": ["toeic", "トーイック", "トイック", "英語", "ビジネス英語"],
   "chintai.html": ["賃管", "賃貸管理士", "賃貸管理", "不動産管理"],
@@ -84,7 +85,10 @@ function matchScore(q, item) {
   if (name === q || aliases.some((alias) => alias === q)) return 4;
   if (name.includes(q) || aliases.some((alias) => alias.includes(q))) return 3;
   if (normalizeText(item.description).includes(q)) return 2;
-  // タグには「国家試験」など全資格共通の属性があるため検索対象にしない。
+  // 興味のある分野の名前で探せるようにする。
+  // 「国家試験」「CBT」など一般的な属性タグは対象外。
+  const categoryName = (item.tags || []).find(tag => genreTagClasses[tag]);
+  if (categoryName && normalizeText(categoryName).includes(q)) return 1;
   return 0;
 }
 

@@ -21,7 +21,12 @@
   function getAcquiredQualifications() {
     try {
       const saved = JSON.parse(localStorage.getItem(storageKey) || "[]");
-      return Array.isArray(saved) ? saved : [];
+      // 以前の保存データに重複や掲載外のURLがあっても、表示と操作を一貫させる。
+      // 保存キーと「URLの配列」という形式は変更しない。
+      return Array.isArray(saved)
+        ? [...new Set(saved)].filter((url) =>
+            typeof url === "string" && qualifications.some((item) => item.url === url))
+        : [];
     } catch (error) {
       return [];
     }

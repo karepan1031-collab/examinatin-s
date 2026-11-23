@@ -4,11 +4,13 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<link href="style.css?v=e552afddd0" rel="stylesheet"/>
-<link href="detail.css?v=04878531e5" rel="stylesheet"/>
+<link href="style.css?v=1c99882023" rel="stylesheet"/>
+<link href="detail.css?v=e0ca7e60e6" rel="stylesheet"/>
 <title>Python 3 エンジニア認定基礎試験｜資格試験ドットコム</title>
+  <meta name="description" content="Python 3 エンジニア認定基礎試験の試験内容・受験資格・受験料・試験時間・申込方法をまとめました。Pythonの文法、データ構造、制御構文などの基礎知識を問う試験です。">
 </head>
 <body class="home detail-page">
+<a class="skip-link" href="#main-content">本文へ移動</a>
 <header class="site-header">
 <a class="site-name" href="index.html">資格試験ドットコム</a>
 <nav aria-label="メインメニュー" class="main-menu">
@@ -17,7 +19,7 @@
 <a href="progress.html">マイ取得状況</a>
 </nav>
 </header>
-<main class="home-content">
+<main id="main-content" class="home-content">
 <nav aria-label="現在位置" class="breadcrumb">
 <a href="index.html">トップ</a><span>›</span>
 <a href="genres.html">ジャンルから探す</a><span>›</span>
@@ -31,19 +33,21 @@
 <p class="qualification-lead" id="qualification-description">Pythonの文法、データ構造、制御構文などの基礎知識を問う試験です。</p>
 <div aria-label="資格の特徴" class="qualification-tags" id="qualification-tags"><span>IT・情報</span><span>民間資格・検定</span></div>
 </div>
-<div class="collection-action"><a class="exam-entry" href="https://cbt.odyssey-com.co.jp/pythonic-exam/python3basic.html" target="_blank" rel="noopener noreferrer">公式の受験案内</a>
+<div class="collection-action"><a class="exam-entry" href="https://cbt.odyssey-com.co.jp/pythonic-exam/python3basic.html" rel="noopener noreferrer" target="_blank">公式の受験案内</a>
 <button aria-pressed="false" class="collection-button" id="acquisition-button" type="button"><span aria-hidden="true">＋</span> 取得済みに追加</button>
-<button id="candidate-button" type="button" aria-pressed="false">候補に保存</button>
+<button aria-pressed="false" id="candidate-button" type="button">候補に保存</button>
+
+<p class="collection-help">取得済みは「<a href="progress.html">マイ取得状況</a>」、候補は「<a href="compare.html">候補を比較</a>」で確認できます。</p>
 </div>
 </section>
 <!-- お知らせ -->
-<section class="practical-use" aria-label="学んだことが役立つ場面"><h2>学んだことが役立つ場面</h2><p>条件分岐・繰り返し・データ構造などを学び、Pythonの短いプログラムの動きを理解する基礎を作れます。</p></section>
+<section aria-label="学んだことが役立つ場面" class="practical-use"><h2>学んだことが役立つ場面</h2><p>条件分岐・繰り返し・データ構造などを学び、Pythonの短いプログラムの動きを理解する基礎を作れます。</p></section>
 <!-- ページ内メニュー -->
 <nav aria-label="ページ内メニュー" class="page-index">
 <p>このページの内容</p>
 <div class="page-index-links">
 <a href="#summary">ひと目でわかる試験情報</a>
-<a href="#study-guide">学習・受験のポイント</a>
+<a href="#study-guide">学習・受験のポイント</a><a href="#exam-steps">受験までの流れ</a>
 <a href="#basic-information">基本情報</a>
 <a href="#official-links">公式サイト・学習資料</a>
 <a href="#sources">情報源</a>
@@ -54,13 +58,13 @@
 <div class="section-heading"><p class="section-number">01</p><h2>ひと目でわかる試験情報</h2></div>
 <div class="summary-grid">
 <article class="summary-item"><span>試験時間</span><strong>60分</strong><small>CBT方式・選択式</small></article>
-<article class="summary-item"><span>受験資格</span><strong>制限なし</strong></article>
+<article class="summary-item"><span>受験資格</span><strong>条件の明記なし</strong><small>制限の有無は未確認。未成年者は保護者の同意が必要</small></article>
 <article class="summary-item"><span>受験料</span><strong>一般 11,000円</strong><small>学割 5,500円</small></article>
 <article class="summary-item"><span>実施時期</span><strong>CBT試験会場の実施日程による</strong></article>
 </div>
 </section>
 <!-- 02 -->
-<section class="content-section study-guide" id="study-guide"><div class="section-heading"><p class="section-number">02</p><h2>学習・受験のポイント</h2></div><div class="study-guide-grid"><article class="study-guide-card"><h3>試験で押さえること</h3><p>Pythonの構文、条件分岐、繰り返し、リストや辞書、関数、例外など、コードの動きを読めるかが中心です。</p></article><article class="study-guide-card"><h3>学習・受験時の注意</h3><p>短いコードを実行して、出力・変数の変化・エラーが起きる条件を確認すると理解が深まります。</p></article></div></section>
+<section class="content-section study-guide" id="study-guide"><div class="section-heading"><p class="section-number">02</p><h2>学習・受験のポイント</h2></div><div class="study-guide-grid"><article class="study-guide-card"><h3>試験で押さえること</h3><p>主教材は「Pythonチュートリアル第4版」です。公式出題内訳では「制御構造ツール」9問、「データ構造」7問、「気楽な入門編」6問が40問中22問を占めます。まず条件分岐・反復・リスト／辞書を実際に動かし、その後に例外・モジュール・標準ライブラリを確認しましょう。</p></article><article class="study-guide-card"><h3>学習・受験時の注意</h3><p>まず短いコードを動かし、次に主催団体が紹介する認定スクールの無料模擬試験で理解度を確かめましょう。模擬試験は認定スクールの作成であり、本試験の過去問題ではありません。受験する前にオデッセイID登録と写真付き本人確認書類の準備も必要です。</p></article></div><div class="study-route"><h3 class="guide-steps-title" id="exam-steps">受験までの流れ</h3><ol class="exam-steps"><li class="exam-step"><span aria-hidden="true" class="step-number">1</span><div class="step-content"><h4>会場と受験条件を確認する</h4><p>試験会場を探し、オデッセイIDを登録します。受験制限の有無は未確認のため、申込先に問い合わせてください。</p></div></li><li class="exam-step"><span aria-hidden="true" class="step-number">2</span><div class="step-content"><h4>Pythonの短いコードを動かす</h4><p>条件分岐・繰り返し・データ構造などを実行して理解し、主催者案内の模擬問題で確認します。</p></div></li><li class="exam-step"><span aria-hidden="true" class="step-number">3</span><div class="step-content"><h4>希望する会場へ申し込む</h4><p>試験日は会場ごとに異なります。未成年者は保護者の同意も準備します。</p></div></li></ol><p class="study-route-note">日程・締切・受験当日の条件は変更されることがあります。最後に<a href="#official-links">公式サイト・受験案内</a>で確認してください。</p></div></section>
 <!-- 03 -->
 <section class="content-section" id="basic-information">
 <div class="section-heading"><p class="section-number">03</p><h2>試験の基本情報</h2></div>
@@ -68,24 +72,22 @@
 <tr><th scope="row">用途</th><td>Pythonの文法、データ構造、制御構文などの基礎知識を問う試験です。</td></tr>
 <tr><th scope="row">実施団体</th><td>Pythonエンジニア育成推進協会</td></tr>
 <tr><th scope="row">資格の種類</th><td>民間認定試験</td></tr>
-<tr><th scope="row">受験資格</th><td>制限なし</td></tr>
+<tr><th scope="row">受験資格</th><td>年齢・学歴等の受験制限の有無は、確認した公式案内に明記されていません（未確認）。未成年者は保護者の同意を得て申し込みます。受験には無料のオデッセイID登録が必要です。 <small class="info-unconfirmed">（2026年11月22日・申込手続きのみ確認：<a href="https://cbt.odyssey-com.co.jp/pythonic-exam/python3basic.html" rel="noopener noreferrer" target="_blank">試験運営団体・受験の流れ</a>。受験資格の制限は未確認）</small></td></tr>
 <tr><th scope="row">試験日時</th><td>CBT試験会場の実施日程による</td></tr>
-<tr><th scope="row">受験料</th><td>11,000円、学割5,500円 <small class="info-verified">（2026年11月21日確認：<a href="https://cbt.odyssey-com.co.jp/pythonic-exam/python3basic.html" target="_blank" rel="noopener noreferrer">公式案内</a>）</small></td></tr>
-<tr><th scope="row">試験方式</th><td>CBT方式・選択式</td></tr>
-<tr><th scope="row">試験時間</th><td>60分</td></tr>
+<tr><th scope="row">受験料</th><td>一般11,000円／学割5,500円。学割は対象となる学生・教員などが試験当日に学生証・教員証等を提示する場合に適用されます。2026年9月14日から職業訓練受講者も対象です（詳細は運営団体へ確認）。 <small class="info-verified">（2026年11月22日確認：<a href="https://www.pythonic-exam.com/exam/basic" rel="noopener noreferrer" target="_blank">主催団体・受験料と学割</a>）</small></td></tr>
+<tr><th scope="row">試験方式</th><td>試験会場のパソコンで受けるCBT方式。全40問が選択式です。 <small class="info-verified">（2026年11月22日確認：<a href="https://www.pythonic-exam.com/exam/basic" rel="noopener noreferrer" target="_blank">主催団体・試験概要</a>）</small></td></tr>
+<tr><th scope="row">試験時間</th><td>60分。 <small class="info-verified">（2026年11月22日確認：<a href="https://www.pythonic-exam.com/exam/basic" rel="noopener noreferrer" target="_blank">主催団体・試験概要</a>）</small></td></tr>
 <tr><th scope="row">出題数</th><td>40問</td></tr>
 <tr><th scope="row">出題分野</th><td>Pythonの基本文法、条件分岐、繰り返し、データ構造、関数、例外、モジュールなど。</td></tr>
-<tr><th scope="row">合格基準</th><td>正答率70%以上。</td></tr>
-<tr><th scope="row">申込状況</th><td>会場を検索し、希望する会場へ直接申し込みます。試験実施日・申込方法・空席は会場ごとに確認してください。 <small class="info-verified">（2026年11月21日確認：<a href="https://cbt.odyssey-com.co.jp/pythonic-exam/python3basic.html" target="_blank" rel="noopener noreferrer">公式案内</a>）</small></td></tr></tbody></table></div>
+<tr><th scope="row">合格基準</th><td>正答率70%以上（40問中28問以上が目安）。 <small class="info-verified">（2026年11月22日確認：<a href="https://www.pythonic-exam.com/exam/basic" rel="noopener noreferrer" target="_blank">主催団体・試験概要</a>）</small></td></tr><tr><th scope="row">受験前の準備</th><td>受験会場を選んで申し込み、無料のオデッセイIDを事前登録します。試験当日は写真付き本人確認書類などが必要です。同一科目の3回目以降の受験には、直前の受験から168時間以上空ける規定があります。 <small class="info-verified">（2026年11月22日確認：<a href="https://cbt.odyssey-com.co.jp/pythonic-exam/python3basic.html" rel="noopener noreferrer" target="_blank">試験運営団体・受験の流れ</a>）</small></td></tr>
+<tr><th scope="row">申込状況</th><td>会場を検索し、希望する会場へ直接申し込みます。試験実施日・申込方法・空席は会場ごとに確認してください。 <small class="info-verified">（2026年11月21日確認：<a href="https://cbt.odyssey-com.co.jp/pythonic-exam/python3basic.html" rel="noopener noreferrer" target="_blank">公式案内</a>）</small></td></tr></tbody></table></div>
 </section>
 <!-- 04 -->
 <!-- 05 -->
 <section class="content-section" id="official-links">
 <div class="section-heading"><p class="section-number">04</p><h2>公式サイト・学習資料</h2></div>
 <div class="official-link-grid">
-<a class="official-link-card" href="https://pythonic-exam.com/exam/basic" rel="noopener noreferrer" target="_blank"><span>公式サイト</span><strong>Python 3 エンジニア認定基礎試験公式サイト</strong><small>公式ページを開く ↗</small></a>
-<a class="official-link-card" href="https://cbt.odyssey-com.co.jp/pythonic-exam/python3basic.html" rel="noopener noreferrer" target="_blank"><span>受験申込</span><strong>受験申込案内</strong><small>公式ページを開く ↗</small></a>
-</div>
+<a class="official-link-card" href="https://pythonic-exam.com/exam/basic" rel="noopener noreferrer" target="_blank"><span>公式サイト</span><strong>Python 3 エンジニア認定基礎試験公式サイト</strong><small>主催団体の案内を見る ↗</small></a><a class="official-link-card" href="https://cbt.odyssey-com.co.jp/pythonic-exam/python3basic.html" rel="noopener noreferrer" target="_blank"><span>受験申込案内</span><strong>Python基礎試験の会場・受験案内</strong><small>申込方法を確認 ↗</small></a><a class="official-link-card" href="https://platjam.jmooc.jp/230410681" rel="noopener noreferrer" target="_blank"><span>学習資料</span><strong>主催者が案内する無料補助教材</strong><small>出題範囲の約6割を扱う動画教材 ↗</small></a><a class="official-link-card" href="https://study.prime-strategy.co.jp/" rel="noopener noreferrer" target="_blank"><span>学習資料</span><strong>認定スクールの無料模擬試験（外部サイト）</strong><small>主催団体が紹介する無料模擬試験を解く ↗</small></a><a class="official-link-card" href="https://diver.diveintocode.jp/python_basic/lp" rel="noopener noreferrer" target="_blank"><span>学習資料</span><strong>別の認定スクールによる無料模擬試験</strong><small>公式試験問題ではなく学校独自の練習問題 ↗</small></a></div>
 </section>
 <!-- 情報源 -->
 <aside class="source-note" id="sources">
@@ -95,9 +97,10 @@
 <p class="back-link"><a href="it.html">← IT・情報の資格一覧に戻る</a></p>
 </main>
 <!-- カードデータに登録後は表示内容も共通データに同期 -->
-<script src="sikakucard.js?v=552e6611a8"></script>
-<script src="sikakusyousai.js?v=82338b2333"></script>
-<script src="acquisition.js?v=3485a822eb"></script>
-<script src="candidates.js?v=6068d8ad23"></script>
+<script src="sikakucard.js?v=358d76ddc6"></script>
+<script src="sikakusyousai.js?v=158186b85f"></script>
+<script src="acquisition.js?v=10bb3b2781"></script>
+<script src="candidates.js?v=8727232dca"></script>
 </body>
 </html>
+

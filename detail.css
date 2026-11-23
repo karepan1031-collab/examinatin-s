@@ -980,3 +980,74 @@ body.detail-page {
 .detail-page .fee-list { margin: 0; padding-left: 1.25em; }
 .detail-page .fee-list li + li { margin-top: .65em; }
 .detail-page .fee-summary strong { font-size: clamp(22px, 2.1vw, 27px); line-height: 1.5; }
+
+/* 一部のみ公式確認できた項目も、他の出典メモと同じ組版にする */
+.detail-page .qualification-details .info-unconfirmed { display: inline; color: #526b7f; font-size: 12px; line-height: 1.8; }
+.detail-page .qualification-details .info-unconfirmed a { color: #07599c; text-underline-offset: 2px; }
+
+/* 2026-11-23: 資格別の受験フロー（知識・申し込み・登録を区別） */
+.detail-page .study-route {
+  margin-top: 28px;
+  padding: 22px 25px 15px;
+  background: #fff;
+  border: 1px solid #d5dee5;
+  border-radius: 8px;
+}
+.detail-page .guide-steps-title {
+  margin: 0 0 20px;
+  font-size: clamp(20px, 3vw, 25px);
+  line-height: 1.4;
+  color: #17365d;
+  scroll-margin-top: 16px;
+}
+.detail-page .study-route .exam-steps { max-width: none; }
+.detail-page .study-route .exam-step {
+  grid-template-columns: 36px minmax(0, 1fr);
+  gap: 15px;
+  padding-bottom: 15px;
+}
+.detail-page .study-route .exam-step:not(:last-child)::before { top: 34px; left: 17px; }
+.detail-page .study-route .step-number {
+  width: 36px;
+  height: 36px;
+  background: #1766bc;
+  font-size: 16px;
+}
+.detail-page .study-route .step-content { padding: 3px 0 14px; }
+.detail-page .study-route .step-content h4 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  line-height: 1.45;
+  color: #17365d;
+}
+.detail-page .study-route .step-content p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.75;
+  color: #3b4e59;
+}
+.detail-page .study-route-note {
+  margin: 0;
+  padding-top: 10px;
+  border-top: 1px solid #d5dee5;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #3b4e59;
+}
+.detail-page .study-route-note a { color: #10568d; font-weight: 700; }
+@media (max-width: 500px) {
+  .detail-page .study-route { padding: 19px 16px 14px; }
+  .detail-page .study-route .step-content h4 { font-size: 17px; }
+  .detail-page .study-route .step-content p { font-size: 15px; }
+}
+
+
+/* 第21回：ページ内の移動先も指で選びやすくする */
+@media (max-width: 600px) {
+  .detail-page .page-index-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    box-sizing: border-box;
+  }
+}

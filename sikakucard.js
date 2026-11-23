@@ -484,7 +484,7 @@ const qualifications = [
       "法律・不動産",
       "国家試験"
     ],
-    "feeSummary": "受験料 12,000円",
+    "feeSummary": "12,000円",
     "feeNote": "Web申込は手数料込み12,400円"
   },
   {
@@ -496,7 +496,7 @@ const qualifications = [
       "法律・不動産",
       "国家試験"
     ],
-    "feeSummary": "受験料 10,400円",
+    "feeSummary": "10,400円",
     "feeNote": "ネット申込は手数料込み10,770円"
   },
   {
@@ -508,7 +508,7 @@ const qualifications = [
       "法律・不動産",
       "国家試験"
     ],
-    "feeSummary": "受験料 8,900円",
+    "feeSummary": "8,900円",
     "feeNote": "Web申込は手数料込み9,197円"
   },
   {
@@ -532,7 +532,7 @@ const qualifications = [
       "法律・不動産",
       "国家試験"
     ],
-    "feeSummary": "受験料 9,400円",
+    "feeSummary": "9,400円",
     "feeNote": "Web申込は手数料込み9,717円"
   },
   {
@@ -592,7 +592,7 @@ const qualifications = [
       "旅行・観光",
       "国家試験"
     ],
-    "feeSummary": "受験料 8,000円",
+    "feeSummary": "8,000円",
     "feeNote": "システム利用料込み8,660円"
   },
   {
