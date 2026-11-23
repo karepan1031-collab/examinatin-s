@@ -2419,6 +2419,7 @@ body.top-page .site-intro.daily-intro h2 {
 .comparison-presets { margin:28px 0; }
 .comparison-presets h2 { margin:0 0 12px; color:#17365d; font-size:22px; }
 .comparison-presets > p { margin:10px 0 0; color:#475569; font-size:14px; }
+.comparison-presets > .comparison-preset-note { margin:0 0 14px; font-size:15px; line-height:1.8; color:#334155; }
 .comparison-preset-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr)); gap:12px; }
 .comparison-preset-list button { padding:18px; border:1px solid #bdcfe4; border-radius:10px; background:#fff; color:#17365d; font:inherit; text-align:left; cursor:pointer; }
 .comparison-preset-list button:hover { background:#eaf2fd; border-color:#1766bc; }

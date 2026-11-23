@@ -955,18 +955,18 @@ body.detail-page {
 .detail-page .exam-alert {
   margin: 22px 0 6px;
   padding: 18px 22px;
-  border: 1px solid #bad5e9;
-  border-left: 4px solid #1479d1;
+  border: 1px solid #efb6bf;
+  border-left: 5px solid #d4485b;
   border-radius: 10px;
-  background: #f3f9ff;
-  color: #21384b;
+  background: #fff1f2;
+  color: #542c34;
   line-height: 1.75;
 }
-.detail-page .exam-alert strong { display: block; margin-bottom: 6px; font-size: 17px; }
+.detail-page .exam-alert strong { display: block; margin-bottom: 6px; font-size: 17px; color: #8e2638; }
 .detail-page .exam-alert p { margin: 0 0 7px; }
-.detail-page .exam-alert a,
+.detail-page .exam-alert a { color: #9b273a; text-underline-offset: 2px; font-weight: 600; }
 .detail-page .qualification-details .info-verified a { color: #07599c; text-underline-offset: 2px; }
-.detail-page .exam-alert small { display: block; color: #526b7f; font-size: 12px; }
+.detail-page .exam-alert small { display: block; color: #6e4a52; font-size: 12px; }
 .detail-page .qualification-details .info-verified { display: inline; color: #526b7f; font-size: 12px; line-height: 1.8; }
 @media (max-width: 640px) {
   .detail-page .exam-alert { padding: 14px 16px; }
