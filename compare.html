@@ -24,7 +24,7 @@
   <span aria-current="page">資格を比較</span>
 </nav>
 <h1>資格を比較</h1>
-<p>気になる資格を候補に保存し、2〜3件の受験料や受験条件を並べて比較できます。候補はこのブラウザに保存されます。</p>
+<p>気になる資格を比較リストに追加し、2〜3件の受験料や受験条件を並べて比較できます。比較リストはこのブラウザに保存されます。</p>
 <section class="comparison-presets" aria-labelledby="comparison-presets-title">
 <h2 id="comparison-presets-title">比較例から選ぶ</h2>
 <div class="comparison-preset-list">
@@ -32,11 +32,11 @@
 <button type="button" data-compare="takken.html,kanrigyomu.html,chintai.html"><strong>不動産の仕事（3資格）</strong><span>宅建・管理業務主任者・賃貸不動産経営管理士を比較する</span></button>
 </div>
 <p>ここにある2組は比較の例です。</p>
-<p>比較例を選んでも、以前保存した候補は削除されません。</p>
+<p>比較例を選んでも、比較リストに追加済みの資格は削除されません。</p>
 </section>
 <form id="candidate-form"><label for="candidate-select">資格を選ぶ</label>
 <select id="candidate-select" required></select>
-<button>候補に追加</button></form>
+<button>比較リストに追加</button></form>
 <p id="candidate-status" role="status"></p>
 <fieldset id="candidate-list" hidden><legend>比較する資格を2〜3件選ぶ</legend></fieldset>
 <p id="comparison-status" role="status"></p>
@@ -45,6 +45,6 @@
 </main>
 <script src="sikakucard.js?v=358d76ddc6"></script>
 <script src="compare-facts.js?v=dc28bd56ce"></script>
-<script src="candidates.js?v=punct20261123"></script>
+<script src="candidates.js?v=comparelist20261123"></script>
 </body>
 </html>

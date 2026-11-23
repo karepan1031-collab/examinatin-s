@@ -26,7 +26,7 @@
       selected = selected.filter(item => updated.includes(item));
       if (!removing && selected.length < 3) selected.push(url);
     } catch {
-      alert('候補を保存できませんでした。ブラウザの保存設定を確認してください。');
+      alert('比較リストを保存できませんでした。ブラウザの保存設定を確認してください。');
     }
     render();
   }
@@ -102,14 +102,14 @@
     const saved = read();
     if (detailButton) {
       detailButton.setAttribute('aria-pressed', String(saved.includes(page)));
-      detailButton.textContent = saved.includes(page) ? '候補から外す' : '候補に保存';
+      detailButton.textContent = saved.includes(page) ? '比較リストから外す' : '比較リストに追加';
       return;
     }
     selected = selected.filter(url => saved.includes(url));
     const choices = qualifications.filter(q => !saved.includes(q.url));
     select.replaceChildren(new Option('資格を選んでください', ''), ...choices.map(q => new Option(q.name, q.url)));
     form.querySelector('button').disabled = !choices.length;
-    document.getElementById('candidate-status').textContent = saved.length ? '保存した候補 ' + saved.length + '件。比較には最大3件を選べます。' : 'まだ候補がありません。';
+    document.getElementById('candidate-status').textContent = saved.length ? '比較リスト ' + saved.length + '件。比較には最大3件を選べます。' : '比較リストは空です。';
     const list = document.getElementById('candidate-list');
     list.hidden = !saved.length;
     list.replaceChildren(element('legend', '比較する資格を2〜3件選ぶ'));
@@ -127,9 +127,9 @@
         renderComparison();
       });
       label.append(box, document.createTextNode(q.name));
-      const remove = element('button', '候補から外す');
+      const remove = element('button', '比較リストから外す');
       remove.type = 'button';
-      remove.setAttribute('aria-label', q.name + 'を候補から外す');
+      remove.setAttribute('aria-label', q.name + 'を比較リストから外す');
       remove.onclick = () => { toggle(url); select.focus(); };
       row.append(label, remove);
       list.append(row);
@@ -146,7 +146,7 @@
         localStorage.setItem(key, JSON.stringify([...new Set([...read(), ...urls])]));
         selected = urls;
       } catch {
-        alert('候補を保存できませんでした。ブラウザの保存設定を確認してください。');
+        alert('比較リストを保存できませんでした。ブラウザの保存設定を確認してください。');
         return;
       }
       render();
