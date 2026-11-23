@@ -37,6 +37,14 @@
     return node;
   }
 
+  // 比較表だけ、項目末尾や括弧内の不要な句点を整える。
+  // 長い説明の途中の句点は文章の区切りとして残す。
+  function comparisonDisplayText(text) {
+    return String(text)
+      .replace(/。(?=免除なしの場合|科目A群と科目B群は別の実施期間)/g, '、')
+      .replace(/。+$/u, '');
+  }
+
   function renderComparison() {
     output.replaceChildren();
     const status = document.getElementById('comparison-status');
@@ -69,7 +77,7 @@
       for (const row of body.rows) {
         const label = row.cells[0].textContent;
         const cell = row.insertCell();
-        cell.append(element('p', compareFacts[url][label]));
+        cell.append(element('p', comparisonDisplayText(compareFacts[url][label])));
         const date = comparisonDates[url][label];
         const isUsage = label === '用途';
         // 「用途」はサイトの説明文。主催団体による確認日と誤認させない。
@@ -83,8 +91,8 @@
               ? '都道府県別の具体的な料金は未確認です。'
               : 'この項目は未確認です。'
             : '記録上の確認日 ' + date;
-        cell.append(element('small', note));
-        if (age > 45) cell.append(element('p', '確認から45日以上経過しています。最新情報は詳細ページの公式案内をご確認ください。'));
+        cell.append(element('small', comparisonDisplayText(note)));
+        if (age > 45) cell.append(element('p', comparisonDisplayText('確認から45日以上経過しています。最新情報は詳細ページの公式案内をご確認ください。')));
       }
     }
     output.append(table);
