@@ -1,0 +1,68 @@
+/* ヘルプページ専用。既存の資格カードや他ページには影響させない。 */
+.help-content { max-width: 1100px; }
+.help-intro {
+  margin: 18px 0 24px;
+  padding: clamp(24px, 4vw, 42px);
+  background: #eaf2fd;
+  border-left: 5px solid #1766bc;
+  border-radius: 0 12px 12px 0;
+}
+.help-kicker { margin: 0 0 8px; font-size: 14px; font-weight: 700; color: #1766bc; }
+.help-intro h1 { margin: 0 0 12px; font-size: clamp(27px, 4vw, 36px); color: #17365d; line-height: 1.35; }
+.help-intro p:last-child { margin: 0; color: #314c68; font-size: 16px; line-height: 1.85; }
+.help-nav, .help-section { margin: 0 0 24px; padding: 28px; background: #fff; border: 1px solid #d4dfeb; border-radius: 12px; }
+.help-nav h2, .help-section h2 { margin: 0 0 18px; color: #17365d; font-size: 24px; line-height: 1.45; }
+.help-nav-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; }
+.help-nav-grid a {
+  display: flex; align-items: center; justify-content: space-between; min-height: 60px;
+  padding: 15px 16px; background: #f4f8fd; border: 1px solid #d0e0f2; border-radius: 8px;
+  font-weight: 700; text-decoration: none; color: #17365d; line-height: 1.5;
+}
+.help-nav-grid a::after { content: '›'; color: #1766bc; font-size: 23px; margin-left: 10px; }
+.help-nav-grid a:hover { border-color: #1766bc; background: #ebf4ff; }
+.help-section p, .help-section li { color: #34495e; font-size: 16px; line-height: 1.85; }
+.help-section p { margin: 0 0 15px; }
+.help-section p:last-child { margin-bottom: 0; }
+.help-section a { color: #075ca9; font-weight: 700; text-underline-offset: 3px; }
+.help-steps { counter-reset: help-step; display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 12px; padding: 0; margin: 0; list-style: none; }
+.help-steps li { position: relative; padding: 18px; background: #f4f8fd; border: 1px solid #d0e0f2; border-radius: 9px; }
+.help-step-no { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: #1766bc; border-radius: 50%; font-weight: 700; color: #fff; margin-bottom: 12px; }
+.help-steps strong { display: block; color: #17365d; font-size: 17px; margin-bottom: 8px; }
+.help-steps p { font-size: 14px; line-height: 1.75; margin: 0; }
+.help-subsection { margin-top: 26px; }
+.help-subsection h3 { color: #17365d; font-size: 19px; margin: 0 0 12px; }
+.help-actions { display:flex; gap: 10px; flex-wrap: wrap; margin: 16px 0 0; }
+.help-actions a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 17px; color: #fff; background: #17365d; border-radius: 7px; text-decoration: none; }
+.help-actions a:hover { background: #075ca9; }
+.help-callout { margin: 18px 0; padding: 16px 18px; background: #f0f6ff; border-left: 4px solid #1766bc; border-radius: 0 8px 8px 0; }
+.help-callout p { margin: 0; }
+.help-caution { margin: 18px 0; padding: 16px 18px; background: #fff2f2; border-left: 4px solid #ce4254; border-radius: 0 8px 8px 0; }
+.help-caution strong { display:block; margin-bottom: 5px; color: #9b2535; }
+.help-caution p { color:#672f37; margin:0; }
+.help-bullets { padding-left: 1.4em; margin: 12px 0 0; }
+.help-bullets li + li { margin-top: 8px; }
+.help-bullets li::marker { color: #1766bc; }
+.help-info-list { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; margin: 14px 0 0; }
+.help-info-item { padding: 17px 19px; background: #f7f9fc; border: 1px solid #e0e6ef; border-radius: 9px; }
+.help-info-item h3 { margin: 0 0 8px; color: #17365d; font-size: 17px; }
+.help-info-item p { margin:0; font-size: 14px; line-height: 1.8; }
+.help-faq details { border-top: 1px solid #dce5ef; }
+.help-faq details:last-of-type { border-bottom: 1px solid #dce5ef; }
+.help-faq summary { position:relative; display: block; cursor:pointer; padding: 18px 30px 18px 4px; color: #17365d; font-weight: 700; line-height: 1.65; }
+.help-faq summary::-webkit-details-marker { display: none; }
+.help-faq summary::after { content:'＋'; position:absolute; right:4px; top:18px; color:#1766bc; }
+.help-faq details[open] summary::after { content:'－'; }
+.help-faq details p { margin:0 0 20px 4px; }
+.help-faq summary:focus-visible, .help-nav-grid a:focus-visible, .help-actions a:focus-visible { outline:3px solid #1766bc; outline-offset:3px; }
+.help-ending { text-align:center; padding:20px 0 35px; }
+.help-ending a { font-weight:700; color:#075ca9; }
+@media (max-width: 800px) { .help-steps { grid-template-columns: repeat(2,minmax(0,1fr)); } .help-nav-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 600px) {
+  .help-intro { margin-top: 10px; padding: 22px 18px; }
+  .help-nav, .help-section { padding: 20px 17px; }
+  .help-nav h2, .help-section h2 { font-size: 21px; }
+  .help-nav-grid { grid-template-columns: 1fr; }
+  .help-steps, .help-info-list { grid-template-columns: 1fr; }
+  .help-steps li { padding: 17px; }
+  .help-section p, .help-section li { font-size: 15px; }
+}
