@@ -1051,3 +1051,20 @@ body.detail-page {
     box-sizing: border-box;
   }
 }
+
+/* 重要なお知らせと試験変更の注意事項を同じ色・見た目に揃える */
+.detail-page .exam-notice {
+  margin: 22px 0 6px;
+  padding: 18px 22px;
+  border: 1px solid #efb6bf;
+  border-left: 5px solid #d4485b;
+  border-radius: 10px;
+  background: #fff1f2;
+  color: #542c34;
+}
+.detail-page .exam-notice h2 { color: #8e2638; font-size: 17px; }
+.detail-page .exam-notice a { color: #9b273a; text-underline-offset: 2px; }
+@media (max-width: 640px) {
+  .detail-page .exam-notice { padding: 14px 16px; }
+  .detail-page .exam-notice h2 { font-size: 16px; }
+}
