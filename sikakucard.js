@@ -1072,5 +1072,575 @@ const qualifications = [
   ],
   "feeSummary": "8,800円",
   "feeNote": "学科試験手数料・非課税"
+},
+{
+  "category": "design",
+  "name": "CGクリエイター検定 エキスパート",
+  "description": "3DCG映像の制作工程、アニメーションや演出に関する専門知識を問う検定です。",
+  "url": "cg-creator-expert.html",
+  "tags": [
+    "デザイン・色彩",
+    "民間検定",
+    "年2回",
+    "CG映像制作"
+  ],
+  "feeSummary": "7,150円",
+  "feeNote": "2026年度・税込"
+},
+{
+  "category": "design",
+  "name": "Webクリエイター能力認定試験 スタンダード（HTML5対応版）",
+  "description": "HTMLとCSSで指示どおりにWebページを制作する実技試験です。",
+  "url": "web-creator-standard.html",
+  "tags": [
+    "デザイン・色彩",
+    "民間検定",
+    "通年",
+    "HTML/CSS"
+  ],
+  "feeSummary": "6,400円",
+  "feeNote": "HTML5対応版・税込"
+},
+{
+  "category": "travel",
+  "name": "観光英語検定3級",
+  "description": "旅先の案内表示や日常会話など、観光に使う基礎的な英語を測る検定です。",
+  "url": "tourism-english3.html",
+  "tags": [
+    "旅行・観光",
+    "民間検定",
+    "年2回",
+    "筆記・聴解"
+  ],
+  "feeSummary": "5,150円",
+  "feeNote": "協会会員は4,500円"
+},
+{
+  "category": "travel",
+  "name": "ホテルビジネス実務検定 ベーシックレベル2級",
+  "description": "ホテルの宿泊・料飲・宴会業務などの実務知識を問う検定です。",
+  "url": "hotel-business-basic2.html",
+  "tags": [
+    "旅行・観光",
+    "民間検定",
+    "年2回",
+    "宿泊・接客"
+  ],
+  "feeSummary": "6,050円",
+  "feeNote": "2026年度・税込"
+},
+{
+  "category": "language",
+  "name": "日本語能力試験 N1（JLPT）",
+  "description": "幅広い話題の日本語を読み聞きして理解する力を測る検定です。",
+  "url": "jlpt-n1.html",
+  "tags": [
+    "語学",
+    "民間の語学能力認定",
+    "年2回",
+    "国内受験条件あり"
+  ],
+  "feeSummary": "7,500円",
+  "feeNote": "2026年国内・税込。海外は地域で異なる"
+},
+{
+  "category": "law",
+  "name": "知的財産管理技能検定3級（管理業務）",
+  "description": "特許・商標・著作権など、知的財産の保護と活用の基礎を問う国家検定です。",
+  "url": "ip-management3.html",
+  "tags": [
+    "法律・不動産",
+    "国家検定",
+    "学科・実技",
+    "知財"
+  ],
+  "feeSummary": "12,200円",
+  "feeNote": "学科・実技各6,100円（非課税）"
+},
+{
+  "category": "medical",
+  "name": "作業療法士国家試験",
+  "description": "生活動作や社会参加の支援に関わる作業療法の専門知識を問う国家試験です。",
+  "url": "occupational-therapist.html",
+  "tags": [
+    "医療・福祉",
+    "国家資格",
+    "受験資格あり",
+    "年1回"
+  ],
+  "feeSummary": "10,100円",
+  "feeNote": "第61回（2026年）・収入印紙"
+},
+{
+  "category": "industrial",
+  "name": "第三種冷凍機械責任者試験",
+  "description": "冷凍・空調設備の保安管理と高圧ガスの法令を問う国家試験です。",
+  "url": "refrigeration3.html",
+  "tags": [
+    "技術・工業",
+    "国家試験・免状",
+    "年1回",
+    "保安管理"
+  ],
+  "feeSummary": "9,800円",
+  "feeNote": "電子申請。書面は10,300円（非課税）"
+},
+{
+  "category": "it",
+  "name": "統計検定3級",
+  "description": "高校数学「データの分析」を土台に、データを読み取る統計の基礎知識を問う試験です。",
+  "url": "toukei3.html",
+  "tags": [
+    "IT・情報",
+    "民間検定",
+    "通年",
+    "CBT",
+    "統計"
+  ],
+  "feeSummary": "6,000円",
+  "feeNote": "学割4,000円（税込）"
+},
+{
+  "category": "business",
+  "name": "日商簿記初級",
+  "description": "簿記の仕組みと日常の取引の記録を問う、日商簿記の入門級です。",
+  "url": "boki-shokyu.html",
+  "tags": [
+    "ビジネス・会計",
+    "商工会議所検定",
+    "通年",
+    "ネット試験"
+  ],
+  "feeSummary": "2,200円",
+  "feeNote": "税込・申込先により事務手数料別"
+},
+{
+  "category": "law",
+  "name": "知的財産管理技能検定2級（管理業務）",
+  "description": "商標・特許・著作権などの権利を、企業活動で管理・活用する技能を問う国家検定です。",
+  "url": "ip-management2.html",
+  "tags": [
+    "法律・不動産",
+    "国家検定",
+    "受検資格あり",
+    "学科・実技"
+  ],
+  "feeSummary": "16,400円",
+  "feeNote": "学科・実技各8,200円（非課税）"
+},
+{
+  "category": "language",
+  "name": "日本語能力試験 N4（JLPT）",
+  "description": "身近な話題の日本語を読み、ゆっくりした会話を聞いて理解する力を測る試験です。",
+  "url": "jlpt-n4.html",
+  "tags": [
+    "語学",
+    "民間の語学能力認定",
+    "年2回",
+    "国内受験条件あり"
+  ],
+  "feeSummary": "7,500円",
+  "feeNote": "国内2026年・税込／海外は別"
+},
+{
+  "category": "medical",
+  "name": "管理栄養士国家試験",
+  "description": "栄養管理、疾病の予防、給食運営などの専門知識を問う国家試験です。",
+  "url": "kanri-eiyoshi.html",
+  "tags": [
+    "医療・福祉",
+    "国家資格",
+    "年1回",
+    "受験資格あり"
+  ],
+  "feeSummary": "6,800円",
+  "feeNote": "第41回（2027年）・収入印紙"
+},
+{
+  "category": "industrial",
+  "name": "二級建築士試験",
+  "description": "小規模な建築物の設計・工事監理に必要な知識と設計製図の技能を問う国家試験です。",
+  "url": "kenchikushi2.html",
+  "tags": [
+    "技術・工業",
+    "国家資格",
+    "受験資格あり",
+    "学科・製図"
+  ],
+  "feeSummary": "18,500円",
+  "feeNote": "2026年・非課税、決済手数料別"
+},
+{
+  "category": "design",
+  "name": "CGエンジニア検定 ベーシック",
+  "description": "コンピュータグラフィックスと画像処理の技術的な基礎知識を問う検定です。",
+  "url": "cg-engineer-basic.html",
+  "tags": [
+    "デザイン・色彩",
+    "民間検定",
+    "年2回",
+    "CG技術"
+  ],
+  "feeSummary": "6,050円",
+  "feeNote": "2026年度・税込"
+},
+{
+  "category": "travel",
+  "name": "世界遺産検定 準1級",
+  "description": "日本と世界の主要な遺産について、歴史・自然・文化のつながりを問う検定です。",
+  "url": "sekaken-pre1.html",
+  "tags": [
+    "旅行・観光",
+    "民間検定",
+    "2級認定者対象",
+    "年2回"
+  ],
+  "feeSummary": "7,600円",
+  "feeNote": "公開会場／CBT8,500円（税込）"
+},
+{
+  "category": "it",
+  "name": "統計検定4級",
+  "description": "表・グラフの読み取りやデータの整理、確率の基礎を問う検定です。",
+  "url": "toukei4.html",
+  "tags": [
+    "IT・情報",
+    "民間検定",
+    "通年",
+    "CBT",
+    "データ"
+  ],
+  "feeSummary": "5,000円",
+  "feeNote": "学割3,500円・税込"
+},
+{
+  "category": "business",
+  "name": "日商簿記1級",
+  "description": "商業簿記・会計学・工業簿記・原価計算の高度な知識を問う検定です。",
+  "url": "boki1.html",
+  "tags": [
+    "ビジネス・会計",
+    "商工会議所検定",
+    "年2回",
+    "会計"
+  ],
+  "feeSummary": "8,800円",
+  "feeNote": "2026年度・税込"
+},
+{
+  "category": "law",
+  "name": "ビジネス実務法務検定1級",
+  "description": "企業法務の事例から問題点を見つけ、法律に基づく対応を論述する検定です。",
+  "url": "business-law1.html",
+  "tags": [
+    "法律・不動産",
+    "商工会議所検定",
+    "年1回",
+    "論述式"
+  ],
+  "feeSummary": "12,100円",
+  "feeNote": "受験料9,900円＋CBT利用料2,200円・税込"
+},
+{
+  "category": "language",
+  "name": "実用英語技能検定3級（英検3級）",
+  "description": "身近な話題の英文を読み聞きし、短い文章を書く力と英語で話す力を測る検定です。",
+  "url": "eiken3.html",
+  "tags": [
+    "語学",
+    "民間検定",
+    "年3回",
+    "面接あり"
+  ],
+  "feeSummary": "6,800円",
+  "feeNote": "2026年度・従来型本会場／準会場4,900円"
+},
+{
+  "category": "medical",
+  "name": "言語聴覚士国家試験",
+  "description": "ことば・聞こえ・飲み込みに関する障害とリハビリテーションの専門知識を問う国家試験です。",
+  "url": "speech-therapist.html",
+  "tags": [
+    "医療・福祉",
+    "国家資格",
+    "年1回",
+    "受験資格あり"
+  ],
+  "feeSummary": "38,400円",
+  "feeNote": "第29回・受験手数料"
+},
+{
+  "category": "industrial",
+  "name": "消防設備士甲種第4類",
+  "description": "火災報知設備などの工事・整備・点検に必要な資格の試験です。",
+  "url": "shobo-ko4.html",
+  "tags": [
+    "技術・工業",
+    "国家資格",
+    "受験資格あり",
+    "電気・消防"
+  ],
+  "feeSummary": "6,600円",
+  "feeNote": "非課税・甲種"
+},
+{
+  "category": "design",
+  "name": "Webデザイナー検定 ベーシック",
+  "description": "Webサイトの企画、画面デザイン、制作・運用の基礎知識を問う検定です。",
+  "url": "web-designer-basic.html",
+  "tags": [
+    "デザイン・色彩",
+    "民間検定",
+    "年2回",
+    "Web制作"
+  ],
+  "feeSummary": "6,050円",
+  "feeNote": "2026年度・税込"
+},
+{
+  "category": "travel",
+  "name": "ホテルビジネス実務検定 ベーシックレベル1級",
+  "description": "宿泊・料飲・宴会に加え、マーケティングや総務・施設管理などを問うホテル実務の検定です。",
+  "url": "hotel-business-basic1.html",
+  "tags": [
+    "旅行・観光",
+    "民間検定",
+    "年2回",
+    "ホテル"
+  ],
+  "feeSummary": "6,050円",
+  "feeNote": "2026年度・税込"
+},
+{
+  "category": "it",
+  "name": "統計検定準1級",
+  "description": "統計モデルの選択、推定・検定、多変量解析などをデータに応用する力を問う試験です。",
+  "url": "toukei-pre1.html",
+  "tags": [
+    "IT・情報",
+    "民間検定",
+    "通年",
+    "CBT",
+    "データ分析"
+  ],
+  "feeSummary": "8,000円",
+  "feeNote": "学割6,000円"
+},
+{
+  "category": "business",
+  "name": "ビジネス会計検定試験2級",
+  "description": "連結財務諸表や損益分岐点など、企業の会計情報を分析する力を問う検定です。",
+  "url": "business-accounting2.html",
+  "tags": [
+    "ビジネス・会計",
+    "商工会議所検定",
+    "年2回",
+    "財務分析"
+  ],
+  "feeSummary": "7,480円",
+  "feeNote": "税込"
+},
+{
+  "category": "law",
+  "name": "ビジネス著作権検定 初級",
+  "description": "写真・文章・音楽などの著作権と、仕事での利用ルールを問う検定です。",
+  "url": "business-copyright-basic.html",
+  "tags": [
+    "法律・不動産",
+    "民間検定",
+    "リモートWebテスト",
+    "著作権"
+  ],
+  "feeSummary": "5,800円",
+  "feeNote": "税込"
+},
+{
+  "category": "language",
+  "name": "日本漢字能力検定3級（漢検3級）",
+  "description": "中学校卒業程度の漢字の読み書き、部首、熟語、四字熟語などを問う検定です。",
+  "url": "kanken3.html",
+  "tags": [
+    "語学",
+    "民間検定",
+    "漢字",
+    "複数方式"
+  ],
+  "feeSummary": "4,200円",
+  "feeNote": "公開会場／CBT・オンライン3,800円"
+},
+{
+  "category": "medical",
+  "name": "歯科衛生士国家試験",
+  "description": "口腔保健、歯科予防処置、歯科保健指導、歯科診療補助の知識を問う国家試験です。",
+  "url": "dental-hygienist.html",
+  "tags": [
+    "医療・福祉",
+    "国家資格",
+    "年1回",
+    "受験資格あり"
+  ],
+  "feeSummary": "14,300円",
+  "feeNote": "2027年・受験手数料"
+},
+{
+  "category": "industrial",
+  "name": "危険物取扱者乙種第6類",
+  "description": "過酸化水素や硝酸など、酸化性液体に分類される危険物の取扱い知識を問う国家試験です。",
+  "url": "hazard6.html",
+  "tags": [
+    "技術・工業",
+    "国家資格",
+    "都道府県別日程",
+    "危険物"
+  ],
+  "feeSummary": "5,300円",
+  "feeNote": "非課税・乙種"
+},
+{
+  "category": "design",
+  "name": "CGエンジニア検定 エキスパート",
+  "description": "3DCGのアルゴリズムや画像生成、レンダリングなどの専門知識を問う検定です。",
+  "url": "cg-engineer-expert.html",
+  "tags": [
+    "デザイン・色彩",
+    "民間検定",
+    "年2回",
+    "CG技術"
+  ],
+  "feeSummary": "7,150円",
+  "feeNote": "税込"
+},
+{
+  "category": "travel",
+  "name": "レストランサービス技能検定3級",
+  "description": "レストランでの料理・飲料サービスに必要な知識と接客の技能を評価する国家検定です。",
+  "url": "restaurant-service3.html",
+  "tags": [
+    "旅行・観光",
+    "国家検定",
+    "年1回",
+    "実務経験などの条件あり"
+  ],
+  "feeSummary": "19,500円",
+  "feeNote": "学科6,500円＋実技13,000円・非課税"
+},
+{
+  "category": "it",
+  "name": "統計検定 データサイエンス基礎",
+  "description": "Excelで実データを処理し、集計・可視化・統計的な判断を行う力を測る検定です。",
+  "url": "toukei-ds-basic.html",
+  "tags": [
+    "IT・情報",
+    "民間検定",
+    "通年",
+    "CBT",
+    "Excel"
+  ],
+  "feeSummary": "7,000円",
+  "feeNote": "学割5,000円（税込）"
+},
+{
+  "category": "business",
+  "name": "日商PC検定（文書作成）3級",
+  "description": "Wordで社内・社外向けのビジネス文書を正確に作る力を測る検定です。",
+  "url": "nissho-pc-document3.html",
+  "tags": [
+    "ビジネス・会計",
+    "商工会議所検定",
+    "通年",
+    "Word",
+    "ネット試験"
+  ],
+  "feeSummary": "5,500円",
+  "feeNote": "税込"
+},
+{
+  "category": "law",
+  "name": "ビジネス著作権検定 上級",
+  "description": "コンテンツの利用許諾や著作権の侵害・契約など、実務的な判断力を問う検定です。",
+  "url": "business-copyright-advanced.html",
+  "tags": [
+    "法律・不動産",
+    "民間検定",
+    "リモート試験",
+    "著作権",
+    "上級"
+  ],
+  "feeSummary": "8,700円",
+  "feeNote": "税込"
+},
+{
+  "category": "language",
+  "name": "実用英語技能検定4級（英検4級）",
+  "description": "日常的な英語の短い文章と会話を理解する力を測る検定です。",
+  "url": "eiken4.html",
+  "tags": [
+    "語学",
+    "民間検定",
+    "年3回",
+    "英語",
+    "中学中級程度"
+  ],
+  "feeSummary": "4,600円",
+  "feeNote": "準会場2,800円（2026年度・税込）"
+},
+{
+  "category": "medical",
+  "name": "臨床検査技師国家試験",
+  "description": "血液・微生物・生理機能などの臨床検査に必要な専門知識を測る国家試験です。",
+  "url": "clinical-laboratory.html",
+  "tags": [
+    "医療・福祉",
+    "国家資格",
+    "年1回",
+    "養成課程等が必要"
+  ],
+  "feeSummary": "11,300円",
+  "feeNote": "収入印紙で納付"
+},
+{
+  "category": "industrial",
+  "name": "エネルギー管理士試験",
+  "description": "工場などのエネルギー利用、熱や電気の管理に必要な知識を問う国家試験です。",
+  "url": "energy-manager.html",
+  "tags": [
+    "技術・工業",
+    "国家資格",
+    "年1回",
+    "省エネルギー",
+    "熱・電気"
+  ],
+  "feeSummary": "17,000円",
+  "feeNote": "旧資格保有者は例外あり・非課税"
+},
+{
+  "category": "design",
+  "name": "Webデザイナー検定 エキスパート",
+  "description": "Webサイトの企画・設計・制作・テスト・運用に関する専門知識を問う検定です。",
+  "url": "webdesigner-expert.html",
+  "tags": [
+    "デザイン・色彩",
+    "民間検定",
+    "年2回",
+    "Web制作",
+    "エキスパート"
+  ],
+  "feeSummary": "7,150円",
+  "feeNote": "2026年度・税込"
+},
+{
+  "category": "travel",
+  "name": "サービス接遇検定2級",
+  "description": "受付・接客・サービス提供の基本マナーと、場面に応じた対応力を問う検定です。",
+  "url": "service-reception2.html",
+  "tags": [
+    "旅行・観光",
+    "民間検定",
+    "通年CBT",
+    "接客",
+    "サービス"
+  ],
+  "feeSummary": "4,900円",
+  "feeNote": "CBT受験・税込（筆記5,200円）"
 }
 ];
