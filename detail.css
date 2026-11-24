@@ -40,8 +40,8 @@ body.detail-page {
 /* ヘッダー */
 
 .detail-page .site-header {
-  position: sticky;
-  top: 0;
+  position: static;
+  top: auto;
   z-index: 100;
 
   display: flex;
